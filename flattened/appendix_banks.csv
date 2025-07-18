@@ -1,0 +1,679 @@
+date,bank,account,subaccount,detail,value,multiple,raw_value,signed,shf_subaccount,shf_detail
+1700-03-31,Bank of Scotland,Liabilities,1. To the Public,(a) Time deposits (Treasurers’ bonds),,1000,0,0,Deposits,Term deposits
+1706-03-31,Bank of Scotland,Liabilities,1. To the Public,(a) Time deposits (Treasurers’ bonds),,1000,0,0,Deposits,Term deposits
+1713-03-31,Bank of Scotland,Liabilities,1. To the Public,(a) Time deposits (Treasurers’ bonds),36,1000,36000,-36000,Deposits,Term deposits
+1719-03-31,Bank of Scotland,Liabilities,1. To the Public,(a) Time deposits (Treasurers’ bonds),18.3,1000,18300,-18300,Deposits,Term deposits
+1725-03-31,Bank of Scotland,Liabilities,1. To the Public,(a) Time deposits (Treasurers’ bonds),48.3,1000,48300,-48300,Deposits,Term deposits
+1728-03-31,Bank of Scotland,Liabilities,1. To the Public,(a) Time deposits (Treasurers’ bonds),0.4,1000,400,-400,Deposits,Term deposits
+1738-03-31,Bank of Scotland,Liabilities,1. To the Public,(a) Time deposits (Treasurers’ bonds),13.2,1000,13200,-13200,Deposits,Term deposits
+1741-03-31,Bank of Scotland,Liabilities,1. To the Public,(a) Time deposits (Treasurers’ bonds),24.9,1000,24900,-24900,Deposits,Term deposits
+1744-03-31,Bank of Scotland,Liabilities,1. To the Public,(a) Time deposits (Treasurers’ bonds),26.6,1000,26600,-26600,Deposits,Term deposits
+1700-03-31,Bank of Scotland,Liabilities,1. To the Public,(b) Demand deposits (cash a/cs in credit),,1000,0,0,Deposits,Deposits
+1706-03-31,Bank of Scotland,Liabilities,1. To the Public,(b) Demand deposits (cash a/cs in credit),,1000,0,0,Deposits,Deposits
+1713-03-31,Bank of Scotland,Liabilities,1. To the Public,(b) Demand deposits (cash a/cs in credit),,1000,0,0,Deposits,Deposits
+1719-03-31,Bank of Scotland,Liabilities,1. To the Public,(b) Demand deposits (cash a/cs in credit),,1000,0,0,Deposits,Deposits
+1725-03-31,Bank of Scotland,Liabilities,1. To the Public,(b) Demand deposits (cash a/cs in credit),,1000,0,0,Deposits,Deposits
+1728-03-31,Bank of Scotland,Liabilities,1. To the Public,(b) Demand deposits (cash a/cs in credit),,1000,0,0,Deposits,Deposits
+1738-03-31,Bank of Scotland,Liabilities,1. To the Public,(b) Demand deposits (cash a/cs in credit),3.4,1000,3400,-3400,Deposits,Deposits
+1741-03-31,Bank of Scotland,Liabilities,1. To the Public,(b) Demand deposits (cash a/cs in credit),1.2,1000,1200,-1200,Deposits,Deposits
+1744-03-31,Bank of Scotland,Liabilities,1. To the Public,(b) Demand deposits (cash a/cs in credit),4.4,1000,4400,-4400,Deposits,Deposits
+1700-03-31,Bank of Scotland,Liabilities,Total deposits,(c) notes in hands of public,45,1000,45000,-45000,Deposits,Deposits
+1706-03-31,Bank of Scotland,Liabilities,Total deposits,(c) notes in hands of public,6.3,1000,6300,-6300,Deposits,Deposits
+1713-03-31,Bank of Scotland,Liabilities,Total deposits,(c) notes in hands of public,42,1000,42000,-42000,Deposits,Deposits
+1719-03-31,Bank of Scotland,Liabilities,Total deposits,(c) notes in hands of public,33.2,1000,33200,-33200,Deposits,Deposits
+1725-03-31,Bank of Scotland,Liabilities,Total deposits,(c) notes in hands of public,49.1,1000,49100,-49100,Deposits,Deposits
+1728-03-31,Bank of Scotland,Liabilities,Total deposits,(c) notes in hands of public,76.4,1000,76400,-76400,Deposits,Deposits
+1738-03-31,Bank of Scotland,Liabilities,Total deposits,(c) notes in hands of public,32.3,1000,32300,-32300,Deposits,Deposits
+1741-03-31,Bank of Scotland,Liabilities,Total deposits,(c) notes in hands of public,32,1000,32000,-32000,Deposits,Deposits
+1744-03-31,Bank of Scotland,Liabilities,Total deposits,(c) notes in hands of public,23.5,1000,23500,-23500,Deposits,Deposits
+1700-03-31,Bank of Scotland,Equity,2. To proprietors,(a) paid up capital,10,1000,10000,-10000,Capital,Capital
+1706-03-31,Bank of Scotland,Equity,2. To proprietors,(a) paid up capital,17.2,1000,17200,-17200,Capital,Capital
+1713-03-31,Bank of Scotland,Equity,2. To proprietors,(a) paid up capital,10,1000,10000,-10000,Capital,Capital
+1719-03-31,Bank of Scotland,Equity,2. To proprietors,(a) paid up capital,10,1000,10000,-10000,Capital,Capital
+1725-03-31,Bank of Scotland,Equity,2. To proprietors,(a) paid up capital,20,1000,20000,-20000,Capital,Capital
+1728-03-31,Bank of Scotland,Equity,2. To proprietors,(a) paid up capital,30,1000,30000,-30000,Capital,Capital
+1738-03-31,Bank of Scotland,Equity,2. To proprietors,(a) paid up capital,40,1000,40000,-40000,Capital,Capital
+1741-03-31,Bank of Scotland,Equity,2. To proprietors,(a) paid up capital,40,1000,40000,-40000,Capital,Capital
+1744-03-31,Bank of Scotland,Equity,2. To proprietors,(a) paid up capital,40,1000,40000,-40000,Capital,Capital
+1700-03-31,Bank of Scotland,Equity,2. To proprietors,(b) surplus,1,1000,1000,-1000,Surplus,Surplus
+1706-03-31,Bank of Scotland,Equity,2. To proprietors,(b) surplus,0.9,1000,900,-900,Surplus,Surplus
+1713-03-31,Bank of Scotland,Equity,2. To proprietors,(b) surplus,4,1000,4000,-4000,Surplus,Surplus
+1719-03-31,Bank of Scotland,Equity,2. To proprietors,(b) surplus,2.2,1000,2200,-2200,Surplus,Surplus
+1725-03-31,Bank of Scotland,Equity,2. To proprietors,(b) surplus,4.5,1000,4500,-4500,Surplus,Surplus
+1728-03-31,Bank of Scotland,Equity,2. To proprietors,(b) surplus,4.5,1000,4500,-4500,Surplus,Surplus
+1738-03-31,Bank of Scotland,Equity,2. To proprietors,(b) surplus,6.5,1000,6500,-6500,Surplus,Surplus
+1741-03-31,Bank of Scotland,Equity,2. To proprietors,(b) surplus,9.7,1000,9700,-9700,Surplus,Surplus
+1744-03-31,Bank of Scotland,Equity,2. To proprietors,(b) surplus,13.3,1000,13300,-13300,Surplus,Surplus
+1700-03-31,Bank of Scotland,Equity,3. Miscellaneous,3. Miscellaneous,4.5,1000,4500,-4500,Capital,Capital
+1706-03-31,Bank of Scotland,Equity,3. Miscellaneous,3. Miscellaneous,0.7,1000,700,-700,Capital,Capital
+1713-03-31,Bank of Scotland,Equity,3. Miscellaneous,3. Miscellaneous,1,1000,1000,-1000,Capital,Capital
+1719-03-31,Bank of Scotland,Equity,3. Miscellaneous,3. Miscellaneous,0.6,1000,600,-600,Capital,Capital
+1725-03-31,Bank of Scotland,Equity,3. Miscellaneous,3. Miscellaneous,,1000,0,0,Capital,Capital
+1728-03-31,Bank of Scotland,Equity,3. Miscellaneous,3. Miscellaneous,0.8,1000,800,-800,Capital,Capital
+1738-03-31,Bank of Scotland,Equity,3. Miscellaneous,3. Miscellaneous,0.4,1000,400,-400,Capital,Capital
+1741-03-31,Bank of Scotland,Equity,3. Miscellaneous,3. Miscellaneous,3.1,1000,3100,-3100,Capital,Capital
+1744-03-31,Bank of Scotland,Equity,3. Miscellaneous,3. Miscellaneous,0.7,1000,700,-700,Capital,Capital
+1700-03-31,Bank of Scotland,Assets,1. Advances,(a) on heritable and personal Bonds,47.2,1000,47200,47200,Advances,Heritable/Personal Binds
+1706-03-31,Bank of Scotland,Assets,1. Advances,(a) on heritable and personal Bonds,16.5,1000,16500,16500,Advances,Heritable/Personal Binds
+1713-03-31,Bank of Scotland,Assets,1. Advances,(a) on heritable and personal Bonds,77.8,1000,77800,77800,Advances,Heritable/Personal Binds
+1719-03-31,Bank of Scotland,Assets,1. Advances,(a) on heritable and personal Bonds,51.7,1000,51700,51700,Advances,Heritable/Personal Binds
+1725-03-31,Bank of Scotland,Assets,1. Advances,(a) on heritable and personal Bonds,87.7,1000,87700,87700,Advances,Heritable/Personal Binds
+1728-03-31,Bank of Scotland,Assets,1. Advances,(a) on heritable and personal Bonds,91.4,1000,91400,91400,Advances,Heritable/Personal Binds
+1738-03-31,Bank of Scotland,Assets,1. Advances,(a) on heritable and personal Bonds,51.8,1000,51800,51800,Advances,Heritable/Personal Binds
+1741-03-31,Bank of Scotland,Assets,1. Advances,(a) on heritable and personal Bonds,42.6,1000,42600,42600,Advances,Heritable/Personal Binds
+1744-03-31,Bank of Scotland,Assets,1. Advances,(a) on heritable and personal Bonds,46.4,1000,46400,46400,Advances,Heritable/Personal Binds
+1700-03-31,Bank of Scotland,Assets,1. Advances,(b) on bills discounted (mostly London),7.1,1000,7100,7100,Advances,Bills
+1706-03-31,Bank of Scotland,Assets,1. Advances,(b) on bills discounted (mostly London),7.6,1000,7600,7600,Advances,Bills
+1713-03-31,Bank of Scotland,Assets,1. Advances,(b) on bills discounted (mostly London),13.1,1000,13100,13100,Advances,Bills
+1719-03-31,Bank of Scotland,Assets,1. Advances,(b) on bills discounted (mostly London),11,1000,11000,11000,Advances,Bills
+1725-03-31,Bank of Scotland,Assets,1. Advances,(b) on bills discounted (mostly London),31.8,1000,31800,31800,Advances,Bills
+1728-03-31,Bank of Scotland,Assets,1. Advances,(b) on bills discounted (mostly London),14.9,1000,14900,14900,Advances,Bills
+1738-03-31,Bank of Scotland,Assets,1. Advances,(b) on bills discounted (mostly London),12.6,1000,12600,12600,Advances,Bills
+1741-03-31,Bank of Scotland,Assets,1. Advances,(b) on bills discounted (mostly London),15.4,1000,15400,15400,Advances,Bills
+1744-03-31,Bank of Scotland,Assets,1. Advances,(b) on bills discounted (mostly London),12.3,1000,12300,12300,Advances,Bills
+1700-03-31,Bank of Scotland,Assets,1. Advances,(c) on cash accounts,,1000,0,0,Advances,Cash Accounts
+1706-03-31,Bank of Scotland,Assets,1. Advances,(c) on cash accounts,,1000,0,0,Advances,Cash Accounts
+1713-03-31,Bank of Scotland,Assets,1. Advances,(c) on cash accounts,,1000,0,0,Advances,Cash Accounts
+1719-03-31,Bank of Scotland,Assets,1. Advances,(c) on cash accounts,,1000,0,0,Advances,Cash Accounts
+1725-03-31,Bank of Scotland,Assets,1. Advances,(c) on cash accounts,,1000,0,0,Advances,Cash Accounts
+1728-03-31,Bank of Scotland,Assets,1. Advances,(c) on cash accounts,,1000,0,0,Advances,Cash Accounts
+1738-03-31,Bank of Scotland,Assets,1. Advances,(c) on cash accounts,27.8,1000,27800,27800,Advances,Cash Accounts
+1741-03-31,Bank of Scotland,Assets,1. Advances,(c) on cash accounts,49,1000,49000,49000,Advances,Cash Accounts
+1744-03-31,Bank of Scotland,Assets,1. Advances,(c) on cash accounts,46.6,1000,46600,46600,Advances,Cash Accounts
+1700-03-31,Bank of Scotland,Assets,2. Specie,2. Specie,2.3,1000,2300,2300,Liquid Assets,Liquid Assets
+1706-03-31,Bank of Scotland,Assets,2. Specie,2. Specie,1,1000,1000,1000,Liquid Assets,Liquid Assets
+1713-03-31,Bank of Scotland,Assets,2. Specie,2. Specie,2.1,1000,2100,2100,Liquid Assets,Liquid Assets
+1719-03-31,Bank of Scotland,Assets,2. Specie,2. Specie,1.6,1000,1600,1600,Liquid Assets,Liquid Assets
+1725-03-31,Bank of Scotland,Assets,2. Specie,2. Specie,2.4,1000,2400,2400,Liquid Assets,Liquid Assets
+1728-03-31,Bank of Scotland,Assets,2. Specie,2. Specie,3.8,1000,3800,3800,Liquid Assets,Liquid Assets
+1738-03-31,Bank of Scotland,Assets,2. Specie,2. Specie,1.6,1000,1600,1600,Liquid Assets,Liquid Assets
+1741-03-31,Bank of Scotland,Assets,2. Specie,2. Specie,1.6,1000,1600,1600,Liquid Assets,Liquid Assets
+1744-03-31,Bank of Scotland,Assets,2. Specie,2. Specie,1.2,1000,1200,1200,Liquid Assets,Liquid Assets
+1700-03-31,Bank of Scotland,Assets,3. Notes of other banks,3. Notes of other banks,,1000,0,0,Notes,Notes (other banks)
+1706-03-31,Bank of Scotland,Assets,3. Notes of other banks,3. Notes of other banks,,1000,0,0,Notes,Notes (other banks)
+1713-03-31,Bank of Scotland,Assets,3. Notes of other banks,3. Notes of other banks,,1000,0,0,Notes,Notes (other banks)
+1719-03-31,Bank of Scotland,Assets,3. Notes of other banks,3. Notes of other banks,,1000,0,0,Notes,Notes (other banks)
+1725-03-31,Bank of Scotland,Assets,3. Notes of other banks,3. Notes of other banks,,1000,0,0,Notes,Notes (other banks)
+1728-03-31,Bank of Scotland,Assets,3. Notes of other banks,3. Notes of other banks,2,1000,2000,2000,Notes,Notes (other banks)
+1738-03-31,Bank of Scotland,Assets,3. Notes of other banks,3. Notes of other banks,2,1000,2000,2000,Notes,Notes (other banks)
+1741-03-31,Bank of Scotland,Assets,3. Notes of other banks,3. Notes of other banks,2,1000,2000,2000,Notes,Notes (other banks)
+1744-03-31,Bank of Scotland,Assets,3. Notes of other banks,3. Notes of other banks,2,1000,2000,2000,Notes,Notes (other banks)
+1700-03-31,Bank of Scotland,Assets,4. Miscellaneous,4. Miscellaneous,3.9,1000,3900,3900,Liquid Assets,Liquid Assets
+1706-03-31,Bank of Scotland,Assets,4. Miscellaneous,4. Miscellaneous,,1000,0,0,Liquid Assets,Liquid Assets
+1713-03-31,Bank of Scotland,Assets,4. Miscellaneous,4. Miscellaneous,,1000,0,0,Liquid Assets,Liquid Assets
+1719-03-31,Bank of Scotland,Assets,4. Miscellaneous,4. Miscellaneous,,1000,0,0,Liquid Assets,Liquid Assets
+1725-03-31,Bank of Scotland,Assets,4. Miscellaneous,4. Miscellaneous,,1000,0,0,Liquid Assets,Liquid Assets
+1728-03-31,Bank of Scotland,Assets,4. Miscellaneous,4. Miscellaneous,,1000,0,0,Liquid Assets,Liquid Assets
+1738-03-31,Bank of Scotland,Assets,4. Miscellaneous,4. Miscellaneous,,1000,0,0,Liquid Assets,Liquid Assets
+1741-03-31,Bank of Scotland,Assets,4. Miscellaneous,4. Miscellaneous,0.3,1000,300,300,Liquid Assets,Liquid Assets
+1744-03-31,Bank of Scotland,Assets,4. Miscellaneous,4. Miscellaneous,,1000,0,0,Liquid Assets,Liquid Assets
+1775-12-31,Bank of Scotland,Liabilities,1. Deposits at head office,1. Deposits at head office,240,1000,240000,-240000,Deposits,Deposits
+1780-12-31,Bank of Scotland,Liabilities,1. Deposits at head office,1. Deposits at head office,92,1000,92000,-92000,Deposits,Deposits
+1792-12-31,Bank of Scotland,Liabilities,1. Deposits at head office,1. Deposits at head office,164,1000,164000,-164000,Deposits,Deposits
+1797-12-31,Bank of Scotland,Liabilities,1. Deposits at head office,1. Deposits at head office,142,1000,142000,-142000,Deposits,Deposits
+1800-12-31,Bank of Scotland,Liabilities,1. Deposits at head office,1. Deposits at head office,88,1000,88000,-88000,Deposits,Deposits
+1802-12-31,Bank of Scotland,Liabilities,1. Deposits at head office,1. Deposits at head office,85,1000,85000,-85000,Deposits,Deposits
+1805-12-31,Bank of Scotland,Liabilities,1. Deposits at head office,1. Deposits at head office,105,1000,105000,-105000,Deposits,Deposits
+1810-12-31,Bank of Scotland,Liabilities,1. Deposits at head office,1. Deposits at head office,31,1000,31000,-31000,Deposits,Deposits
+1775-12-31,Bank of Scotland,Liabilities,2. Branches in credit,2. Branches in credit,0,1000,0,0,Deposits,Deposits
+1780-12-31,Bank of Scotland,Liabilities,2. Branches in credit,2. Branches in credit,0,1000,0,0,Deposits,Deposits
+1792-12-31,Bank of Scotland,Liabilities,2. Branches in credit,2. Branches in credit,27,1000,27000,-27000,Deposits,Deposits
+1797-12-31,Bank of Scotland,Liabilities,2. Branches in credit,2. Branches in credit,151,1000,151000,-151000,Deposits,Deposits
+1800-12-31,Bank of Scotland,Liabilities,2. Branches in credit,2. Branches in credit,154,1000,154000,-154000,Deposits,Deposits
+1802-12-31,Bank of Scotland,Liabilities,2. Branches in credit,2. Branches in credit,345,1000,345000,-345000,Deposits,Deposits
+1805-12-31,Bank of Scotland,Liabilities,2. Branches in credit,2. Branches in credit,229,1000,229000,-229000,Deposits,Deposits
+1810-12-31,Bank of Scotland,Liabilities,2. Branches in credit,2. Branches in credit,357,1000,357000,-357000,Deposits,Deposits
+1775-12-31,Bank of Scotland,Liabilities,3. Notes in hands of public,3. Notes in hands of public,25,1000,25000,-25000,Notes,Notes
+1780-12-31,Bank of Scotland,Liabilities,3. Notes in hands of public,3. Notes in hands of public,289,1000,289000,-289000,Notes,Notes
+1792-12-31,Bank of Scotland,Liabilities,3. Notes in hands of public,3. Notes in hands of public,80,1000,80000,-80000,Notes,Notes
+1797-12-31,Bank of Scotland,Liabilities,3. Notes in hands of public,3. Notes in hands of public,852,1000,852000,-852000,Notes,Notes
+1800-12-31,Bank of Scotland,Liabilities,3. Notes in hands of public,3. Notes in hands of public,937,1000,937000,-937000,Notes,Notes
+1802-12-31,Bank of Scotland,Liabilities,3. Notes in hands of public,3. Notes in hands of public,867,1000,867000,-867000,Notes,Notes
+1805-12-31,Bank of Scotland,Liabilities,3. Notes in hands of public,3. Notes in hands of public,650,1000,650000,-650000,Notes,Notes
+1810-12-31,Bank of Scotland,Liabilities,3. Notes in hands of public,3. Notes in hands of public,730,1000,730000,-730000,Notes,Notes
+1775-12-31,Bank of Scotland,Equity,Equity,(a) Capital,177,1000,177000,-177000,Capital,Capital
+1780-12-31,Bank of Scotland,Equity,Equity,(a) Capital,200,1000,200000,-200000,Capital,Capital
+1792-12-31,Bank of Scotland,Equity,Equity,(a) Capital,300,1000,300000,-300000,Capital,Capital
+1797-12-31,Bank of Scotland,Equity,Equity,(a) Capital,803,1000,803000,-803000,Capital,Capital
+1800-12-31,Bank of Scotland,Equity,Equity,(a) Capital,989,1000,989000,-989000,Capital,Capital
+1802-12-31,Bank of Scotland,Equity,Equity,(a) Capital,1000,1000,1000000,-1000000,Capital,Capital
+1805-12-31,Bank of Scotland,Equity,Equity,(a) Capital,1000,1000,1000000,-1000000,Capital,Capital
+1810-12-31,Bank of Scotland,Equity,Equity,(a) Capital,1000,1000,1000000,-1000000,Capital,Capital
+1775-12-31,Bank of Scotland,Equity,4. Sundries,4. Sundries,10,1000,10000,-10000,Capital,Capital
+1780-12-31,Bank of Scotland,Equity,4. Sundries,4. Sundries,53,1000,53000,-53000,Capital,Capital
+1792-12-31,Bank of Scotland,Equity,4. Sundries,4. Sundries,34,1000,34000,-34000,Capital,Capital
+1797-12-31,Bank of Scotland,Equity,4. Sundries,4. Sundries,,1000,0,0,Capital,Capital
+1800-12-31,Bank of Scotland,Equity,4. Sundries,4. Sundries,39,1000,39000,-39000,Capital,Capital
+1802-12-31,Bank of Scotland,Equity,4. Sundries,4. Sundries,,1000,0,0,Capital,Capital
+1805-12-31,Bank of Scotland,Equity,4. Sundries,4. Sundries,44,1000,44000,-44000,Capital,Capital
+1810-12-31,Bank of Scotland,Equity,4. Sundries,4. Sundries,105,1000,105000,-105000,Capital,Capital
+1775-12-31,Bank of Scotland,Equity,Equity,(b) Surplus,7,1000,7000,-7000,Surplus,Surplus
+1780-12-31,Bank of Scotland,Equity,Equity,(b) Surplus,32,1000,32000,-32000,Surplus,Surplus
+1792-12-31,Bank of Scotland,Equity,Equity,(b) Surplus,77,1000,77000,-77000,Surplus,Surplus
+1797-12-31,Bank of Scotland,Equity,Equity,(b) Surplus,144,1000,144000,-144000,Surplus,Surplus
+1800-12-31,Bank of Scotland,Equity,Equity,(b) Surplus,110,1000,110000,-110000,Surplus,Surplus
+1802-12-31,Bank of Scotland,Equity,Equity,(b) Surplus,124,1000,124000,-124000,Surplus,Surplus
+1805-12-31,Bank of Scotland,Equity,Equity,(b) Surplus,148,1000,148000,-148000,Surplus,Surplus
+1810-12-31,Bank of Scotland,Equity,Equity,(b) Surplus,174,1000,174000,-174000,Surplus,Surplus
+1775-12-31,Bank of Scotland,Assets,1. Advances to public (Head office),(a) On bonds,233,1000,233000,233000,Advances,Bonds
+1780-12-31,Bank of Scotland,Assets,1. Advances to public (Head office),(a) On bonds,256,1000,256000,256000,Advances,Bonds
+1792-12-31,Bank of Scotland,Assets,1. Advances to public (Head office),(a) On bonds,35,1000,35000,35000,Advances,Bonds
+1797-12-31,Bank of Scotland,Assets,1. Advances to public (Head office),(a) On bonds,15,1000,15000,15000,Advances,Bonds
+1800-12-31,Bank of Scotland,Assets,1. Advances to public (Head office),(a) On bonds,9,1000,9000,9000,Advances,Bonds
+1802-12-31,Bank of Scotland,Assets,1. Advances to public (Head office),(a) On bonds,15,1000,15000,15000,Advances,Bonds
+1805-12-31,Bank of Scotland,Assets,1. Advances to public (Head office),(a) On bonds,34,1000,34000,34000,Advances,Bonds
+1810-12-31,Bank of Scotland,Assets,1. Advances to public (Head office),(a) On bonds,41,1000,41000,41000,Advances,Bonds
+1775-12-31,Bank of Scotland,Assets,1. Advances to public (Head office),(b) Bills discounted,53,1000,53000,53000,Advances,Bills
+1780-12-31,Bank of Scotland,Assets,1. Advances to public (Head office),(b) Bills discounted,13,1000,13000,13000,Advances,Bills
+1792-12-31,Bank of Scotland,Assets,1. Advances to public (Head office),(b) Bills discounted,24,1000,24000,24000,Advances,Bills
+1797-12-31,Bank of Scotland,Assets,1. Advances to public (Head office),(b) Bills discounted,67,1000,67000,67000,Advances,Bills
+1800-12-31,Bank of Scotland,Assets,1. Advances to public (Head office),(b) Bills discounted,418,1000,418000,418000,Advances,Bills
+1802-12-31,Bank of Scotland,Assets,1. Advances to public (Head office),(b) Bills discounted,368,1000,368000,368000,Advances,Bills
+1805-12-31,Bank of Scotland,Assets,1. Advances to public (Head office),(b) Bills discounted,285,1000,285000,285000,Advances,Bills
+1810-12-31,Bank of Scotland,Assets,1. Advances to public (Head office),(b) Bills discounted,391,1000,391000,391000,Advances,Bills
+1775-12-31,Bank of Scotland,Assets,1. Advances to public (Head office),(c) Cash accounts,88,1000,88000,88000,Advances,Cash Accounts
+1780-12-31,Bank of Scotland,Assets,1. Advances to public (Head office),(c) Cash accounts,40,1000,40000,40000,Advances,Cash Accounts
+1792-12-31,Bank of Scotland,Assets,1. Advances to public (Head office),(c) Cash accounts,54,1000,54000,54000,Advances,Cash Accounts
+1797-12-31,Bank of Scotland,Assets,1. Advances to public (Head office),(c) Cash accounts,3,1000,3000,3000,Advances,Cash Accounts
+1800-12-31,Bank of Scotland,Assets,1. Advances to public (Head office),(c) Cash accounts,3,1000,3000,3000,Advances,Cash Accounts
+1802-12-31,Bank of Scotland,Assets,1. Advances to public (Head office),(c) Cash accounts,3,1000,3000,3000,Advances,Cash Accounts
+1805-12-31,Bank of Scotland,Assets,1. Advances to public (Head office),(c) Cash accounts,3,1000,3000,3000,Advances,Cash Accounts
+1810-12-31,Bank of Scotland,Assets,1. Advances to public (Head office),(c) Cash accounts,1,1000,1000,1000,Advances,Cash Accounts
+1775-12-31,Bank of Scotland,Assets,2. Loans to agents,2. Loans to agents,49,1000,49000,49000,Loans,Loans
+1780-12-31,Bank of Scotland,Assets,2. Loans to agents,2. Loans to agents,174,1000,174000,174000,Loans,Loans
+1792-12-31,Bank of Scotland,Assets,2. Loans to agents,2. Loans to agents,379,1000,379000,379000,Loans,Loans
+1797-12-31,Bank of Scotland,Assets,2. Loans to agents,2. Loans to agents,1005,1000,1005000,1005000,Loans,Loans
+1800-12-31,Bank of Scotland,Assets,2. Loans to agents,2. Loans to agents,880,1000,880000,880000,Loans,Loans
+1802-12-31,Bank of Scotland,Assets,2. Loans to agents,2. Loans to agents,675,1000,675000,675000,Loans,Loans
+1805-12-31,Bank of Scotland,Assets,2. Loans to agents,2. Loans to agents,863,1000,863000,863000,Loans,Loans
+1810-12-31,Bank of Scotland,Assets,2. Loans to agents,2. Loans to agents,1195,1000,1195000,1195000,Loans,Loans
+1775-12-31,Bank of Scotland,Assets,3. Specie,3. Specie,2,1000,2000,2000,Liquid Assets,Liquid Assets
+1780-12-31,Bank of Scotland,Assets,3. Specie,3. Specie,14,1000,14000,14000,Liquid Assets,Liquid Assets
+1792-12-31,Bank of Scotland,Assets,3. Specie,3. Specie,27,1000,27000,27000,Liquid Assets,Liquid Assets
+1797-12-31,Bank of Scotland,Assets,3. Specie,3. Specie,40,1000,40000,40000,Liquid Assets,Liquid Assets
+1800-12-31,Bank of Scotland,Assets,3. Specie,3. Specie,45,1000,45000,45000,Liquid Assets,Liquid Assets
+1802-12-31,Bank of Scotland,Assets,3. Specie,3. Specie,42,1000,42000,42000,Liquid Assets,Liquid Assets
+1805-12-31,Bank of Scotland,Assets,3. Specie,3. Specie,31,1000,31000,31000,Liquid Assets,Liquid Assets
+1810-12-31,Bank of Scotland,Assets,3. Specie,3. Specie,37,1000,37000,37000,Liquid Assets,Liquid Assets
+1775-12-31,Bank of Scotland,Assets,4. Investments,4. Investments,0,1000,0,0,Investments,Investments
+1780-12-31,Bank of Scotland,Assets,4. Investments,4. Investments,162,1000,162000,162000,Investments,Investments
+1792-12-31,Bank of Scotland,Assets,4. Investments,4. Investments,158,1000,158000,158000,Investments,Investments
+1797-12-31,Bank of Scotland,Assets,4. Investments,4. Investments,793,1000,793000,793000,Investments,Investments
+1800-12-31,Bank of Scotland,Assets,4. Investments,4. Investments,935,1000,935000,935000,Investments,Investments
+1802-12-31,Bank of Scotland,Assets,4. Investments,4. Investments,1149,1000,1149000,1149000,Investments,Investments
+1805-12-31,Bank of Scotland,Assets,4. Investments,4. Investments,948,1000,948000,948000,Investments,Investments
+1810-12-31,Bank of Scotland,Assets,4. Investments,4. Investments,702,1000,702000,702000,Investments,Investments
+1775-12-31,Bank of Scotland,Assets,5. London assets,5. London assets,1,1000,1000,1000,Liquid Assets,London Assets
+1780-12-31,Bank of Scotland,Assets,5. London assets,5. London assets,0,1000,0,0,Liquid Assets,London Assets
+1792-12-31,Bank of Scotland,Assets,5. London assets,5. London assets,0,1000,0,0,Liquid Assets,London Assets
+1797-12-31,Bank of Scotland,Assets,5. London assets,5. London assets,0,1000,0,0,Liquid Assets,London Assets
+1800-12-31,Bank of Scotland,Assets,5. London assets,5. London assets,0,1000,0,0,Liquid Assets,London Assets
+1802-12-31,Bank of Scotland,Assets,5. London assets,5. London assets,0,1000,0,0,Liquid Assets,London Assets
+1805-12-31,Bank of Scotland,Assets,5. London assets,5. London assets,0,1000,0,0,Liquid Assets,London Assets
+1810-12-31,Bank of Scotland,Assets,5. London assets,5. London assets,0,1000,0,0,Liquid Assets,London Assets
+1775-12-31,Bank of Scotland,Assets,6. Sundries,6. Sundries,33,1000,33000,33000,Liquid Assets,Liquid Assets
+1780-12-31,Bank of Scotland,Assets,6. Sundries,6. Sundries,7,1000,7000,7000,Liquid Assets,Liquid Assets
+1792-12-31,Bank of Scotland,Assets,6. Sundries,6. Sundries,5,1000,5000,5000,Liquid Assets,Liquid Assets
+1797-12-31,Bank of Scotland,Assets,6. Sundries,6. Sundries,169,1000,169000,169000,Liquid Assets,Liquid Assets
+1800-12-31,Bank of Scotland,Assets,6. Sundries,6. Sundries,27,1000,27000,27000,Liquid Assets,Liquid Assets
+1802-12-31,Bank of Scotland,Assets,6. Sundries,6. Sundries,169,1000,169000,169000,Liquid Assets,Liquid Assets
+1805-12-31,Bank of Scotland,Assets,6. Sundries,6. Sundries,12,1000,12000,12000,Liquid Assets,Liquid Assets
+1810-12-31,Bank of Scotland,Assets,6. Sundries,6. Sundries,30,1000,30000,30000,Liquid Assets,Liquid Assets
+1764-12-31,Dundee Banking Co,Liabilities,1. Note Issue,1. Note Issue,30.3,1000,30300,-30300,Notes,Notes
+1765-12-31,Dundee Banking Co,Liabilities,1. Note Issue,1. Note Issue,33.8,1000,33800,-33800,Notes,Notes
+1766-12-31,Dundee Banking Co,Liabilities,1. Note Issue,1. Note Issue,34.5,1000,34500,-34500,Notes,Notes
+1767-12-31,Dundee Banking Co,Liabilities,1. Note Issue,1. Note Issue,32,1000,32000,-32000,Notes,Notes
+1768-12-31,Dundee Banking Co,Liabilities,1. Note Issue,1. Note Issue,32.5,1000,32500,-32500,Notes,Notes
+1769-12-31,Dundee Banking Co,Liabilities,1. Note Issue,1. Note Issue,33.5,1000,33500,-33500,Notes,Notes
+1770-12-31,Dundee Banking Co,Liabilities,1. Note Issue,1. Note Issue,27.5,1000,27500,-27500,Notes,Notes
+1771-12-31,Dundee Banking Co,Liabilities,1. Note Issue,1. Note Issue,30.2,1000,30200,-30200,Notes,Notes
+1772-12-31,Dundee Banking Co,Liabilities,1. Note Issue,1. Note Issue,43.7,1000,43700,-43700,Notes,Notes
+1764-12-31,Dundee Banking Co,Liabilities,2. Deposits,2. Deposits,,1000,0,0,Deposits,Deposits
+1765-12-31,Dundee Banking Co,Liabilities,2. Deposits,2. Deposits,,1000,0,0,Deposits,Deposits
+1766-12-31,Dundee Banking Co,Liabilities,2. Deposits,2. Deposits,,1000,0,0,Deposits,Deposits
+1767-12-31,Dundee Banking Co,Liabilities,2. Deposits,2. Deposits,,1000,0,0,Deposits,Deposits
+1768-12-31,Dundee Banking Co,Liabilities,2. Deposits,2. Deposits,3.9,1000,3900,-3900,Deposits,Deposits
+1769-12-31,Dundee Banking Co,Liabilities,2. Deposits,2. Deposits,,1000,0,0,Deposits,Deposits
+1770-12-31,Dundee Banking Co,Liabilities,2. Deposits,2. Deposits,8.5,1000,8500,-8500,Deposits,Deposits
+1771-12-31,Dundee Banking Co,Liabilities,2. Deposits,2. Deposits,,1000,0,0,Deposits,Deposits
+1772-12-31,Dundee Banking Co,Liabilities,2. Deposits,2. Deposits,,1000,0,0,Deposits,Deposits
+1764-12-31,Dundee Banking Co,Equity,3. Capital and surplus,3. Capital and surplus,1.6,1000,1600,-1600,Capital,Capital
+1765-12-31,Dundee Banking Co,Equity,3. Capital and surplus,3. Capital and surplus,1.3,1000,1300,-1300,Capital,Capital
+1766-12-31,Dundee Banking Co,Equity,3. Capital and surplus,3. Capital and surplus,4.5,1000,4500,-4500,Capital,Capital
+1767-12-31,Dundee Banking Co,Equity,3. Capital and surplus,3. Capital and surplus,5.6,1000,5600,-5600,Capital,Capital
+1768-12-31,Dundee Banking Co,Equity,3. Capital and surplus,3. Capital and surplus,6.1,1000,6100,-6100,Capital,Capital
+1769-12-31,Dundee Banking Co,Equity,3. Capital and surplus,3. Capital and surplus,6.5,1000,6500,-6500,Capital,Capital
+1770-12-31,Dundee Banking Co,Equity,3. Capital and surplus,3. Capital and surplus,7,1000,7000,-7000,Capital,Capital
+1771-12-31,Dundee Banking Co,Equity,3. Capital and surplus,3. Capital and surplus,7.4,1000,7400,-7400,Capital,Capital
+1772-12-31,Dundee Banking Co,Equity,3. Capital and surplus,3. Capital and surplus,7.9,1000,7900,-7900,Capital,Capital
+1764-12-31,Dundee Banking Co,Equity,4. Sundries,4. Sundries,,1000,0,0,Capital,Capital
+1765-12-31,Dundee Banking Co,Equity,4. Sundries,4. Sundries,,1000,0,0,Capital,Capital
+1766-12-31,Dundee Banking Co,Equity,4. Sundries,4. Sundries,0.3,1000,300,-300,Capital,Capital
+1767-12-31,Dundee Banking Co,Equity,4. Sundries,4. Sundries,3.1,1000,3100,-3100,Capital,Capital
+1768-12-31,Dundee Banking Co,Equity,4. Sundries,4. Sundries,1.3,1000,1300,-1300,Capital,Capital
+1769-12-31,Dundee Banking Co,Equity,4. Sundries,4. Sundries,4.9,1000,4900,-4900,Capital,Capital
+1770-12-31,Dundee Banking Co,Equity,4. Sundries,4. Sundries,6.3,1000,6300,-6300,Capital,Capital
+1771-12-31,Dundee Banking Co,Equity,4. Sundries,4. Sundries,,1000,0,0,Capital,Capital
+1772-12-31,Dundee Banking Co,Equity,4. Sundries,4. Sundries,,1000,0,0,Capital,Capital
+1764-12-31,Dundee Banking Co,Assets,1. Advances,1. Advances,28.3,1000,28300,28300,Advances,Advances
+1765-12-31,Dundee Banking Co,Assets,1. Advances,1. Advances,30.7,1000,30700,30700,Advances,Advances
+1766-12-31,Dundee Banking Co,Assets,1. Advances,1. Advances,34.6,1000,34600,34600,Advances,Advances
+1767-12-31,Dundee Banking Co,Assets,1. Advances,1. Advances,30.8,1000,30800,30800,Advances,Advances
+1768-12-31,Dundee Banking Co,Assets,1. Advances,1. Advances,38.7,1000,38700,38700,Advances,Advances
+1769-12-31,Dundee Banking Co,Assets,1. Advances,1. Advances,39.5,1000,39500,39500,Advances,Advances
+1770-12-31,Dundee Banking Co,Assets,1. Advances,1. Advances,45.3,1000,45300,45300,Advances,Advances
+1771-12-31,Dundee Banking Co,Assets,1. Advances,1. Advances,34.2,1000,34200,34200,Advances,Advances
+1772-12-31,Dundee Banking Co,Assets,1. Advances,1. Advances,28.4,1000,28400,28400,Advances,Advances
+1764-12-31,Dundee Banking Co,Assets,2. Investments and Liquid Assets,2. Investments and Liquid Assets,2.5,1000,2500,2500,Investments,Investments
+1765-12-31,Dundee Banking Co,Assets,2. Investments and Liquid Assets,2. Investments and Liquid Assets,2.6,1000,2600,2600,Investments,Investments
+1766-12-31,Dundee Banking Co,Assets,2. Investments and Liquid Assets,2. Investments and Liquid Assets,1.2,1000,1200,1200,Investments,Investments
+1767-12-31,Dundee Banking Co,Assets,2. Investments and Liquid Assets,2. Investments and Liquid Assets,0.8,1000,800,800,Investments,Investments
+1768-12-31,Dundee Banking Co,Assets,2. Investments and Liquid Assets,2. Investments and Liquid Assets,2,1000,2000,2000,Investments,Investments
+1769-12-31,Dundee Banking Co,Assets,2. Investments and Liquid Assets,2. Investments and Liquid Assets,2,1000,2000,2000,Investments,Investments
+1770-12-31,Dundee Banking Co,Assets,2. Investments and Liquid Assets,2. Investments and Liquid Assets,0.6,1000,600,600,Investments,Investments
+1771-12-31,Dundee Banking Co,Assets,2. Investments and Liquid Assets,2. Investments and Liquid Assets,1,1000,1000,1000,Investments,Investments
+1772-12-31,Dundee Banking Co,Assets,2. Investments and Liquid Assets,2. Investments and Liquid Assets,4.9,1000,4900,4900,Investments,Investments
+1764-12-31,Dundee Banking Co,Assets,3. Specie,3. Specie,1,1000,1000,1000,Liquid Assets,Liquid Assets
+1765-12-31,Dundee Banking Co,Assets,3. Specie,3. Specie,1.4,1000,1400,1400,Liquid Assets,Liquid Assets
+1766-12-31,Dundee Banking Co,Assets,3. Specie,3. Specie,3.5,1000,3500,3500,Liquid Assets,Liquid Assets
+1767-12-31,Dundee Banking Co,Assets,3. Specie,3. Specie,9.1,1000,9100,9100,Liquid Assets,Liquid Assets
+1768-12-31,Dundee Banking Co,Assets,3. Specie,3. Specie,2.6,1000,2600,2600,Liquid Assets,Liquid Assets
+1769-12-31,Dundee Banking Co,Assets,3. Specie,3. Specie,2.9,1000,2900,2900,Liquid Assets,Liquid Assets
+1770-12-31,Dundee Banking Co,Assets,3. Specie,3. Specie,2.4,1000,2400,2400,Liquid Assets,Liquid Assets
+1771-12-31,Dundee Banking Co,Assets,3. Specie,3. Specie,2.1,1000,2100,2100,Liquid Assets,Liquid Assets
+1772-12-31,Dundee Banking Co,Assets,3. Specie,3. Specie,17.3,1000,17300,17300,Liquid Assets,Liquid Assets
+1764-12-31,Dundee Banking Co,Assets,4. Sundries,4. Sundries,0.1,1000,100,100,Liquid Assets,Liquid Assets
+1765-12-31,Dundee Banking Co,Assets,4. Sundries,4. Sundries,0.4,1000,400,400,Liquid Assets,Liquid Assets
+1766-12-31,Dundee Banking Co,Assets,4. Sundries,4. Sundries,,1000,0,0,Liquid Assets,Liquid Assets
+1767-12-31,Dundee Banking Co,Assets,4. Sundries,4. Sundries,,1000,0,0,Liquid Assets,Liquid Assets
+1768-12-31,Dundee Banking Co,Assets,4. Sundries,4. Sundries,0.5,1000,500,500,Liquid Assets,Liquid Assets
+1769-12-31,Dundee Banking Co,Assets,4. Sundries,4. Sundries,0.5,1000,500,500,Liquid Assets,Liquid Assets
+1770-12-31,Dundee Banking Co,Assets,4. Sundries,4. Sundries,1,1000,1000,1000,Liquid Assets,Liquid Assets
+1771-12-31,Dundee Banking Co,Assets,4. Sundries,4. Sundries,0.3,1000,300,300,Liquid Assets,Liquid Assets
+1772-12-31,Dundee Banking Co,Assets,4. Sundries,4. Sundries,1,1000,1000,1000,Liquid Assets,Liquid Assets
+1775-02-21,Dundee Banking Co,Liabilities,1. Note Issue,1. Note Issue,35.9,1000,35900,-35900,Notes,Notes
+1780-02-21,Dundee Banking Co,Liabilities,1. Note Issue,1. Note Issue,40.3,1000,40300,-40300,Notes,Notes
+1785-02-21,Dundee Banking Co,Liabilities,1. Note Issue,1. Note Issue,55.4,1000,55400,-55400,Notes,Notes
+1790-02-21,Dundee Banking Co,Liabilities,1. Note Issue,1. Note Issue,43.4,1000,43400,-43400,Notes,Notes
+1795-02-21,Dundee Banking Co,Liabilities,1. Note Issue,1. Note Issue,69,1000,69000,-69000,Notes,Notes
+1800-02-21,Dundee Banking Co,Liabilities,1. Note Issue,1. Note Issue,60.9,1000,60900,-60900,Notes,Notes
+1802-02-21,Dundee Banking Co,Liabilities,1. Note Issue,1. Note Issue,12.7,1000,12700,-12700,Notes,Notes
+1805-02-21,Dundee Banking Co,Liabilities,1. Note Issue,1. Note Issue,67.2,1000,67200,-67200,Notes,Notes
+1810-02-21,Dundee Banking Co,Liabilities,1. Note Issue,1. Note Issue,58.5,1000,58500,-58500,Notes,Notes
+1775-02-21,Dundee Banking Co,Liabilities,2. Deposits,2. Deposits,,1000,0,0,Deposits,Deposits
+1780-02-21,Dundee Banking Co,Liabilities,2. Deposits,2. Deposits,,1000,0,0,Deposits,Deposits
+1785-02-21,Dundee Banking Co,Liabilities,2. Deposits,2. Deposits,,1000,0,0,Deposits,Deposits
+1790-02-21,Dundee Banking Co,Liabilities,2. Deposits,2. Deposits,,1000,0,0,Deposits,Deposits
+1795-02-21,Dundee Banking Co,Liabilities,2. Deposits,2. Deposits,73.5,1000,73500,-73500,Deposits,Deposits
+1800-02-21,Dundee Banking Co,Liabilities,2. Deposits,2. Deposits,119.4,1000,119400,-119400,Deposits,Deposits
+1802-02-21,Dundee Banking Co,Liabilities,2. Deposits,2. Deposits,135.1,1000,135100,-135100,Deposits,Deposits
+1805-02-21,Dundee Banking Co,Liabilities,2. Deposits,2. Deposits,197.7,1000,197700,-197700,Deposits,Deposits
+1810-02-21,Dundee Banking Co,Liabilities,2. Deposits,2. Deposits,337.2,1000,337200,-337200,Deposits,Deposits
+1775-02-21,Dundee Banking Co,Equity,3. Capital and surplus,3. Capital and surplus,8.2,1000,8200,-8200,Capital,Capital
+1780-02-21,Dundee Banking Co,Equity,3. Capital and surplus,3. Capital and surplus,10,1000,10000,-10000,Capital,Capital
+1785-02-21,Dundee Banking Co,Equity,3. Capital and surplus,3. Capital and surplus,13.1,1000,13100,-13100,Capital,Capital
+1790-02-21,Dundee Banking Co,Equity,3. Capital and surplus,3. Capital and surplus,23.4,1000,23400,-23400,Capital,Capital
+1795-02-21,Dundee Banking Co,Equity,3. Capital and surplus,3. Capital and surplus,33.5,1000,33500,-33500,Capital,Capital
+1800-02-21,Dundee Banking Co,Equity,3. Capital and surplus,3. Capital and surplus,36.4,1000,36400,-36400,Capital,Capital
+1802-02-21,Dundee Banking Co,Equity,3. Capital and surplus,3. Capital and surplus,23.4,1000,23400,-23400,Capital,Capital
+1805-02-21,Dundee Banking Co,Equity,3. Capital and surplus,3. Capital and surplus,13.1,1000,13100,-13100,Capital,Capital
+1810-02-21,Dundee Banking Co,Equity,3. Capital and surplus,3. Capital and surplus,39.7,1000,39700,-39700,Capital,Capital
+1775-02-21,Dundee Banking Co,Equity,4. Sundries,4. Sundries,0.2,1000,200,-200,Capital,Capital
+1780-02-21,Dundee Banking Co,Equity,4. Sundries,4. Sundries,,1000,0,0,Capital,Capital
+1785-02-21,Dundee Banking Co,Equity,4. Sundries,4. Sundries,4.3,1000,4300,-4300,Capital,Capital
+1790-02-21,Dundee Banking Co,Equity,4. Sundries,4. Sundries,3.6,1000,3600,-3600,Capital,Capital
+1795-02-21,Dundee Banking Co,Equity,4. Sundries,4. Sundries,0.1,1000,100,-100,Capital,Capital
+1800-02-21,Dundee Banking Co,Equity,4. Sundries,4. Sundries,5.4,1000,5400,-5400,Capital,Capital
+1802-02-21,Dundee Banking Co,Equity,4. Sundries,4. Sundries,15.1,1000,15100,-15100,Capital,Capital
+1805-02-21,Dundee Banking Co,Equity,4. Sundries,4. Sundries,16.2,1000,16200,-16200,Capital,Capital
+1810-02-21,Dundee Banking Co,Equity,4. Sundries,4. Sundries,43.5,1000,43500,-43500,Capital,Capital
+1775-02-21,Dundee Banking Co,Assets,1. Advances,1. Advances,36,1000,36000,36000,Advances,Advances
+1780-02-21,Dundee Banking Co,Assets,1. Advances,1. Advances,32.4,1000,32400,32400,Advances,Advances
+1785-02-21,Dundee Banking Co,Assets,1. Advances,1. Advances,62.3,1000,62300,62300,Advances,Advances
+1790-02-21,Dundee Banking Co,Assets,1. Advances,1. Advances,57.9,1000,57900,57900,Advances,Advances
+1795-02-21,Dundee Banking Co,Assets,1. Advances,1. Advances,154.3,1000,154300,154300,Advances,Advances
+1800-02-21,Dundee Banking Co,Assets,1. Advances,1. Advances,193.5,1000,193500,193500,Advances,Advances
+1802-02-21,Dundee Banking Co,Assets,1. Advances,1. Advances,154.1,1000,154100,154100,Advances,Advances
+1805-02-21,Dundee Banking Co,Assets,1. Advances,1. Advances,184.2,1000,184200,184200,Advances,Advances
+1810-02-21,Dundee Banking Co,Assets,1. Advances,1. Advances,311,1000,311000,311000,Advances,Advances
+1775-02-21,Dundee Banking Co,Assets,2. Investments and Liquid Assets,2. Investments and Liquid Assets,4.7,1000,4700,4700,Investments,Investments
+1780-02-21,Dundee Banking Co,Assets,2. Investments and Liquid Assets,2. Investments and Liquid Assets,9.5,1000,9500,9500,Investments,Investments
+1785-02-21,Dundee Banking Co,Assets,2. Investments and Liquid Assets,2. Investments and Liquid Assets,2.1,1000,2100,2100,Investments,Investments
+1790-02-21,Dundee Banking Co,Assets,2. Investments and Liquid Assets,2. Investments and Liquid Assets,2.6,1000,2600,2600,Investments,Investments
+1795-02-21,Dundee Banking Co,Assets,2. Investments and Liquid Assets,2. Investments and Liquid Assets,13.8,1000,13800,13800,Investments,Investments
+1800-02-21,Dundee Banking Co,Assets,2. Investments and Liquid Assets,2. Investments and Liquid Assets,14.8,1000,14800,14800,Investments,Investments
+1802-02-21,Dundee Banking Co,Assets,2. Investments and Liquid Assets,2. Investments and Liquid Assets,17.6,1000,17600,17600,Investments,Investments
+1805-02-21,Dundee Banking Co,Assets,2. Investments and Liquid Assets,2. Investments and Liquid Assets,99.9,1000,99900,99900,Investments,Investments
+1810-02-21,Dundee Banking Co,Assets,2. Investments and Liquid Assets,2. Investments and Liquid Assets,154.1,1000,154100,154100,Investments,Investments
+1775-02-21,Dundee Banking Co,Assets,3. Specie,3. Specie,3.2,1000,3200,3200,Liquid Assets,Liquid Assets
+1780-02-21,Dundee Banking Co,Assets,3. Specie,3. Specie,7.1,1000,7100,7100,Liquid Assets,Liquid Assets
+1785-02-21,Dundee Banking Co,Assets,3. Specie,3. Specie,7.7,1000,7700,7700,Liquid Assets,Liquid Assets
+1790-02-21,Dundee Banking Co,Assets,3. Specie,3. Specie,7.9,1000,7900,7900,Liquid Assets,Liquid Assets
+1795-02-21,Dundee Banking Co,Assets,3. Specie,3. Specie,6.8,1000,6800,6800,Liquid Assets,Liquid Assets
+1800-02-21,Dundee Banking Co,Assets,3. Specie,3. Specie,11.3,1000,11300,11300,Liquid Assets,Liquid Assets
+1802-02-21,Dundee Banking Co,Assets,3. Specie,3. Specie,9.1,1000,9100,9100,Liquid Assets,Liquid Assets
+1805-02-21,Dundee Banking Co,Assets,3. Specie,3. Specie,8,1000,8000,8000,Liquid Assets,Liquid Assets
+1810-02-21,Dundee Banking Co,Assets,3. Specie,3. Specie,9,1000,9000,9000,Liquid Assets,Liquid Assets
+1775-02-21,Dundee Banking Co,Assets,4. Sundries,4. Sundries,0.4,1000,400,400,Liquid Assets,Liquid Assets
+1780-02-21,Dundee Banking Co,Assets,4. Sundries,4. Sundries,1.3,1000,1300,1300,Liquid Assets,Liquid Assets
+1785-02-21,Dundee Banking Co,Assets,4. Sundries,4. Sundries,0.7,1000,700,700,Liquid Assets,Liquid Assets
+1790-02-21,Dundee Banking Co,Assets,4. Sundries,4. Sundries,2,1000,2000,2000,Liquid Assets,Liquid Assets
+1795-02-21,Dundee Banking Co,Assets,4. Sundries,4. Sundries,1.2,1000,1200,1200,Liquid Assets,Liquid Assets
+1800-02-21,Dundee Banking Co,Assets,4. Sundries,4. Sundries,2.5,1000,2500,2500,Liquid Assets,Liquid Assets
+1802-02-21,Dundee Banking Co,Assets,4. Sundries,4. Sundries,5.5,1000,5500,5500,Liquid Assets,Liquid Assets
+1805-02-21,Dundee Banking Co,Assets,4. Sundries,4. Sundries,2.1,1000,2100,2100,Liquid Assets,Liquid Assets
+1810-02-21,Dundee Banking Co,Assets,4. Sundries,4. Sundries,4.8,1000,4800,4800,Liquid Assets,Liquid Assets
+1815-02-21,Dundee Banking Co,Liabilities,1. Note issue,1. Note issue,44.4,1000,44400,-44400,Notes,Notes
+1820-02-21,Dundee Banking Co,Liabilities,1. Note issue,1. Note issue,32.2,1000,32200,-32200,Notes,Notes
+1825-02-21,Dundee Banking Co,Liabilities,1. Note issue,1. Note issue,30.7,1000,30700,-30700,Notes,Notes
+1830-02-21,Dundee Banking Co,Liabilities,1. Note issue,1. Note issue,26.3,1000,26300,-26300,Notes,Notes
+1835-02-21,Dundee Banking Co,Liabilities,1. Note issue,1. Note issue,32,1000,32000,-32000,Notes,Notes
+1840-02-21,Dundee Banking Co,Liabilities,1. Note issue,1. Note issue,31.2,1000,31200,-31200,Notes,Notes
+1845-02-21,Dundee Banking Co,Liabilities,1. Note issue,1. Note issue,31,1000,31000,-31000,Notes,Notes
+1850-02-21,Dundee Banking Co,Liabilities,1. Note issue,1. Note issue,28.5,1000,28500,-28500,Notes,Notes
+1815-02-21,Dundee Banking Co,Liabilities,2. Deposits,2. Deposits,478,1000,478000,-478000,Deposits,Deposits
+1820-02-21,Dundee Banking Co,Liabilities,2. Deposits,2. Deposits,332.5,1000,332500,-332500,Deposits,Deposits
+1825-02-21,Dundee Banking Co,Liabilities,2. Deposits,2. Deposits,398.1,1000,398100,-398100,Deposits,Deposits
+1830-02-21,Dundee Banking Co,Liabilities,2. Deposits,2. Deposits,419.6,1000,419600,-419600,Deposits,Deposits
+1835-02-21,Dundee Banking Co,Liabilities,2. Deposits,2. Deposits,486.1,1000,486100,-486100,Deposits,Deposits
+1840-02-21,Dundee Banking Co,Liabilities,2. Deposits,2. Deposits,501.1,1000,501100,-501100,Deposits,Deposits
+1845-02-21,Dundee Banking Co,Liabilities,2. Deposits,2. Deposits,514.1,1000,514100,-514100,Deposits,Deposits
+1850-02-21,Dundee Banking Co,Liabilities,2. Deposits,2. Deposits,624.2,1000,624200,-624200,Deposits,Deposits
+1815-02-21,Dundee Banking Co,Equity,3. Capital and surplus,3. Capital and surplus,41.3,1000,41300,-41300,Capital,Capital
+1820-02-21,Dundee Banking Co,Equity,3. Capital and surplus,3. Capital and surplus,18.5,1000,18500,-18500,Capital,Capital
+1825-02-21,Dundee Banking Co,Equity,3. Capital and surplus,3. Capital and surplus,28.9,1000,28900,-28900,Capital,Capital
+1830-02-21,Dundee Banking Co,Equity,3. Capital and surplus,3. Capital and surplus,30,1000,30000,-30000,Capital,Capital
+1835-02-21,Dundee Banking Co,Equity,3. Capital and surplus,3. Capital and surplus,28.5,1000,28500,-28500,Capital,Capital
+1840-02-21,Dundee Banking Co,Equity,3. Capital and surplus,3. Capital and surplus,65.1,1000,65100,-65100,Capital,Capital
+1845-02-21,Dundee Banking Co,Equity,3. Capital and surplus,3. Capital and surplus,65.4,1000,65400,-65400,Capital,Capital
+1850-02-21,Dundee Banking Co,Equity,3. Capital and surplus,3. Capital and surplus,79.3,1000,79300,-79300,Capital,Capital
+1815-02-21,Dundee Banking Co,Equity,4. Sundries,4. Sundries,37.7,1000,37700,-37700,Capital,Capital
+1820-02-21,Dundee Banking Co,Equity,4. Sundries,4. Sundries,2.5,1000,2500,-2500,Capital,Capital
+1825-02-21,Dundee Banking Co,Equity,4. Sundries,4. Sundries,10.1,1000,10100,-10100,Capital,Capital
+1830-02-21,Dundee Banking Co,Equity,4. Sundries,4. Sundries,1.6,1000,1600,-1600,Capital,Capital
+1835-02-21,Dundee Banking Co,Equity,4. Sundries,4. Sundries,0.1,1000,100,-100,Capital,Capital
+1840-02-21,Dundee Banking Co,Equity,4. Sundries,4. Sundries,5.8,1000,5800,-5800,Capital,Capital
+1845-02-21,Dundee Banking Co,Equity,4. Sundries,4. Sundries,7.1,1000,7100,-7100,Capital,Capital
+1850-02-21,Dundee Banking Co,Equity,4. Sundries,4. Sundries,7.8,1000,7800,-7800,Capital,Capital
+1815-02-21,Dundee Banking Co,Assets,1. Advances,1. Advances,351,1000,351000,351000,Advances,Advances
+1820-02-21,Dundee Banking Co,Assets,1. Advances,1. Advances,194.6,1000,194600,194600,Advances,Advances
+1825-02-21,Dundee Banking Co,Assets,1. Advances,1. Advances,327.4,1000,327400,327400,Advances,Advances
+1830-02-21,Dundee Banking Co,Assets,1. Advances,1. Advances,392.5,1000,392500,392500,Advances,Advances
+1835-02-21,Dundee Banking Co,Assets,1. Advances,1. Advances,431.6,1000,431600,431600,Advances,Advances
+1840-02-21,Dundee Banking Co,Assets,1. Advances,1. Advances,517.6,1000,517600,517600,Advances,Advances
+1845-02-21,Dundee Banking Co,Assets,1. Advances,1. Advances,513.6,1000,513600,513600,Advances,Advances
+1850-02-21,Dundee Banking Co,Assets,1. Advances,1. Advances,648.2,1000,648200,648200,Advances,Advances
+1815-02-21,Dundee Banking Co,Assets,2. Investments and liquid assets,2. Investments and liquid assets,241.7,1000,241700,241700,Investments,Investments
+1820-02-21,Dundee Banking Co,Assets,2. Investments and liquid assets,2. Investments and liquid assets,181.4,1000,181400,181400,Investments,Investments
+1825-02-21,Dundee Banking Co,Assets,2. Investments and liquid assets,2. Investments and liquid assets,132.3,1000,132300,132300,Investments,Investments
+1830-02-21,Dundee Banking Co,Assets,2. Investments and liquid assets,2. Investments and liquid assets,78.3,1000,78300,78300,Investments,Investments
+1835-02-21,Dundee Banking Co,Assets,2. Investments and liquid assets,2. Investments and liquid assets,108.8,1000,108800,108800,Investments,Investments
+1840-02-21,Dundee Banking Co,Assets,2. Investments and liquid assets,2. Investments and liquid assets,75.2,1000,75200,75200,Investments,Investments
+1845-02-21,Dundee Banking Co,Assets,2. Investments and liquid assets,2. Investments and liquid assets,96.7,1000,96700,96700,Investments,Investments
+1850-02-21,Dundee Banking Co,Assets,2. Investments and liquid assets,2. Investments and liquid assets,82.5,1000,82500,82500,Investments,Investments
+1815-02-21,Dundee Banking Co,Assets,3. Specie,3. Specie,6.5,1000,6500,6500,Liquid Assets,Liquid Assets
+1820-02-21,Dundee Banking Co,Assets,3. Specie,3. Specie,4.1,1000,4100,4100,Liquid Assets,Liquid Assets
+1825-02-21,Dundee Banking Co,Assets,3. Specie,3. Specie,2.6,1000,2600,2600,Liquid Assets,Liquid Assets
+1830-02-21,Dundee Banking Co,Assets,3. Specie,3. Specie,2.2,1000,2200,2200,Liquid Assets,Liquid Assets
+1835-02-21,Dundee Banking Co,Assets,3. Specie,3. Specie,1.8,1000,1800,1800,Liquid Assets,Liquid Assets
+1840-02-21,Dundee Banking Co,Assets,3. Specie,3. Specie,4.9,1000,4900,4900,Liquid Assets,Liquid Assets
+1845-02-21,Dundee Banking Co,Assets,3. Specie,3. Specie,3.4,1000,3400,3400,Liquid Assets,Liquid Assets
+1850-02-21,Dundee Banking Co,Assets,3. Specie,3. Specie,5.2,1000,5200,5200,Liquid Assets,Liquid Assets
+1815-02-21,Dundee Banking Co,Assets,4. Sundry,4. Sundry,2.2,1000,2200,2200,Liquid Assets,Liquid Assets
+1820-02-21,Dundee Banking Co,Assets,4. Sundry,4. Sundry,5.6,1000,5600,5600,Liquid Assets,Liquid Assets
+1825-02-21,Dundee Banking Co,Assets,4. Sundry,4. Sundry,5.5,1000,5500,5500,Liquid Assets,Liquid Assets
+1830-02-21,Dundee Banking Co,Assets,4. Sundry,4. Sundry,4.5,1000,4500,4500,Liquid Assets,Liquid Assets
+1835-02-21,Dundee Banking Co,Assets,4. Sundry,4. Sundry,4.5,1000,4500,4500,Liquid Assets,Liquid Assets
+1840-02-21,Dundee Banking Co,Assets,4. Sundry,4. Sundry,5.5,1000,5500,5500,Liquid Assets,Liquid Assets
+1845-02-21,Dundee Banking Co,Assets,4. Sundry,4. Sundry,3.9,1000,3900,3900,Liquid Assets,Liquid Assets
+1850-02-21,Dundee Banking Co,Assets,4. Sundry,4. Sundry,3.9,1000,3900,3900,Liquid Assets,Liquid Assets
+1794-09-29,Royal Bank of Scotland,Liabilities,1. Note issue,1. Note issue,251,1000,251000,-251000,Notes,Notes
+1795-03-30,Royal Bank of Scotland,Liabilities,1. Note issue,1. Note issue,325,1000,325000,-325000,Notes,Notes
+1795-09-28,Royal Bank of Scotland,Liabilities,1. Note issue,1. Note issue,271,1000,271000,-271000,Notes,Notes
+1797-03-31,Royal Bank of Scotland,Liabilities,1. Note issue,1. Note issue,339,1000,339000,-339000,Notes,Notes
+1802-08-16,Royal Bank of Scotland,Liabilities,1. Note issue,1. Note issue,391,1000,391000,-391000,Notes,Notes
+1794-09-29,Royal Bank of Scotland,Liabilities,2. Deposits,Edinburgh,383,1000,383000,-383000,Deposits,Deposits
+1795-03-30,Royal Bank of Scotland,Liabilities,2. Deposits,Edinburgh,410,1000,410000,-410000,Deposits,Deposits
+1795-09-28,Royal Bank of Scotland,Liabilities,2. Deposits,Edinburgh,394,1000,394000,-394000,Deposits,Deposits
+1797-03-31,Royal Bank of Scotland,Liabilities,2. Deposits,Edinburgh,391,1000,391000,-391000,Deposits,Deposits
+1802-08-16,Royal Bank of Scotland,Liabilities,2. Deposits,Edinburgh,422,1000,422000,-422000,Deposits,Deposits
+1794-09-29,Royal Bank of Scotland,Liabilities,2. Deposits,Glasgow,246,1000,246000,-246000,Deposits,Deposits
+1795-03-30,Royal Bank of Scotland,Liabilities,2. Deposits,Glasgow,277,1000,277000,-277000,Deposits,Deposits
+1795-09-28,Royal Bank of Scotland,Liabilities,2. Deposits,Glasgow,335,1000,335000,-335000,Deposits,Deposits
+1797-03-31,Royal Bank of Scotland,Liabilities,2. Deposits,Glasgow,314,1000,314000,-314000,Deposits,Deposits
+1802-08-16,Royal Bank of Scotland,Liabilities,2. Deposits,Glasgow,484,1000,484000,-484000,Deposits,Deposits
+1794-09-29,Royal Bank of Scotland,Liabilities,3. Owed other banks,(a) Sundry,2,1000,2000,-2000,Notes,Notes (other banks)
+1795-03-30,Royal Bank of Scotland,Liabilities,3. Owed other banks,(a) Sundry,1,1000,1000,-1000,Notes,Notes (other banks)
+1795-09-28,Royal Bank of Scotland,Liabilities,3. Owed other banks,(a) Sundry,,1000,0,0,Notes,Notes (other banks)
+1797-03-31,Royal Bank of Scotland,Liabilities,3. Owed other banks,(a) Sundry,3,1000,3000,-3000,Notes,Notes (other banks)
+1802-08-16,Royal Bank of Scotland,Liabilities,3. Owed other banks,(a) Sundry,,1000,0,0,Notes,Notes (other banks)
+1794-09-29,Royal Bank of Scotland,Liabilities,3. Owed other banks,(b) Bank of Scotland,30,1000,30000,-30000,Notes,Notes (other banks)
+1795-03-30,Royal Bank of Scotland,Liabilities,3. Owed other banks,(b) Bank of Scotland,30,1000,30000,-30000,Notes,Notes (other banks)
+1795-09-28,Royal Bank of Scotland,Liabilities,3. Owed other banks,(b) Bank of Scotland,6,1000,6000,-6000,Notes,Notes (other banks)
+1797-03-31,Royal Bank of Scotland,Liabilities,3. Owed other banks,(b) Bank of Scotland,30,1000,30000,-30000,Notes,Notes (other banks)
+1802-08-16,Royal Bank of Scotland,Liabilities,3. Owed other banks,(b) Bank of Scotland,1,1000,1000,-1000,Notes,Notes (other banks)
+1794-09-29,Royal Bank of Scotland,Equity,4. Sundry,4. Sundry,23,1000,23000,-23000,Capital,Capital
+1795-03-30,Royal Bank of Scotland,Equity,4. Sundry,4. Sundry,45,1000,45000,-45000,Capital,Capital
+1795-09-28,Royal Bank of Scotland,Equity,4. Sundry,4. Sundry,40,1000,40000,-40000,Capital,Capital
+1797-03-31,Royal Bank of Scotland,Equity,4. Sundry,4. Sundry,36,1000,36000,-36000,Capital,Capital
+1802-08-16,Royal Bank of Scotland,Equity,4. Sundry,4. Sundry,60,1000,60000,-60000,Capital,Capital
+1794-09-29,Royal Bank of Scotland,Equity,5.Capital,5.Capital,1000,1000,1000000,-1000000,Capital,Capital
+1795-03-30,Royal Bank of Scotland,Equity,5.Capital,5.Capital,1000,1000,1000000,-1000000,Capital,Capital
+1795-09-28,Royal Bank of Scotland,Equity,5.Capital,5.Capital,1000,1000,1000000,-1000000,Capital,Capital
+1797-03-31,Royal Bank of Scotland,Equity,5.Capital,5.Capital,1000,1000,1000000,-1000000,Capital,Capital
+1802-08-16,Royal Bank of Scotland,Equity,5.Capital,5.Capital,1000,1000,1000000,-1000000,Capital,Capital
+1794-09-29,Royal Bank of Scotland,Equity,Surplus,Surplus,145,1000,145000,-145000,Surplus,Surplus
+1795-03-30,Royal Bank of Scotland,Equity,Surplus,Surplus,142,1000,142000,-142000,Surplus,Surplus
+1795-09-28,Royal Bank of Scotland,Equity,Surplus,Surplus,148,1000,148000,-148000,Surplus,Surplus
+1797-03-31,Royal Bank of Scotland,Equity,Surplus,Surplus,159,1000,159000,-159000,Surplus,Surplus
+1802-08-16,Royal Bank of Scotland,Equity,Surplus,Surplus,191,1000,191000,-191000,Surplus,Surplus
+1794-09-29,Royal Bank of Scotland,Assets,"1. Advances, heritable and personal",(a) On bonds,131,1000,131000,131000,Advances,Bonds
+1795-03-30,Royal Bank of Scotland,Assets,"1. Advances, heritable and personal",(a) On bonds,112,1000,112000,112000,Advances,Bonds
+1795-09-28,Royal Bank of Scotland,Assets,"1. Advances, heritable and personal",(a) On bonds,97,1000,97000,97000,Advances,Bonds
+1797-03-31,Royal Bank of Scotland,Assets,"1. Advances, heritable and personal",(a) On bonds,92,1000,92000,92000,Advances,Bonds
+1802-08-16,Royal Bank of Scotland,Assets,"1. Advances, heritable and personal",(a) On bonds,71,1000,71000,71000,Advances,Bonds
+1794-09-29,Royal Bank of Scotland,Assets,"1. Advances, heritable and personal",(b) Cash a/cs: Edinburgh,126,1000,126000,126000,Advances,Cash Accounts
+1795-03-30,Royal Bank of Scotland,Assets,"1. Advances, heritable and personal",(b) Cash a/cs: Edinburgh,121,1000,121000,121000,Advances,Cash Accounts
+1795-09-28,Royal Bank of Scotland,Assets,"1. Advances, heritable and personal",(b) Cash a/cs: Edinburgh,108,1000,108000,108000,Advances,Cash Accounts
+1797-03-31,Royal Bank of Scotland,Assets,"1. Advances, heritable and personal",(b) Cash a/cs: Edinburgh,215,1000,215000,215000,Advances,Cash Accounts
+1802-08-16,Royal Bank of Scotland,Assets,"1. Advances, heritable and personal",(b) Cash a/cs: Edinburgh,57,1000,57000,57000,Advances,Cash Accounts
+1794-09-29,Royal Bank of Scotland,Assets,"1. Advances, heritable and personal",(b) Cash a/cs: Glasgow,84,1000,84000,84000,Advances,Cash Accounts
+1795-03-30,Royal Bank of Scotland,Assets,"1. Advances, heritable and personal",(b) Cash a/cs: Glasgow,93,1000,93000,93000,Advances,Cash Accounts
+1795-09-28,Royal Bank of Scotland,Assets,"1. Advances, heritable and personal",(b) Cash a/cs: Glasgow,58,1000,58000,58000,Advances,Cash Accounts
+1797-03-31,Royal Bank of Scotland,Assets,"1. Advances, heritable and personal",(b) Cash a/cs: Glasgow,64,1000,64000,64000,Advances,Cash Accounts
+1802-08-16,Royal Bank of Scotland,Assets,"1. Advances, heritable and personal",(b) Cash a/cs: Glasgow,10,1000,10000,10000,Advances,Cash Accounts
+1794-09-29,Royal Bank of Scotland,Assets,"1. Advances, heritable and personal",(c) Bills discounted: Edinburgh,238,1000,238000,238000,Advances,Bills
+1795-03-30,Royal Bank of Scotland,Assets,"1. Advances, heritable and personal",(c) Bills discounted: Edinburgh,196,1000,196000,196000,Advances,Bills
+1795-09-28,Royal Bank of Scotland,Assets,"1. Advances, heritable and personal",(c) Bills discounted: Edinburgh,174,1000,174000,174000,Advances,Bills
+1797-03-31,Royal Bank of Scotland,Assets,"1. Advances, heritable and personal",(c) Bills discounted: Edinburgh,216,1000,216000,216000,Advances,Bills
+1802-08-16,Royal Bank of Scotland,Assets,"1. Advances, heritable and personal",(c) Bills discounted: Edinburgh,212,1000,212000,212000,Advances,Bills
+1794-09-29,Royal Bank of Scotland,Assets,"1. Advances, heritable and personal",(c) Bills discounted: Glasgow,391,1000,391000,391000,Advances,Bills
+1795-03-30,Royal Bank of Scotland,Assets,"1. Advances, heritable and personal",(c) Bills discounted: Glasgow,372,1000,372000,372000,Advances,Bills
+1795-09-28,Royal Bank of Scotland,Assets,"1. Advances, heritable and personal",(c) Bills discounted: Glasgow,326,1000,326000,326000,Advances,Bills
+1797-03-31,Royal Bank of Scotland,Assets,"1. Advances, heritable and personal",(c) Bills discounted: Glasgow,413,1000,413000,413000,Advances,Bills
+1802-08-16,Royal Bank of Scotland,Assets,"1. Advances, heritable and personal",(c) Bills discounted: Glasgow,550,1000,550000,550000,Advances,Bills
+1794-09-29,Royal Bank of Scotland,Assets,2. Specie,2. Specie,13,1000,13000,13000,Liquid Assets,Liquid Assets
+1795-03-30,Royal Bank of Scotland,Assets,2. Specie,2. Specie,16,1000,16000,16000,Liquid Assets,Liquid Assets
+1795-09-28,Royal Bank of Scotland,Assets,2. Specie,2. Specie,14,1000,14000,14000,Liquid Assets,Liquid Assets
+1797-03-31,Royal Bank of Scotland,Assets,2. Specie,2. Specie,17,1000,17000,17000,Liquid Assets,Liquid Assets
+1802-08-16,Royal Bank of Scotland,Assets,2. Specie,2. Specie,20,1000,20000,20000,Liquid Assets,Liquid Assets
+1794-09-29,Royal Bank of Scotland,Assets,3. Notes of other banks,3. Notes of other banks,19,1000,19000,19000,Notes,Notes (other banks)
+1795-03-30,Royal Bank of Scotland,Assets,3. Notes of other banks,3. Notes of other banks,18,1000,18000,18000,Notes,Notes (other banks)
+1795-09-28,Royal Bank of Scotland,Assets,3. Notes of other banks,3. Notes of other banks,15,1000,15000,15000,Notes,Notes (other banks)
+1797-03-31,Royal Bank of Scotland,Assets,3. Notes of other banks,3. Notes of other banks,20,1000,20000,20000,Notes,Notes (other banks)
+1802-08-16,Royal Bank of Scotland,Assets,3. Notes of other banks,3. Notes of other banks,18,1000,18000,18000,Notes,Notes (other banks)
+1794-09-29,Royal Bank of Scotland,Assets,4. Investments,(a) Bank stocks,426,1000,426000,426000,Investments,Bank stocks
+1795-03-30,Royal Bank of Scotland,Assets,4. Investments,(a) Bank stocks,465,1000,465000,465000,Investments,Bank stocks
+1795-09-28,Royal Bank of Scotland,Assets,4. Investments,(a) Bank stocks,491,1000,491000,491000,Investments,Bank stocks
+1797-03-31,Royal Bank of Scotland,Assets,4. Investments,(a) Bank stocks,470,1000,470000,470000,Investments,Bank stocks
+1802-08-16,Royal Bank of Scotland,Assets,4. Investments,(a) Bank stocks,416,1000,416000,416000,Investments,Bank stocks
+1794-09-29,Royal Bank of Scotland,Assets,4. Investments,(b) Government obligations,113,1000,113000,113000,Investments,Government bonds
+1795-03-30,Royal Bank of Scotland,Assets,4. Investments,(b) Government obligations,212,1000,212000,212000,Investments,Government bonds
+1795-09-28,Royal Bank of Scotland,Assets,4. Investments,(b) Government obligations,341,1000,341000,341000,Investments,Government bonds
+1797-03-31,Royal Bank of Scotland,Assets,4. Investments,(b) Government obligations,259,1000,259000,259000,Investments,Government bonds
+1802-08-16,Royal Bank of Scotland,Assets,4. Investments,(b) Government obligations,570,1000,570000,570000,Investments,Government bonds
+1794-09-29,Royal Bank of Scotland,Assets,5. Owed by other banks,(a) Sundry,162,1000,162000,162000,Notes,Liquid Assets
+1795-03-30,Royal Bank of Scotland,Assets,5. Owed by other banks,(a) Sundry,213,1000,213000,213000,Notes,Liquid Assets
+1795-09-28,Royal Bank of Scotland,Assets,5. Owed by other banks,(a) Sundry,196,1000,196000,196000,Notes,Liquid Assets
+1797-03-31,Royal Bank of Scotland,Assets,5. Owed by other banks,(a) Sundry,160,1000,160000,160000,Notes,Liquid Assets
+1802-08-16,Royal Bank of Scotland,Assets,5. Owed by other banks,(a) Sundry,244,1000,244000,244000,Notes,Liquid Assets
+1794-09-29,Royal Bank of Scotland,Assets,5. Owed by other banks,(b) Bank of England,225,1000,225000,225000,Notes,London Assets
+1795-03-30,Royal Bank of Scotland,Assets,5. Owed by other banks,(b) Bank of England,243,1000,243000,243000,Notes,London Assets
+1795-09-28,Royal Bank of Scotland,Assets,5. Owed by other banks,(b) Bank of England,196,1000,196000,196000,Notes,London Assets
+1797-03-31,Royal Bank of Scotland,Assets,5. Owed by other banks,(b) Bank of England,155,1000,155000,155000,Notes,London Assets
+1802-08-16,Royal Bank of Scotland,Assets,5. Owed by other banks,(b) Bank of England,203,1000,203000,203000,Notes,London Assets
+1794-09-29,Royal Bank of Scotland,Assets,6. Owed by Glasgow agent,6. Owed by Glasgow agent,79,1000,79000,79000,Notes,Glasgow
+1795-03-30,Royal Bank of Scotland,Assets,6. Owed by Glasgow agent,6. Owed by Glasgow agent,80,1000,80000,80000,Notes,Glasgow
+1795-09-28,Royal Bank of Scotland,Assets,6. Owed by Glasgow agent,6. Owed by Glasgow agent,80,1000,80000,80000,Notes,Glasgow
+1797-03-31,Royal Bank of Scotland,Assets,6. Owed by Glasgow agent,6. Owed by Glasgow agent,103,1000,103000,103000,Notes,Glasgow
+1802-08-16,Royal Bank of Scotland,Assets,6. Owed by Glasgow agent,6. Owed by Glasgow agent,110,1000,110000,110000,Notes,Glasgow
+1794-09-29,Royal Bank of Scotland,Assets,7. Sundry,7. Sundry,73,1000,73000,73000,Liquid Assets,Liquid Assets
+1795-03-30,Royal Bank of Scotland,Assets,7. Sundry,7. Sundry,89,1000,89000,89000,Liquid Assets,Liquid Assets
+1795-09-28,Royal Bank of Scotland,Assets,7. Sundry,7. Sundry,98,1000,98000,98000,Liquid Assets,Liquid Assets
+1797-03-31,Royal Bank of Scotland,Assets,7. Sundry,7. Sundry,88,1000,88000,88000,Liquid Assets,Liquid Assets
+1802-08-16,Royal Bank of Scotland,Assets,7. Sundry,7. Sundry,68,1000,68000,68000,Liquid Assets,Liquid Assets
+1817-09-30,Royal Bank of Scotland,Liabilities,1. Deposits,1. Deposits,2266,1000,2266000,-2266000,Deposits,Deposits
+1819-09-30,Royal Bank of Scotland,Liabilities,1. Deposits,1. Deposits,1152,1000,1152000,-1152000,Deposits,Deposits
+1821-09-30,Royal Bank of Scotland,Liabilities,1. Deposits,1. Deposits,1242,1000,1242000,-1242000,Deposits,Deposits
+1823-09-30,Royal Bank of Scotland,Liabilities,1. Deposits,1. Deposits,1721,1000,1721000,-1721000,Deposits,Deposits
+1825-09-30,Royal Bank of Scotland,Liabilities,1. Deposits,1. Deposits,1909,1000,1909000,-1909000,Deposits,Deposits
+1817-09-30,Royal Bank of Scotland,Liabilities,2. Note issue,2. Note issue,217,1000,217000,-217000,Notes,Notes
+1819-09-30,Royal Bank of Scotland,Liabilities,2. Note issue,2. Note issue,204,1000,204000,-204000,Notes,Notes
+1821-09-30,Royal Bank of Scotland,Liabilities,2. Note issue,2. Note issue,224,1000,224000,-224000,Notes,Notes
+1823-09-30,Royal Bank of Scotland,Liabilities,2. Note issue,2. Note issue,200,1000,200000,-200000,Notes,Notes
+1825-09-30,Royal Bank of Scotland,Liabilities,2. Note issue,2. Note issue,246,1000,246000,-246000,Notes,Notes
+1817-09-30,Royal Bank of Scotland,Liabilities,3. Owed to other banks,3. Owed to other banks,74,1000,74000,-74000,Notes,Notes (other banks)
+1819-09-30,Royal Bank of Scotland,Liabilities,3. Owed to other banks,3. Owed to other banks,4,1000,4000,-4000,Notes,Notes (other banks)
+1821-09-30,Royal Bank of Scotland,Liabilities,3. Owed to other banks,3. Owed to other banks,88,1000,88000,-88000,Notes,Notes (other banks)
+1823-09-30,Royal Bank of Scotland,Liabilities,3. Owed to other banks,3. Owed to other banks,213,1000,213000,-213000,Notes,Notes (other banks)
+1825-09-30,Royal Bank of Scotland,Liabilities,3. Owed to other banks,3. Owed to other banks,250,1000,250000,-250000,Notes,Notes (other banks)
+1817-09-30,Royal Bank of Scotland,Equity,4. Capital and,4. Capital and,1000,1000,1000000,-1000000,Capital,Capital
+1819-09-30,Royal Bank of Scotland,Equity,4. Capital and,4. Capital and,1500,1000,1500000,-1500000,Capital,Capital
+1821-09-30,Royal Bank of Scotland,Equity,4. Capital and,4. Capital and,1500,1000,1500000,-1500000,Capital,Capital
+1823-09-30,Royal Bank of Scotland,Equity,4. Capital and,4. Capital and,1500,1000,1500000,-1500000,Capital,Capital
+1825-09-30,Royal Bank of Scotland,Equity,4. Capital and,4. Capital and,1500,1000,1500000,-1500000,Capital,Capital
+1817-09-30,Royal Bank of Scotland,Equity,Surplus,Surplus,845,1000,845000,-845000,Surplus,Surplus
+1819-09-30,Royal Bank of Scotland,Equity,Surplus,Surplus,274,1000,274000,-274000,Surplus,Surplus
+1821-09-30,Royal Bank of Scotland,Equity,Surplus,Surplus,394,1000,394000,-394000,Surplus,Surplus
+1823-09-30,Royal Bank of Scotland,Equity,Surplus,Surplus,382,1000,382000,-382000,Surplus,Surplus
+1825-09-30,Royal Bank of Scotland,Equity,Surplus,Surplus,414,1000,414000,-414000,Surplus,Surplus
+1817-09-30,Royal Bank of Scotland,Equity,5. Sundry,5. Sundry,9,1000,9000,-9000,Capital,Capital
+1819-09-30,Royal Bank of Scotland,Equity,5. Sundry,5. Sundry,3,1000,3000,-3000,Capital,Capital
+1821-09-30,Royal Bank of Scotland,Equity,5. Sundry,5. Sundry,9,1000,9000,-9000,Capital,Capital
+1823-09-30,Royal Bank of Scotland,Equity,5. Sundry,5. Sundry,14,1000,14000,-14000,Capital,Capital
+1825-09-30,Royal Bank of Scotland,Equity,5. Sundry,5. Sundry,13,1000,13000,-13000,Capital,Capital
+1817-09-30,Royal Bank of Scotland,Assets,1. Advances,(a) on bond,61,1000,61000,61000,Advances,Bonds
+1819-09-30,Royal Bank of Scotland,Assets,1. Advances,(a) on bond,77,1000,77000,77000,Advances,Bonds
+1821-09-30,Royal Bank of Scotland,Assets,1. Advances,(a) on bond,67,1000,67000,67000,Advances,Bonds
+1823-09-30,Royal Bank of Scotland,Assets,1. Advances,(a) on bond,48,1000,48000,48000,Advances,Bonds
+1825-09-30,Royal Bank of Scotland,Assets,1. Advances,(a) on bond,44,1000,44000,44000,Advances,Bonds
+1817-09-30,Royal Bank of Scotland,Assets,1. Advances,(b) bills discounted,1095,1000,1095000,1095000,Advances,Bills
+1819-09-30,Royal Bank of Scotland,Assets,1. Advances,(b) bills discounted,1633,1000,1633000,1633000,Advances,Bills
+1821-09-30,Royal Bank of Scotland,Assets,1. Advances,(b) bills discounted,966,1000,966000,966000,Advances,Bills
+1823-09-30,Royal Bank of Scotland,Assets,1. Advances,(b) bills discounted,1664,1000,1664000,1664000,Advances,Bills
+1825-09-30,Royal Bank of Scotland,Assets,1. Advances,(b) bills discounted,2322,1000,2322000,2322000,Advances,Bills
+1817-09-30,Royal Bank of Scotland,Assets,1. Advances,(c) cash a/cs,195,1000,195000,195000,Advances,Cash Accounts
+1819-09-30,Royal Bank of Scotland,Assets,1. Advances,(c) cash a/cs,283,1000,283000,283000,Advances,Cash Accounts
+1821-09-30,Royal Bank of Scotland,Assets,1. Advances,(c) cash a/cs,260,1000,260000,260000,Advances,Cash Accounts
+1823-09-30,Royal Bank of Scotland,Assets,1. Advances,(c) cash a/cs,315,1000,315000,315000,Advances,Cash Accounts
+1825-09-30,Royal Bank of Scotland,Assets,1. Advances,(c) cash a/cs,334,1000,334000,334000,Advances,Cash Accounts
+1817-09-30,Royal Bank of Scotland,Assets,1. Advances,(d) doubtful debts,185,1000,185000,185000,Advances,Doubtful Debts
+1819-09-30,Royal Bank of Scotland,Assets,1. Advances,(d) doubtful debts,102,1000,102000,102000,Advances,Doubtful Debts
+1821-09-30,Royal Bank of Scotland,Assets,1. Advances,(d) doubtful debts,72,1000,72000,72000,Advances,Doubtful Debts
+1823-09-30,Royal Bank of Scotland,Assets,1. Advances,(d) doubtful debts,35,1000,35000,35000,Advances,Doubtful Debts
+1825-09-30,Royal Bank of Scotland,Assets,1. Advances,(d) doubtful debts,30,1000,30000,30000,Advances,Doubtful Debts
+1817-09-30,Royal Bank of Scotland,Assets,2. Specie,2. Specie,11,1000,11000,11000,Liquid Assets,Liquid Assets
+1819-09-30,Royal Bank of Scotland,Assets,2. Specie,2. Specie,10,1000,10000,10000,Liquid Assets,Liquid Assets
+1821-09-30,Royal Bank of Scotland,Assets,2. Specie,2. Specie,11,1000,11000,11000,Liquid Assets,Liquid Assets
+1823-09-30,Royal Bank of Scotland,Assets,2. Specie,2. Specie,10,1000,10000,10000,Liquid Assets,Liquid Assets
+1825-09-30,Royal Bank of Scotland,Assets,2. Specie,2. Specie,12,1000,12000,12000,Liquid Assets,Liquid Assets
+1817-09-30,Royal Bank of Scotland,Assets,3. Notes of other banks,3. Notes of other banks,10,1000,10000,10000,Notes,Notes (other banks)
+1819-09-30,Royal Bank of Scotland,Assets,3. Notes of other banks,3. Notes of other banks,10,1000,10000,10000,Notes,Notes (other banks)
+1821-09-30,Royal Bank of Scotland,Assets,3. Notes of other banks,3. Notes of other banks,7,1000,7000,7000,Notes,Notes (other banks)
+1823-09-30,Royal Bank of Scotland,Assets,3. Notes of other banks,3. Notes of other banks,10,1000,10000,10000,Notes,Notes (other banks)
+1825-09-30,Royal Bank of Scotland,Assets,3. Notes of other banks,3. Notes of other banks,15,1000,15000,15000,Notes,Notes (other banks)
+1817-09-30,Royal Bank of Scotland,Assets,4. Investments and liquid assets,4. Investments and liquid assets,2597,1000,2597000,2597000,Investments,Investments
+1819-09-30,Royal Bank of Scotland,Assets,4. Investments and liquid assets,4. Investments and liquid assets,800,1000,800000,800000,Investments,Investments
+1821-09-30,Royal Bank of Scotland,Assets,4. Investments and liquid assets,4. Investments and liquid assets,1689,1000,1689000,1689000,Investments,Investments
+1823-09-30,Royal Bank of Scotland,Assets,4. Investments and liquid assets,4. Investments and liquid assets,1737,1000,1737000,1737000,Investments,Investments
+1825-09-30,Royal Bank of Scotland,Assets,4. Investments and liquid assets,4. Investments and liquid assets,1419,1000,1419000,1419000,Investments,Investments
+1817-09-30,Royal Bank of Scotland,Assets,5. London balances,5. London balances,239,1000,239000,239000,Liquid Assets,London Assets
+1819-09-30,Royal Bank of Scotland,Assets,5. London balances,5. London balances,158,1000,158000,158000,Liquid Assets,London Assets
+1821-09-30,Royal Bank of Scotland,Assets,5. London balances,5. London balances,321,1000,321000,321000,Liquid Assets,London Assets
+1823-09-30,Royal Bank of Scotland,Assets,5. London balances,5. London balances,163,1000,163000,163000,Liquid Assets,London Assets
+1825-09-30,Royal Bank of Scotland,Assets,5. London balances,5. London balances,60,1000,60000,60000,Liquid Assets,London Assets
+1817-09-30,Royal Bank of Scotland,Assets,6. Sundries,6. Sundries,18,1000,18000,18000,Liquid Assets,Liquid Assets
+1819-09-30,Royal Bank of Scotland,Assets,6. Sundries,6. Sundries,64,1000,64000,64000,Liquid Assets,Liquid Assets
+1821-09-30,Royal Bank of Scotland,Assets,6. Sundries,6. Sundries,64,1000,64000,64000,Liquid Assets,Liquid Assets
+1823-09-30,Royal Bank of Scotland,Assets,6. Sundries,6. Sundries,48,1000,48000,48000,Liquid Assets,Liquid Assets
+1825-09-30,Royal Bank of Scotland,Assets,6. Sundries,6. Sundries,96,1000,96000,96000,Liquid Assets,Liquid Assets
+1830-09-30,Royal Bank of Scotland,Liabilities,1. Deposits,1. Deposits,2885,1000,2885000,-2885000,Deposits,Deposits
+1835-09-30,Royal Bank of Scotland,Liabilities,1. Deposits,1. Deposits,2932,1000,2932000,-2932000,Deposits,Deposits
+1840-09-30,Royal Bank of Scotland,Liabilities,1. Deposits,1. Deposits,3092,1000,3092000,-3092000,Deposits,Deposits
+1845-09-30,Royal Bank of Scotland,Liabilities,1. Deposits,1. Deposits,3815,1000,3815000,-3815000,Deposits,Deposits
+1850-09-30,Royal Bank of Scotland,Liabilities,1. Deposits,1. Deposits,3516,1000,3516000,-3516000,Deposits,Deposits
+1830-09-30,Royal Bank of Scotland,Liabilities,2. Note issue,2. Note issue,203,1000,203000,-203000,Notes,Notes
+1835-09-30,Royal Bank of Scotland,Liabilities,2. Note issue,2. Note issue,184,1000,184000,-184000,Notes,Notes
+1840-09-30,Royal Bank of Scotland,Liabilities,2. Note issue,2. Note issue,179,1000,179000,-179000,Notes,Notes
+1845-09-30,Royal Bank of Scotland,Liabilities,2. Note issue,2. Note issue,119,1000,119000,-119000,Notes,Notes
+1850-09-30,Royal Bank of Scotland,Liabilities,2. Note issue,2. Note issue,318,1000,318000,-318000,Notes,Notes
+1830-09-30,Royal Bank of Scotland,Liabilities,3. Owed to other banks,3. Owed to other banks,303,1000,303000,-303000,Notes,Notes (other banks)
+1835-09-30,Royal Bank of Scotland,Liabilities,3. Owed to other banks,3. Owed to other banks,257,1000,257000,-257000,Notes,Notes (other banks)
+1840-09-30,Royal Bank of Scotland,Liabilities,3. Owed to other banks,3. Owed to other banks,181,1000,181000,-181000,Notes,Notes (other banks)
+1845-09-30,Royal Bank of Scotland,Liabilities,3. Owed to other banks,3. Owed to other banks,170,1000,170000,-170000,Notes,Notes (other banks)
+1850-09-30,Royal Bank of Scotland,Liabilities,3. Owed to other banks,3. Owed to other banks,121,1000,121000,-121000,Notes,Notes (other banks)
+1830-09-30,Royal Bank of Scotland,Equity,4. Capital and surplus,4. Capital and surplus,1850,1000,1850000,-1850000,Capital,Capital
+1835-09-30,Royal Bank of Scotland,Equity,4. Capital and surplus,4. Capital and surplus,2181,1000,2181000,-2181000,Capital,Capital
+1840-09-30,Royal Bank of Scotland,Equity,4. Capital and surplus,4. Capital and surplus,2245,1000,2245000,-2245000,Capital,Capital
+1845-09-30,Royal Bank of Scotland,Equity,4. Capital and surplus,4. Capital and surplus,2210,1000,2210000,-2210000,Capital,Capital
+1850-09-30,Royal Bank of Scotland,Equity,4. Capital and surplus,4. Capital and surplus,2116,1000,2116000,-2116000,Capital,Capital
+1830-09-30,Royal Bank of Scotland,Equity,5. Sundries,5. Sundries,16,1000,16000,-16000,Capital,Capital
+1835-09-30,Royal Bank of Scotland,Equity,5. Sundries,5. Sundries,31,1000,31000,-31000,Capital,Capital
+1840-09-30,Royal Bank of Scotland,Equity,5. Sundries,5. Sundries,64,1000,64000,-64000,Capital,Capital
+1845-09-30,Royal Bank of Scotland,Equity,5. Sundries,5. Sundries,23,1000,23000,-23000,Capital,Capital
+1850-09-30,Royal Bank of Scotland,Equity,5. Sundries,5. Sundries,6,1000,6000,-6000,Capital,Capital
+1830-09-30,Royal Bank of Scotland,Assets,1. Advances,(a) on bonds,665,1000,665000,665000,Advances,Bonds
+1835-09-30,Royal Bank of Scotland,Assets,1. Advances,(a) on bonds,535,1000,535000,535000,Advances,Bonds
+1840-09-30,Royal Bank of Scotland,Assets,1. Advances,(a) on bonds,243,1000,243000,243000,Advances,Bonds
+1845-09-30,Royal Bank of Scotland,Assets,1. Advances,(a) on bonds,560,1000,560000,560000,Advances,Bonds
+1850-09-30,Royal Bank of Scotland,Assets,1. Advances,(a) on bonds,759,1000,759000,759000,Advances,Bonds
+1830-09-30,Royal Bank of Scotland,Assets,1. Advances,(b) bills discounted,1628,1000,1628000,1628000,Advances,Bills
+1835-09-30,Royal Bank of Scotland,Assets,1. Advances,(b) bills discounted,1823,1000,1823000,1823000,Advances,Bills
+1840-09-30,Royal Bank of Scotland,Assets,1. Advances,(b) bills discounted,2568,1000,2568000,2568000,Advances,Bills
+1845-09-30,Royal Bank of Scotland,Assets,1. Advances,(b) bills discounted,2244,1000,2244000,2244000,Advances,Bills
+1850-09-30,Royal Bank of Scotland,Assets,1. Advances,(b) bills discounted,1285,1000,1285000,1285000,Advances,Bills
+1830-09-30,Royal Bank of Scotland,Assets,1. Advances,(c) cash a/cs,502,1000,502000,502000,Advances,Cash Accounts
+1835-09-30,Royal Bank of Scotland,Assets,1. Advances,(c) cash a/cs,955,1000,955000,955000,Advances,Cash Accounts
+1840-09-30,Royal Bank of Scotland,Assets,1. Advances,(c) cash a/cs,1741,1000,1741000,1741000,Advances,Cash Accounts
+1845-09-30,Royal Bank of Scotland,Assets,1. Advances,(c) cash a/cs,1979,1000,1979000,1979000,Advances,Cash Accounts
+1850-09-30,Royal Bank of Scotland,Assets,1. Advances,(c) cash a/cs,1503,1000,1503000,1503000,Advances,Cash Accounts
+1830-09-30,Royal Bank of Scotland,Assets,1. Advances,(d) doubtful debts,213,1000,213000,213000,Advances,Doubtful Debts
+1835-09-30,Royal Bank of Scotland,Assets,1. Advances,(d) doubtful debts,41,1000,41000,41000,Advances,Doubtful Debts
+1840-09-30,Royal Bank of Scotland,Assets,1. Advances,(d) doubtful debts,69,1000,69000,69000,Advances,Doubtful Debts
+1845-09-30,Royal Bank of Scotland,Assets,1. Advances,(d) doubtful debts,91,1000,91000,91000,Advances,Doubtful Debts
+1850-09-30,Royal Bank of Scotland,Assets,1. Advances,(d) doubtful debts,128,1000,128000,128000,Advances,Doubtful Debts
+1830-09-30,Royal Bank of Scotland,Assets,2. Specie,2. Specie,10,1000,10000,10000,Liquid Assets,Liquid Assets
+1835-09-30,Royal Bank of Scotland,Assets,2. Specie,2. Specie,9,1000,9000,9000,Liquid Assets,Liquid Assets
+1840-09-30,Royal Bank of Scotland,Assets,2. Specie,2. Specie,9,1000,9000,9000,Liquid Assets,Liquid Assets
+1845-09-30,Royal Bank of Scotland,Assets,2. Specie,2. Specie,6,1000,6000,6000,Liquid Assets,Liquid Assets
+1850-09-30,Royal Bank of Scotland,Assets,2. Specie,2. Specie,204,1000,204000,204000,Liquid Assets,Liquid Assets
+1830-09-30,Royal Bank of Scotland,Assets,3. Notes of other banks,3. Notes of other banks,15,1000,15000,15000,Notes,Notes (other banks)
+1835-09-30,Royal Bank of Scotland,Assets,3. Notes of other banks,3. Notes of other banks,17,1000,17000,17000,Notes,Notes (other banks)
+1840-09-30,Royal Bank of Scotland,Assets,3. Notes of other banks,3. Notes of other banks,23,1000,23000,23000,Notes,Notes (other banks)
+1845-09-30,Royal Bank of Scotland,Assets,3. Notes of other banks,3. Notes of other banks,24,1000,24000,24000,Notes,Notes (other banks)
+1850-09-30,Royal Bank of Scotland,Assets,3. Notes of other banks,3. Notes of other banks,18,1000,18000,18000,Notes,Notes (other banks)
+1830-09-30,Royal Bank of Scotland,Assets,4. Investments,4. Investments,1294,1000,1294000,1294000,Investments,Investments
+1835-09-30,Royal Bank of Scotland,Assets,4. Investments,4. Investments,2037,1000,2037000,2037000,Investments,Investments
+1840-09-30,Royal Bank of Scotland,Assets,4. Investments,4. Investments,1009,1000,1009000,1009000,Investments,Investments
+1845-09-30,Royal Bank of Scotland,Assets,4. Investments,4. Investments,1308,1000,1308000,1308000,Investments,Investments
+1850-09-30,Royal Bank of Scotland,Assets,4. Investments,4. Investments,2071,1000,2071000,2071000,Investments,Investments
+1830-09-30,Royal Bank of Scotland,Assets,5. London balances,5. London balances,766,1000,766000,766000,Liquid Assets,London Assets
+1835-09-30,Royal Bank of Scotland,Assets,5. London balances,5. London balances,88,1000,88000,88000,Liquid Assets,London Assets
+1840-09-30,Royal Bank of Scotland,Assets,5. London balances,5. London balances,30,1000,30000,30000,Liquid Assets,London Assets
+1845-09-30,Royal Bank of Scotland,Assets,5. London balances,5. London balances,103,1000,103000,103000,Liquid Assets,London Assets
+1850-09-30,Royal Bank of Scotland,Assets,5. London balances,5. London balances,82,1000,82000,82000,Liquid Assets,London Assets
+1830-09-30,Royal Bank of Scotland,Assets,6. Sundries,6. Sundries,164,1000,164000,164000,Liquid Assets,Liquid Assets
+1835-09-30,Royal Bank of Scotland,Assets,6. Sundries,6. Sundries,80,1000,80000,80000,Liquid Assets,Liquid Assets
+1840-09-30,Royal Bank of Scotland,Assets,6. Sundries,6. Sundries,69,1000,69000,69000,Liquid Assets,Liquid Assets
+1845-09-30,Royal Bank of Scotland,Assets,6. Sundries,6. Sundries,22,1000,22000,22000,Liquid Assets,Liquid Assets
+1850-09-30,Royal Bank of Scotland,Assets,6. Sundries,6. Sundries,27,1000,27000,27000,Liquid Assets,Liquid Assets
