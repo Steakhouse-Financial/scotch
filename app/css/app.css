@@ -1,0 +1,663 @@
+/* ════════════════════════════════════════════════════════════════
+   Scottish Banking App — Layout & Component Styles
+   Extracted from sbank/Scottish Banking System.html + extensions
+   ════════════════════════════════════════════════════════════════ */
+
+/* ── 1. Base reset ─────────────────────────────────────────────── */
+html, body {
+  margin: 0;
+  background: var(--brand-bone);
+  color: var(--brand-charcoal);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ── 2. Page layout ────────────────────────────────────────────── */
+.page {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 56px 56px 64px;
+  position: relative;
+}
+
+/* ── 3. Nav bar ────────────────────────────────────────────────── */
+.site-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 56px;
+  border-bottom: 1px solid var(--brand-charcoal);
+}
+.site-nav .nav-links {
+  display: flex;
+  gap: 28px;
+  align-items: center;
+}
+.site-nav .nav-link {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 11px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--brand-slate);
+  text-decoration: none;
+  padding-bottom: 4px;
+  border-bottom: 2px solid transparent;
+  transition: color 120ms ease, border-color 120ms ease;
+}
+.site-nav .nav-link:hover {
+  color: var(--brand-charcoal);
+}
+.site-nav .nav-link.active {
+  color: var(--brand-emerald);
+  border-bottom-color: var(--brand-emerald);
+}
+.site-nav .nav-title {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 11px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--brand-charcoal);
+}
+
+/* ── 4. Masthead ───────────────────────────────────────────────── */
+.masthead {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: end;
+  gap: 48px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid var(--brand-charcoal);
+  margin-bottom: 36px;
+}
+.eyebrow {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 11px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--brand-slate);
+  margin-bottom: 14px;
+  display: flex;
+  gap: 18px;
+  align-items: center;
+}
+.eyebrow .tick { color: var(--brand-stone); }
+h1.title {
+  font-family: var(--font-display);
+  font-weight: 500;
+  font-size: clamp(38px, 5.2vw, 68px);
+  line-height: 1.02;
+  letter-spacing: -0.02em;
+  margin: 0;
+  color: var(--brand-charcoal);
+  text-wrap: balance;
+}
+h1.title em {
+  font-style: normal;
+  color: var(--brand-emerald);
+}
+.meta {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: var(--brand-slate);
+  text-align: right;
+  line-height: 1.5;
+}
+.meta .big {
+  font-family: var(--font-display);
+  font-weight: 500;
+  font-size: 36px;
+  color: var(--brand-charcoal);
+  letter-spacing: -0.01em;
+  line-height: 1;
+  display: block;
+  margin-bottom: 6px;
+}
+
+/* ── 5. Section spacing ────────────────────────────────────────── */
+.chart-section {
+  margin-top: 64px;
+  border-top: 1px solid var(--brand-charcoal);
+  padding-top: 36px;
+}
+.chart-section h2 {
+  font-family: var(--font-display);
+  font-weight: 500;
+  font-size: var(--h2-size);
+  line-height: var(--h2-lh);
+  letter-spacing: var(--h2-tracking);
+  margin: 0 0 24px 0;
+}
+
+/* ── 6. Chart layout ───────────────────────────────────────────── */
+.chart-wrap {
+  position: relative;
+}
+svg.chart {
+  width: 100%;
+  height: auto;
+  display: block;
+  overflow: visible;
+}
+
+.axis-label {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  fill: var(--brand-slate);
+  font-weight: 400;
+}
+.axis-year {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  fill: var(--brand-charcoal);
+  font-weight: 500;
+  text-anchor: middle;
+}
+.grid-line {
+  stroke: var(--brand-bone-deep);
+  stroke-width: 1;
+}
+.grid-line.dashed {
+  stroke-dasharray: 2 4;
+}
+.zero-line {
+  stroke: var(--brand-charcoal);
+  stroke-width: 1.25;
+}
+
+.band-label {
+  font-family: var(--font-display);
+  font-weight: 500;
+  font-size: 12px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+.layer {
+  stroke: var(--brand-bone);
+  stroke-width: 0.75;
+  stroke-linejoin: round;
+}
+
+/* ── 7. Legend ──────────────────────────────────────────────────── */
+.legend-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+  margin-top: 48px;
+}
+.legend-card {
+  background: var(--brand-bone);
+  border: 1px solid var(--brand-charcoal);
+  padding: 18px 20px 20px;
+  box-shadow: var(--shadow-block);
+  position: relative;
+}
+.legend-card h3 {
+  font-family: var(--font-display);
+  font-weight: 500;
+  font-size: 15px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  margin: 0 0 14px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.legend-card .sign {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+  color: var(--brand-slate);
+  text-transform: none;
+}
+.legend-items {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+.legend-item {
+  display: grid;
+  grid-template-columns: 18px 1fr auto;
+  align-items: center;
+  gap: 10px;
+  font-family: var(--font-sans);
+  font-size: 13px;
+  color: var(--brand-charcoal);
+}
+.legend-item .swatch {
+  width: 18px;
+  height: 14px;
+  border: 1px solid var(--brand-charcoal);
+}
+.legend-item .pct {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--brand-slate);
+  font-variant-numeric: tabular-nums;
+}
+
+/* ── 8. Toolbar ────────────────────────────────────────────────── */
+.chart-toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 14px;
+  gap: 16px;
+}
+.toolbar-check {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--brand-slate);
+  cursor: pointer;
+  user-select: none;
+}
+.toolbar-check input { accent-color: var(--brand-emerald); width: 13px; height: 13px; }
+.toolbar-check:hover { color: var(--brand-charcoal); }
+.seg-mini {
+  display: inline-flex;
+  border: 1px solid var(--brand-charcoal);
+}
+.seg-mini button {
+  background: var(--brand-bone);
+  border: none;
+  border-right: 1px solid var(--brand-charcoal);
+  padding: 5px 12px;
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--brand-charcoal);
+  cursor: pointer;
+  transition: background 120ms;
+}
+.seg-mini button:last-child { border-right: none; }
+.seg-mini button:hover { background: var(--brand-bone-deep); }
+.seg-mini button.active {
+  background: var(--brand-charcoal);
+  color: var(--brand-bone);
+}
+.toolbar-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: var(--brand-bone);
+  border: 1px solid var(--brand-charcoal);
+  padding: 5px 12px;
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--brand-charcoal);
+  cursor: pointer;
+  transition: background 120ms;
+}
+.toolbar-btn:hover { background: var(--brand-bone-deep); }
+
+/* ── 9. Tooltip ────────────────────────────────────────────────── */
+.cursor-line {
+  stroke: var(--brand-charcoal);
+  stroke-width: 1;
+  stroke-dasharray: 2 3;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 120ms ease;
+}
+.cursor-line.visible { opacity: 0.55; }
+
+.tooltip {
+  position: absolute;
+  background: var(--brand-bone);
+  border: 1px solid var(--brand-charcoal);
+  box-shadow: var(--shadow-block-sm);
+  padding: 14px 16px 14px 16px;
+  font-family: var(--font-sans);
+  font-size: 12px;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 120ms ease;
+  min-width: 220px;
+  z-index: 5;
+}
+.tooltip.visible { opacity: 1; }
+.tooltip h4 {
+  font-family: var(--font-display);
+  font-weight: 500;
+  font-size: 18px;
+  letter-spacing: -0.01em;
+  margin: 0 0 2px 0;
+}
+.tooltip .sub {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--brand-slate);
+  margin-bottom: 10px;
+}
+.tooltip .totals {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 4px 10px;
+  border-top: 1px dashed var(--brand-bone-deep);
+  padding-top: 8px;
+}
+.tooltip .totals .k { color: var(--brand-slate); font-family: var(--font-mono); font-size: 10px; letter-spacing: 0.05em; text-transform: uppercase; align-self: center; }
+.tooltip .totals .v { font-family: var(--font-mono); font-size: 12px; font-variant-numeric: tabular-nums; text-align: right; }
+.tooltip .totals .v.assets { color: var(--brand-emerald); }
+.tooltip .totals .v.liab   { color: #A77B18; }
+.tooltip .totals .v.eq     { color: var(--brand-plum); }
+
+/* ── 10. Annotations ───────────────────────────────────────────── */
+.annotation {
+  font-family: var(--font-sans);
+  font-size: 11px;
+  fill: var(--brand-slate);
+}
+.annotation-title {
+  font-family: var(--font-sans);
+  font-weight: 600;
+  font-size: 11px;
+  fill: var(--brand-charcoal);
+  letter-spacing: 0.01em;
+}
+.annotation-line {
+  stroke: var(--brand-charcoal);
+  stroke-width: 0.75;
+  stroke-dasharray: 2 3;
+  fill: none;
+}
+.annotation-dot {
+  fill: var(--brand-bone);
+  stroke: var(--brand-charcoal);
+  stroke-width: 1;
+}
+
+/* ── 11. Animations ────────────────────────────────────────────── */
+.fade-in { opacity: 0; transition: opacity 500ms ease; }
+.fade-in.on { opacity: 1; }
+.legend-card { transform: translateY(6px); opacity: 0; transition: transform 500ms cubic-bezier(.2,.7,.2,1), opacity 400ms ease; }
+.legend-card.on { transform: translateY(0); opacity: 1; }
+
+/* ── Reveal mask for stacked chart ───────────── */
+.reveal-rect {
+  fill: var(--brand-bone);
+}
+
+/* ── 12. Footer ────────────────────────────────────────────────── */
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 20px;
+  margin-top: 48px;
+  border-top: 1px solid var(--brand-charcoal);
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--brand-slate);
+  letter-spacing: 0.03em;
+}
+.footer .brand {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 11px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--brand-charcoal);
+}
+.footer .divider {
+  color: var(--brand-stone);
+  margin: 0 10px;
+}
+
+/* ── 13. Bump chart ────────────────────────────────────────────── */
+.bump-line {
+  stroke-width: 2.5;
+  fill: none;
+  stroke-linejoin: round;
+  stroke-linecap: round;
+}
+.bump-dot {
+  r: 4;
+  stroke: var(--brand-bone);
+  stroke-width: 1.5;
+}
+.bump-label {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  fill: var(--brand-charcoal);
+  font-weight: 500;
+}
+.bump-legend {
+  display: inline-flex;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-top: 14px;
+}
+.bump-legend .bump-legend-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--brand-charcoal);
+}
+.bump-legend .bump-legend-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}
+
+/* ── 14. Bank selector ─────────────────────────────────────────── */
+select.bank-select {
+  background: var(--brand-bone);
+  border: 1px solid var(--brand-charcoal);
+  font-family: var(--font-mono);
+  font-size: 12px;
+  padding: 6px 12px;
+  color: var(--brand-charcoal);
+  cursor: pointer;
+  appearance: none;
+  -webkit-appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg width='10' height='6' viewBox='0 0 10 6' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1l4 4 4-4' stroke='%231A1E20' stroke-width='1.2'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  padding-right: 28px;
+}
+select.bank-select:hover {
+  background-color: var(--brand-bone-deep);
+}
+select.bank-select:focus {
+  outline: 2px solid var(--brand-emerald);
+  outline-offset: 1px;
+}
+
+/* ── 15. Table browser ─────────────────────────────────────────── */
+.browser-layout {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 0;
+  min-height: 400px;
+}
+.table-sidebar {
+  position: sticky;
+  top: 0;
+  max-height: 100vh;
+  overflow-y: auto;
+  border-right: 1px solid var(--brand-charcoal);
+  padding: 20px 0;
+}
+.table-sidebar::-webkit-scrollbar {
+  width: 4px;
+}
+.table-sidebar::-webkit-scrollbar-thumb {
+  background: var(--brand-stone);
+}
+.table-group-title {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 11px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--brand-slate);
+  padding: 18px 20px 8px;
+  margin: 0;
+}
+.table-link {
+  display: block;
+  padding: 8px 12px 8px 20px;
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: var(--brand-charcoal);
+  text-decoration: none;
+  border-left: 3px solid transparent;
+  transition: background 120ms ease, border-color 120ms ease;
+}
+.table-link:hover {
+  background: var(--brand-bone-deep);
+}
+.table-link.active {
+  border-left-color: var(--brand-emerald);
+  color: var(--brand-emerald);
+  font-weight: 500;
+}
+.table-view {
+  padding: 36px 48px;
+}
+.table-title {
+  font-family: var(--font-display);
+  font-weight: 500;
+  font-size: var(--h2-size);
+  line-height: var(--h2-lh);
+  letter-spacing: var(--h2-tracking);
+  margin: 0 0 24px 0;
+}
+.table-scroll {
+  overflow-x: auto;
+}
+table.data-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: var(--font-mono);
+  font-size: 12px;
+  font-variant-numeric: tabular-nums;
+}
+table.data-table thead th {
+  position: sticky;
+  top: 0;
+  background: var(--brand-charcoal);
+  color: var(--brand-bone);
+  font-family: var(--font-mono);
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 6px 10px;
+  text-align: left;
+  white-space: nowrap;
+}
+table.data-table thead th.numeric {
+  text-align: right;
+}
+table.data-table tbody td {
+  padding: 6px 10px;
+  border-bottom: 1px solid var(--brand-bone-deep);
+  color: var(--brand-charcoal);
+}
+table.data-table tbody td.numeric {
+  text-align: right;
+}
+table.data-table tbody tr:nth-child(even) {
+  background: var(--brand-bone-deep);
+}
+table.data-table tbody tr:hover {
+  background: var(--brand-bone-deep);
+}
+.download-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: var(--brand-bone);
+  border: 1px solid var(--brand-charcoal);
+  padding: 5px 12px;
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--brand-charcoal);
+  cursor: pointer;
+  transition: background 120ms;
+}
+.download-btn:hover { background: var(--brand-bone-deep); }
+
+/* ── 16. Responsive ────────────────────────────────────────────── */
+@media (max-width: 1024px) {
+  .page {
+    padding: 24px;
+  }
+  .site-nav {
+    padding: 14px 24px;
+  }
+  .legend-row {
+    grid-template-columns: 1fr;
+  }
+  .browser-layout {
+    grid-template-columns: 1fr;
+  }
+  .table-sidebar {
+    position: static;
+    max-height: none;
+    border-right: none;
+    border-bottom: 1px solid var(--brand-charcoal);
+    padding: 12px 0;
+  }
+  .table-view {
+    padding: 24px 0;
+  }
+  .masthead {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+  .meta {
+    text-align: left;
+  }
+}
+
+@media (max-width: 768px) {
+  .table-sidebar {
+    display: none;
+  }
+  /* Show mobile select fallback instead of sidebar */
+  .table-mobile-select {
+    display: block;
+    margin-bottom: 24px;
+  }
+  .site-nav .nav-links {
+    gap: 16px;
+  }
+  .site-nav .nav-link {
+    font-size: 10px;
+    letter-spacing: 0.18em;
+  }
+  h1.title {
+    font-size: clamp(28px, 7vw, 42px);
+  }
+  .chart-section {
+    margin-top: 48px;
+    padding-top: 24px;
+  }
+}
+
+/* Hide mobile select by default (shown via 768px media query) */
+.table-mobile-select {
+  display: none;
+}

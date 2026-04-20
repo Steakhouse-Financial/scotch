@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Scottish Banking: A History, 1695-1973 — Data Companion</title>
+<link rel="stylesheet" href="css/tokens.css" />
+<link rel="stylesheet" href="css/app.css" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js"></script>
+</head>
+<body>
+
+<nav class="site-nav">
+  <div class="nav-left">
+    <a href="index.html" class="nav-link active">Dashboard</a>
+    <a href="tables.html" class="nav-link">Tables</a>
+  </div>
+  <div class="nav-right">
+    <span class="nav-book-title">Scottish Banking: A History, 1695-1973</span>
+  </div>
+</nav>
+
+<div class="page">
+  <!-- Header -->
+  <header class="masthead">
+    <div>
+      <div class="eyebrow">
+        <span>Scottish Banking System</span>
+        <span class="tick">|</span>
+        <span>Data Companion</span>
+      </div>
+      <h1 class="title">Two centuries of <em>Scottish banking</em></h1>
+    </div>
+    <div class="meta">
+      <span class="big">1695 &rarr; 1973</span>
+      48 tables &middot; 3 banks &middot; 228 years<br/>
+      SG Checkland &middot; Expanded Edition 2026
+    </div>
+  </header>
+
+  <!-- ═══════════════════════════════════════════════════════════ -->
+  <!-- Chart A: System Overview -->
+  <!-- ═══════════════════════════════════════════════════════════ -->
+  <section class="chart-section" id="system-chart">
+    <div class="section-header">
+      <h2>The System</h2>
+      <p class="section-desc">Aggregate balance sheet of all Scottish banks, 1744-1972. Assets above, liabilities &amp; equity below.</p>
+    </div>
+
+    <div class="chart-toolbar">
+      <div class="toolbar-left">
+        <label class="toolbar-check">
+          <input id="system-chart-annot" type="checkbox"/>
+          <span>Show historical markers</span>
+        </label>
+      </div>
+      <div class="toolbar-right">
+        <button class="toolbar-btn" id="system-chart-download">Download CSV</button>
+        <div class="seg-mini" id="system-chart-yscale">
+          <button data-yscale="normal" class="active">Normal</button>
+          <button data-yscale="log">Log</button>
+          <button data-yscale="percent">100%</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="chart-wrap" id="system-chart-wrap">
+      <svg class="chart" id="system-chart-svg" viewBox="0 0 1280 620" preserveAspectRatio="xMidYMid meet"></svg>
+      <div class="tooltip" id="system-chart-tooltip"></div>
+    </div>
+
+    <div class="legend-row" id="system-chart-legend"></div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════════════ -->
+  <!-- Chart B: Bank Rankings -->
+  <!-- ═══════════════════════════════════════════════════════════ -->
+  <section class="chart-section" id="rankings-chart">
+    <div class="section-header">
+      <h2>Bank Rankings</h2>
+      <p class="section-desc">Competitive position of the major Scottish banks, 1865-1972.</p>
+    </div>
+
+    <div class="chart-toolbar">
+      <div class="toolbar-left"></div>
+      <div class="toolbar-right">
+        <button class="toolbar-btn" id="rankings-chart-download">Download CSV</button>
+        <div class="seg-mini" id="rankings-chart-metric">
+          <button data-metric="TL" class="active">Total Liabilities</button>
+          <button data-metric="D">Deposits</button>
+          <button data-metric="A">Advances</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="chart-wrap" id="rankings-chart-wrap">
+      <svg class="chart" id="rankings-chart-svg" viewBox="0 0 1280 480" preserveAspectRatio="xMidYMid meet"></svg>
+      <div class="tooltip" id="rankings-chart-tooltip"></div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════════════ -->
+  <!-- Chart C: Individual Banks -->
+  <!-- ═══════════════════════════════════════════════════════════ -->
+  <section class="chart-section" id="bank-chart">
+    <div class="section-header">
+      <h2>Individual Banks</h2>
+      <p class="section-desc">Balance sheet detail for individual banks with surviving records.</p>
+    </div>
+
+    <div class="chart-toolbar">
+      <div class="toolbar-left">
+        <select class="bank-select" id="bank-select"></select>
+      </div>
+      <div class="toolbar-right">
+        <button class="toolbar-btn" id="bank-chart-download">Download CSV</button>
+        <div class="seg-mini" id="bank-chart-yscale">
+          <button data-yscale="normal" class="active">Normal</button>
+          <button data-yscale="log">Log</button>
+          <button data-yscale="percent">100%</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="chart-wrap" id="bank-chart-wrap">
+      <svg class="chart" id="bank-chart-svg" viewBox="0 0 1280 620" preserveAspectRatio="xMidYMid meet"></svg>
+      <div class="tooltip" id="bank-chart-tooltip"></div>
+    </div>
+
+    <div class="legend-row" id="bank-chart-legend"></div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <span class="brand">Steakhouse Financial</span>
+    <span>
+      Source — Checkland, S. G., <em>Scottish Banking: A History, 1695-1973</em>, Expanded Edition
+      <span class="divider">|</span>
+      2026
+    </span>
+  </footer>
+</div>
+
+<script type="module">
+  import { initSystemChart } from './js/chart-system.js';
+  import { initBumpChart } from './js/chart-bump.js';
+  import { initBankChart } from './js/chart-banks.js';
+  import { downloadCSV } from './js/csv.js';
+
+  document.addEventListener('DOMContentLoaded', () => {
+    initSystemChart('system-chart');
+    initBumpChart('rankings-chart');
+    initBankChart('bank-chart', 'bank-select');
+
+    // Download buttons
+    document.getElementById('system-chart-download').addEventListener('click', () => {
+      downloadCSV('appendix_system.csv', '../flattened/appendix_system.csv');
+    });
+    document.getElementById('rankings-chart-download').addEventListener('click', () => {
+      downloadCSV('appendix_ranks.csv', '../flattened/appendix_ranks.csv');
+    });
+    document.getElementById('bank-chart-download').addEventListener('click', () => {
+      downloadCSV('appendix_banks.csv', '../flattened/appendix_banks.csv');
+    });
+  });
+</script>
+</body>
+</html>
