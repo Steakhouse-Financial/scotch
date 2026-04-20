@@ -75,7 +75,6 @@ html, body {
   align-items: end;
   gap: 48px;
   padding-bottom: 20px;
-  border-bottom: 1px solid var(--brand-charcoal);
   margin-bottom: 36px;
 }
 .eyebrow {
