@@ -100,7 +100,3 @@ Most tables from the earlier period are denominated in thousands of pounds (show
 All data is transcribed from *Scottish Banking: A History, 1695-1973* by SG Checkland, Expanded Edition published 2026 by [Steakhouse Financial Ltd](https://steakhouse.financial). The original edition was published in 1975 by Collins.
 
 The underlying sources for the tables are the published balance sheets of the Scottish banks (from 1865 onward), surviving bank ledgers, minute books and fragments (for the earlier period), and parliamentary papers. Full source notes are given in the book's Appendix 2 ("A note on Scottish banking data") and at the foot of each table.
-
-## Errata
-
-See [`changes.md`](changes.md) for a log of corrections made during verification of the CSV files against the printed book.
