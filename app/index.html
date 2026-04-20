@@ -15,6 +15,10 @@
     <img src="wordmark.svg" alt="Steakhouse Financial" class="nav-wordmark" />
     <a href="index.html" class="nav-link active">Dashboard</a>
     <a href="tables.html" class="nav-link">Tables</a>
+    <span class="nav-sep">|</span>
+    <a href="#" class="nav-link nav-external" target="_blank" rel="noopener">Buy Book <svg class="ext-icon" viewBox="0 0 12 12"><path d="M3.5 1.5h7v7M10 2L2 10" stroke="currentColor" stroke-width="1.2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+    <a href="https://steakhouse.financial" class="nav-link nav-external" target="_blank" rel="noopener">Homepage <svg class="ext-icon" viewBox="0 0 12 12"><path d="M3.5 1.5h7v7M10 2L2 10" stroke="currentColor" stroke-width="1.2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+    <a href="https://app.steakhouse.financial" class="nav-link nav-external" target="_blank" rel="noopener">App <svg class="ext-icon" viewBox="0 0 12 12"><path d="M3.5 1.5h7v7M10 2L2 10" stroke="currentColor" stroke-width="1.2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
   </div>
   <div class="nav-right">
     <span class="nav-book-title">Scottish Banking: A History, 1695-1973</span>
@@ -115,16 +119,14 @@
   import { initBumpChart } from './js/chart-bump.js';
   import { downloadCSV } from './js/csv.js';
 
-  document.addEventListener('DOMContentLoaded', () => {
-    initSystemChart('system-chart');
-    initBumpChart('rankings-chart');
+  initSystemChart('system-chart');
+  initBumpChart('rankings-chart');
 
-    document.getElementById('system-chart-download').addEventListener('click', () => {
-      downloadCSV('appendix_system.csv', '../flattened/appendix_system.csv');
-    });
-    document.getElementById('rankings-chart-download').addEventListener('click', () => {
-      downloadCSV('appendix_ranks.csv', '../flattened/appendix_ranks.csv');
-    });
+  document.getElementById('system-chart-download').addEventListener('click', () => {
+    downloadCSV('appendix_system.csv', '../flattened/appendix_system.csv');
+  });
+  document.getElementById('rankings-chart-download').addEventListener('click', () => {
+    downloadCSV('appendix_ranks.csv', '../flattened/appendix_ranks.csv');
   });
 </script>
 </body>

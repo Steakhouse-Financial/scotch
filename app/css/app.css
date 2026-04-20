@@ -56,6 +56,17 @@ html, body {
   color: var(--brand-emerald);
   border-bottom-color: var(--brand-emerald);
 }
+.nav-sep {
+  color: var(--brand-stone);
+  font-size: 14px;
+  user-select: none;
+}
+.ext-icon {
+  width: 10px;
+  height: 10px;
+  vertical-align: baseline;
+  margin-left: 2px;
+}
 .nav-right {
   display: flex;
   align-items: center;
