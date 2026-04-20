@@ -24,7 +24,7 @@ let cachedRows = null;
 export async function initBankChart(containerId, selectId) {
   // Load CSV once
   if (!cachedRows) {
-    cachedRows = await loadCSV('../flattened/appendix_banks.csv');
+    cachedRows = await loadCSV('./flattened/appendix_banks.csv');
   }
 
   const select = document.getElementById(selectId);

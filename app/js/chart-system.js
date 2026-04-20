@@ -73,7 +73,7 @@ export async function initSystemChart(containerId) {
   const annotEl  = document.getElementById(`${containerId}-annot`);
 
   // Fetch system data
-  const resp = await fetch('../sbank/data.json');
+  const resp = await fetch('./sbank/data.json');
   DATA = await resp.json();
 
   // Wire y-scale segmented control
