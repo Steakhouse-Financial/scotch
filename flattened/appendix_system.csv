@@ -959,9 +959,9 @@ Date,Account,Detail,Company Group,Company,Value,Multiple,raw_value,signed,shf_de
 1951-12-31,Liabilities,Notes,,,76.17,1000000,76170000,-76170000,Notes
 1951-12-31,Liabilities,Other liabilities,,,49.43,1000000,49430000,-49430000,Other liabilities
 1951-12-31,Equity,Capital,,,15.84,1000000,15840000,-15840000,Capital
-1951-12-31,Equity,Reserve,,,24.34,1000000,24340000,-24340000,Capital
+1951-12-31,Equity,Reserve,,,24.54,1000000,24540000,-24540000,Capital
 1951-12-31,Assets,Advances,,,284.79,1000000,284790000,284790000,Advances
-1951-12-31,Assets,Investments,,,380.75,1000000,380750000,380750000,Investments
+1951-12-31,Assets,Investments,,,380.55,1000000,380550000,380550000,Investments
 1951-12-31,Assets,Liquid Assets,,,241.17,1000000,241170000,241170000,Liquid Assets
 1951-12-31,Assets,Property,,,6.82,1000000,6820000,6820000,Property
 1952-12-31,Liabilities,Deposits,,,760.69,1000000,760690000,-760690000,Deposits
@@ -1095,7 +1095,7 @@ Date,Account,Detail,Company Group,Company,Value,Multiple,raw_value,signed,shf_de
 1966-12-31,Liabilities,Other liabilities,,,77.63,1000000,77630000,-77630000,Other liabilities
 1966-12-31,Equity,Capital,,,38.68,1000000,38680000,-38680000,Capital
 1966-12-31,Equity,Reserve,,,43.2,1000000,43200000,-43200000,Capital
-1966-12-31,Assets,Advances,,,614.55,1000000,614550000,614550000,Advances
+1966-12-31,Assets,Advances,,,614.45,1000000,614450000,614450000,Advances
 1966-12-31,Assets,Investments,,,261.81,1000000,261810000,261810000,Investments
 1966-12-31,Assets,Liquid Assets,,,417.17,1000000,417170000,417170000,Liquid Assets
 1966-12-31,Assets,Property,,,20.1,1000000,20100000,20100000,Property
