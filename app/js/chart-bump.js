@@ -34,7 +34,7 @@ export async function initBumpChart(containerId) {
   svg.setAttribute('viewBox', `0 0 ${W} ${H}`);
 
   // Load data
-  const rows = await loadCSV('../flattened/appendix_ranks.csv');
+  const rows = await loadCSV('./flattened/appendix_ranks.csv');
 
   // Extract unique sorted years
   const yearsSet = new Set(rows.map(r => r.year));
