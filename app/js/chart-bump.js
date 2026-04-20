@@ -113,7 +113,7 @@ export async function initBumpChart(containerId) {
       el('text', {
         x: M.left - 12, y: y,
         'text-anchor': 'end', 'dominant-baseline': 'middle',
-        'font-family': 'var(--font-mono)', 'font-size': 11,
+        'font-family': 'var(--font-sans)', 'font-size': 11,
         fill: 'var(--brand-charcoal)', 'fill-opacity': 0.6
       }, axesG).textContent = rank;
     }
@@ -122,7 +122,7 @@ export async function initBumpChart(containerId) {
     const rankLabel = el('text', {
       x: 14, y: M.top + plotH / 2,
       'text-anchor': 'middle', 'dominant-baseline': 'middle',
-      'font-family': 'var(--font-mono)', 'font-size': 10,
+      'font-family': 'var(--font-sans)', 'font-size': 10,
       fill: 'var(--brand-charcoal)', 'fill-opacity': 0.5,
       transform: `rotate(-90, 14, ${M.top + plotH / 2})`
     }, axesG);
@@ -134,7 +134,7 @@ export async function initBumpChart(containerId) {
       el('text', {
         x, y: H - M.bottom + 18,
         'text-anchor': 'middle', 'dominant-baseline': 'middle',
-        'font-family': 'var(--font-mono)', 'font-size': 10,
+        'font-family': 'var(--font-sans)', 'font-size': 10,
         fill: 'var(--brand-charcoal)', 'fill-opacity': 0.6
       }, axesG).textContent = yr;
     }

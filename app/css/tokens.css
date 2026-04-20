@@ -12,35 +12,11 @@
 /* ────────────────────────────────────────────────────────────────
    FONTS
    Söhne & Söhne Breit — Klim Type Foundry. Licensed OTFs live in
-   /fonts. Berkeley Mono is NOT supplied; we fall back to JetBrains
    Mono for monospace.
    Weight mapping:
      Extraleicht 200 · Leicht 300 · Buch 400 · Kräftig 500
      Dreiviertelfett 600 · Halbfett 650 · Fett 700 · Extrafett 800
    ──────────────────────────────────────────────────────────────── */
-@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&display=swap');
-
-/* Berkeley Mono — monospace */
-@font-face { font-family: 'Berkeley Mono'; font-style: normal; font-weight: 100; font-display: swap; src: url('../../sbank/fonts/BerkeleyMono-Thin.ttf') format('truetype'); }
-@font-face { font-family: 'Berkeley Mono'; font-style: italic; font-weight: 100; font-display: swap; src: url('../../sbank/fonts/BerkeleyMono-Thin-Oblique.ttf') format('truetype'); }
-@font-face { font-family: 'Berkeley Mono'; font-style: normal; font-weight: 200; font-display: swap; src: url('../../sbank/fonts/BerkeleyMono-ExtraLight.ttf') format('truetype'); }
-@font-face { font-family: 'Berkeley Mono'; font-style: italic; font-weight: 200; font-display: swap; src: url('../../sbank/fonts/BerkeleyMono-ExtraLight-Oblique.ttf') format('truetype'); }
-@font-face { font-family: 'Berkeley Mono'; font-style: normal; font-weight: 300; font-display: swap; src: url('../../sbank/fonts/BerkeleyMono-Light.ttf') format('truetype'); }
-@font-face { font-family: 'Berkeley Mono'; font-style: italic; font-weight: 300; font-display: swap; src: url('../../sbank/fonts/BerkeleyMono-Light-Oblique.ttf') format('truetype'); }
-@font-face { font-family: 'Berkeley Mono'; font-style: normal; font-weight: 350; font-display: swap; src: url('../../sbank/fonts/BerkeleyMono-SemiLight.ttf') format('truetype'); }
-@font-face { font-family: 'Berkeley Mono'; font-style: italic; font-weight: 350; font-display: swap; src: url('../../sbank/fonts/BerkeleyMono-SemiLight-Oblique.ttf') format('truetype'); }
-@font-face { font-family: 'Berkeley Mono'; font-style: normal; font-weight: 400; font-display: swap; src: url('../../sbank/fonts/BerkeleyMono-Regular.ttf') format('truetype'); }
-@font-face { font-family: 'Berkeley Mono'; font-style: italic; font-weight: 400; font-display: swap; src: url('../../sbank/fonts/BerkeleyMono-Oblique.ttf') format('truetype'); }
-@font-face { font-family: 'Berkeley Mono'; font-style: normal; font-weight: 500; font-display: swap; src: url('../../sbank/fonts/BerkeleyMono-Medium.ttf') format('truetype'); }
-@font-face { font-family: 'Berkeley Mono'; font-style: italic; font-weight: 500; font-display: swap; src: url('../../sbank/fonts/BerkeleyMono-Medium-Oblique.ttf') format('truetype'); }
-@font-face { font-family: 'Berkeley Mono'; font-style: normal; font-weight: 600; font-display: swap; src: url('../../sbank/fonts/BerkeleyMono-SemiBold.ttf') format('truetype'); }
-@font-face { font-family: 'Berkeley Mono'; font-style: italic; font-weight: 600; font-display: swap; src: url('../../sbank/fonts/BerkeleyMono-SemiBold-Oblique.ttf') format('truetype'); }
-@font-face { font-family: 'Berkeley Mono'; font-style: normal; font-weight: 700; font-display: swap; src: url('../../sbank/fonts/BerkeleyMono-Bold.ttf') format('truetype'); }
-@font-face { font-family: 'Berkeley Mono'; font-style: italic; font-weight: 700; font-display: swap; src: url('../../sbank/fonts/BerkeleyMono-Bold-Oblique.ttf') format('truetype'); }
-@font-face { font-family: 'Berkeley Mono'; font-style: normal; font-weight: 800; font-display: swap; src: url('../../sbank/fonts/BerkeleyMono-ExtraBold.ttf') format('truetype'); }
-@font-face { font-family: 'Berkeley Mono'; font-style: italic; font-weight: 800; font-display: swap; src: url('../../sbank/fonts/BerkeleyMono-ExtraBold-Oblique.ttf') format('truetype'); }
-@font-face { font-family: 'Berkeley Mono'; font-style: normal; font-weight: 900; font-display: swap; src: url('../../sbank/fonts/BerkeleyMono-Black.ttf') format('truetype'); }
-@font-face { font-family: 'Berkeley Mono'; font-style: italic; font-weight: 900; font-display: swap; src: url('../../sbank/fonts/BerkeleyMono-Black-Oblique.ttf') format('truetype'); }
 
 /* Söhne — body */
 @font-face { font-family: 'Söhne'; font-style: normal; font-weight: 200; font-display: swap; src: url('../../sbank/fonts/S_hne-Extraleicht.otf') format('opentype'); }
@@ -78,7 +54,6 @@
   /* ── Type families ─────────────────────────────────────────── */
   --font-display: 'Söhne Breit', ui-sans-serif, system-ui, sans-serif;
   --font-sans:    'Söhne', ui-sans-serif, system-ui, sans-serif;
-  --font-mono:    'Berkeley Mono', 'JetBrains Mono', ui-monospace, monospace;
 
   /* ── Brand palette (from Figma /Guide/2) ──────────────────── */
   --brand-bone:        #FFFDF1;  /* primary page background */
@@ -223,7 +198,7 @@ h6, .h6 { font-family: var(--font-sans); font-weight: var(--h6-weight);
 .body-medium-plus{ font: 500 14px/20px var(--font-sans); letter-spacing: 0.05px; }
 .body-small      { font: 400 12px/16px var(--font-sans); letter-spacing: 0.05px; }
 .body-small-plus { font: 500 12px/16px var(--font-sans); letter-spacing: 0.05px; }
-.mono, code, kbd { font-family: var(--font-mono); font-size: 0.95em; }
+.mono, code, kbd { font-family: var(--font-sans); font-size: 0.95em; }
 
 .eyebrow {
   font-family: var(--font-display); font-weight: 600;

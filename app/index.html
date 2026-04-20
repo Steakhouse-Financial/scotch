@@ -12,6 +12,7 @@
 
 <nav class="site-nav">
   <div class="nav-left">
+    <img src="wordmark.svg" alt="Steakhouse Financial" class="nav-wordmark" />
     <a href="index.html" class="nav-link active">Dashboard</a>
     <a href="tables.html" class="nav-link">Tables</a>
   </div>
@@ -99,37 +100,6 @@
     </div>
   </section>
 
-  <!-- ═══════════════════════════════════════════════════════════ -->
-  <!-- Chart C: Individual Banks -->
-  <!-- ═══════════════════════════════════════════════════════════ -->
-  <section class="chart-section" id="bank-chart">
-    <div class="section-header">
-      <h2>Individual Banks</h2>
-      <p class="section-desc">Balance sheet detail for individual banks with surviving records.</p>
-    </div>
-
-    <div class="chart-toolbar">
-      <div class="toolbar-left">
-        <select class="bank-select" id="bank-select"></select>
-      </div>
-      <div class="toolbar-right">
-        <button class="toolbar-btn" id="bank-chart-download">Download CSV</button>
-        <div class="seg-mini" id="bank-chart-yscale">
-          <button data-yscale="normal" class="active">Normal</button>
-          <button data-yscale="log">Log</button>
-          <button data-yscale="percent">100%</button>
-        </div>
-      </div>
-    </div>
-
-    <div class="chart-wrap" id="bank-chart-wrap">
-      <svg class="chart" id="bank-chart-svg" viewBox="0 0 1280 620" preserveAspectRatio="xMidYMid meet"></svg>
-      <div class="tooltip" id="bank-chart-tooltip"></div>
-    </div>
-
-    <div class="legend-row" id="bank-chart-legend"></div>
-  </section>
-
   <!-- Footer -->
   <footer class="footer">
     <span class="brand">Steakhouse Financial</span>
@@ -144,23 +114,17 @@
 <script type="module">
   import { initSystemChart } from './js/chart-system.js';
   import { initBumpChart } from './js/chart-bump.js';
-  import { initBankChart } from './js/chart-banks.js';
   import { downloadCSV } from './js/csv.js';
 
   document.addEventListener('DOMContentLoaded', () => {
     initSystemChart('system-chart');
     initBumpChart('rankings-chart');
-    initBankChart('bank-chart', 'bank-select');
 
-    // Download buttons
     document.getElementById('system-chart-download').addEventListener('click', () => {
       downloadCSV('appendix_system.csv', '../flattened/appendix_system.csv');
     });
     document.getElementById('rankings-chart-download').addEventListener('click', () => {
       downloadCSV('appendix_ranks.csv', '../flattened/appendix_ranks.csv');
-    });
-    document.getElementById('bank-chart-download').addEventListener('click', () => {
-      downloadCSV('appendix_banks.csv', '../flattened/appendix_banks.csv');
     });
   });
 </script>

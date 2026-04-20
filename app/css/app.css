@@ -25,20 +25,24 @@ html, body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 14px 56px;
+  padding: 20px 56px;
   border-bottom: 1px solid var(--brand-charcoal);
 }
-.site-nav .nav-links {
+.nav-left {
   display: flex;
-  gap: 28px;
+  gap: 32px;
   align-items: center;
 }
+.nav-wordmark {
+  height: 18px;
+  width: auto;
+  display: block;
+}
 .site-nav .nav-link {
-  font-family: var(--font-display);
-  font-weight: 600;
-  font-size: 11px;
-  letter-spacing: 0.22em;
-  text-transform: uppercase;
+  font-family: var(--font-sans);
+  font-weight: 500;
+  font-size: 13px;
+  letter-spacing: 0.04em;
   color: var(--brand-slate);
   text-decoration: none;
   padding-bottom: 4px;
@@ -52,13 +56,16 @@ html, body {
   color: var(--brand-emerald);
   border-bottom-color: var(--brand-emerald);
 }
-.site-nav .nav-title {
-  font-family: var(--font-display);
-  font-weight: 600;
-  font-size: 11px;
-  letter-spacing: 0.22em;
-  text-transform: uppercase;
-  color: var(--brand-charcoal);
+.nav-right {
+  display: flex;
+  align-items: center;
+}
+.nav-book-title {
+  font-family: var(--font-sans);
+  font-weight: 400;
+  font-size: 12px;
+  letter-spacing: 0.02em;
+  color: var(--brand-slate);
 }
 
 /* ── 4. Masthead ───────────────────────────────────────────────── */
@@ -99,7 +106,7 @@ h1.title em {
   color: var(--brand-emerald);
 }
 .meta {
-  font-family: var(--font-mono);
+  font-family: var(--font-sans);
   font-size: 12px;
   color: var(--brand-slate);
   text-align: right;
@@ -143,13 +150,13 @@ svg.chart {
 }
 
 .axis-label {
-  font-family: var(--font-mono);
+  font-family: var(--font-sans);
   font-size: 11px;
   fill: var(--brand-slate);
   font-weight: 400;
 }
 .axis-year {
-  font-family: var(--font-mono);
+  font-family: var(--font-sans);
   font-size: 12px;
   fill: var(--brand-charcoal);
   font-weight: 500;
@@ -207,7 +214,7 @@ svg.chart {
   justify-content: space-between;
 }
 .legend-card .sign {
-  font-family: var(--font-mono);
+  font-family: var(--font-sans);
   font-size: 11px;
   font-weight: 400;
   letter-spacing: 0.05em;
@@ -234,7 +241,7 @@ svg.chart {
   border: 1px solid var(--brand-charcoal);
 }
 .legend-item .pct {
-  font-family: var(--font-mono);
+  font-family: var(--font-sans);
   font-size: 11px;
   color: var(--brand-slate);
   font-variant-numeric: tabular-nums;
@@ -252,7 +259,7 @@ svg.chart {
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  font-family: var(--font-mono);
+  font-family: var(--font-sans);
   font-size: 10px;
   letter-spacing: 0.08em;
   text-transform: uppercase;
@@ -271,7 +278,7 @@ svg.chart {
   border: none;
   border-right: 1px solid var(--brand-charcoal);
   padding: 5px 12px;
-  font-family: var(--font-mono);
+  font-family: var(--font-sans);
   font-size: 10px;
   letter-spacing: 0.08em;
   text-transform: uppercase;
@@ -292,7 +299,7 @@ svg.chart {
   background: var(--brand-bone);
   border: 1px solid var(--brand-charcoal);
   padding: 5px 12px;
-  font-family: var(--font-mono);
+  font-family: var(--font-sans);
   font-size: 10px;
   letter-spacing: 0.08em;
   text-transform: uppercase;
@@ -336,7 +343,7 @@ svg.chart {
   margin: 0 0 2px 0;
 }
 .tooltip .sub {
-  font-family: var(--font-mono);
+  font-family: var(--font-sans);
   font-size: 10px;
   letter-spacing: 0.1em;
   text-transform: uppercase;
@@ -350,8 +357,8 @@ svg.chart {
   border-top: 1px dashed var(--brand-bone-deep);
   padding-top: 8px;
 }
-.tooltip .totals .k { color: var(--brand-slate); font-family: var(--font-mono); font-size: 10px; letter-spacing: 0.05em; text-transform: uppercase; align-self: center; }
-.tooltip .totals .v { font-family: var(--font-mono); font-size: 12px; font-variant-numeric: tabular-nums; text-align: right; }
+.tooltip .totals .k { color: var(--brand-slate); font-family: var(--font-sans); font-size: 10px; letter-spacing: 0.05em; text-transform: uppercase; align-self: center; }
+.tooltip .totals .v { font-family: var(--font-sans); font-size: 12px; font-variant-numeric: tabular-nums; text-align: right; }
 .tooltip .totals .v.assets { color: var(--brand-emerald); }
 .tooltip .totals .v.liab   { color: #A77B18; }
 .tooltip .totals .v.eq     { color: var(--brand-plum); }
@@ -400,7 +407,7 @@ svg.chart {
   padding-top: 20px;
   margin-top: 48px;
   border-top: 1px solid var(--brand-charcoal);
-  font-family: var(--font-mono);
+  font-family: var(--font-sans);
   font-size: 11px;
   color: var(--brand-slate);
   letter-spacing: 0.03em;
@@ -431,7 +438,7 @@ svg.chart {
   stroke-width: 1.5;
 }
 .bump-label {
-  font-family: var(--font-mono);
+  font-family: var(--font-sans);
   font-size: 11px;
   fill: var(--brand-charcoal);
   font-weight: 500;
@@ -447,7 +454,7 @@ svg.chart {
   display: inline-flex;
   align-items: center;
   gap: 6px;
-  font-family: var(--font-mono);
+  font-family: var(--font-sans);
   font-size: 11px;
   color: var(--brand-charcoal);
 }
@@ -461,7 +468,7 @@ svg.chart {
 select.bank-select {
   background: var(--brand-bone);
   border: 1px solid var(--brand-charcoal);
-  font-family: var(--font-mono);
+  font-family: var(--font-sans);
   font-size: 12px;
   padding: 6px 12px;
   color: var(--brand-charcoal);
@@ -515,7 +522,7 @@ select.bank-select:focus {
 .table-link {
   display: block;
   padding: 8px 12px 8px 20px;
-  font-family: var(--font-mono);
+  font-family: var(--font-sans);
   font-size: 12px;
   color: var(--brand-charcoal);
   text-decoration: none;
@@ -547,7 +554,7 @@ select.bank-select:focus {
 table.data-table {
   width: 100%;
   border-collapse: collapse;
-  font-family: var(--font-mono);
+  font-family: var(--font-sans);
   font-size: 12px;
   font-variant-numeric: tabular-nums;
 }
@@ -556,7 +563,7 @@ table.data-table thead th {
   top: 0;
   background: var(--brand-charcoal);
   color: var(--brand-bone);
-  font-family: var(--font-mono);
+  font-family: var(--font-sans);
   font-size: 10px;
   font-weight: 500;
   letter-spacing: 0.08em;
@@ -589,7 +596,7 @@ table.data-table tbody tr:hover {
   background: var(--brand-bone);
   border: 1px solid var(--brand-charcoal);
   padding: 5px 12px;
-  font-family: var(--font-mono);
+  font-family: var(--font-sans);
   font-size: 10px;
   letter-spacing: 0.08em;
   text-transform: uppercase;
