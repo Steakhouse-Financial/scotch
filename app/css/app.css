@@ -488,56 +488,24 @@ select.bank-select:focus {
 }
 
 /* ── 15. Table browser ─────────────────────────────────────────── */
-.browser-layout {
-  display: grid;
-  grid-template-columns: 280px 1fr;
-  gap: 0;
-  min-height: 400px;
-}
-.table-sidebar {
-  position: sticky;
-  top: 0;
-  max-height: 100vh;
-  overflow-y: auto;
-  border-right: 1px solid var(--brand-charcoal);
-  padding: 20px 0;
-}
-.table-sidebar::-webkit-scrollbar {
-  width: 4px;
-}
-.table-sidebar::-webkit-scrollbar-thumb {
-  background: var(--brand-stone);
-}
-.table-group-title {
-  font-family: var(--font-display);
-  font-weight: 600;
-  font-size: 11px;
-  letter-spacing: 0.22em;
-  text-transform: uppercase;
-  color: var(--brand-slate);
-  padding: 18px 20px 8px;
-  margin: 0;
-}
-.table-link {
+.table-select {
   display: block;
-  padding: 8px 12px 8px 20px;
+  width: 100%;
+  background: var(--brand-bone);
+  border: 1px solid var(--brand-charcoal);
   font-family: var(--font-sans);
-  font-size: 12px;
+  font-size: 14px;
+  padding: 10px 14px;
   color: var(--brand-charcoal);
-  text-decoration: none;
-  border-left: 3px solid transparent;
-  transition: background 120ms ease, border-color 120ms ease;
+  cursor: pointer;
+  margin-bottom: 36px;
 }
-.table-link:hover {
-  background: var(--brand-bone-deep);
-}
-.table-link.active {
-  border-left-color: var(--brand-emerald);
-  color: var(--brand-emerald);
-  font-weight: 500;
+.table-select:focus {
+  outline: 2px solid var(--brand-emerald);
+  outline-offset: 1px;
 }
 .table-view {
-  padding: 36px 48px;
+  min-height: 400px;
 }
 .table-title {
   font-family: var(--font-display);
@@ -616,19 +584,6 @@ table.data-table tbody tr:hover {
   .legend-row {
     grid-template-columns: 1fr;
   }
-  .browser-layout {
-    grid-template-columns: 1fr;
-  }
-  .table-sidebar {
-    position: static;
-    max-height: none;
-    border-right: none;
-    border-bottom: 1px solid var(--brand-charcoal);
-    padding: 12px 0;
-  }
-  .table-view {
-    padding: 24px 0;
-  }
   .masthead {
     grid-template-columns: 1fr;
     gap: 24px;
@@ -639,14 +594,6 @@ table.data-table tbody tr:hover {
 }
 
 @media (max-width: 768px) {
-  .table-sidebar {
-    display: none;
-  }
-  /* Show mobile select fallback instead of sidebar */
-  .table-mobile-select {
-    display: block;
-    margin-bottom: 24px;
-  }
   .site-nav .nav-links {
     gap: 16px;
   }
@@ -663,7 +610,3 @@ table.data-table tbody tr:hover {
   }
 }
 
-/* Hide mobile select by default (shown via 768px media query) */
-.table-mobile-select {
-  display: none;
-}
