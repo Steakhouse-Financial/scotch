@@ -86,11 +86,7 @@ export async function initTableBrowser() {
         const tr = document.createElement('tr');
         for (const cell of dataRows[i]) {
           const td = document.createElement('td');
-          const v = cell != null ? cell : '';
-          if (/^-?[\d,.]+%?$/.test(String(v).trim()) && String(v).trim() !== '') {
-            td.className = 'numeric';
-          }
-          td.textContent = v;
+          td.textContent = cell != null ? cell : '';
           tr.appendChild(td);
         }
         tbody.appendChild(tr);

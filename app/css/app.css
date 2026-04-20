@@ -543,23 +543,23 @@ table.data-table thead th {
   color: var(--brand-bone);
   font-family: var(--font-sans);
   font-size: 10px;
-  font-weight: 500;
+  font-weight: 600;
   letter-spacing: 0.08em;
-  text-transform: uppercase;
   padding: 6px 10px;
-  text-align: left;
+  text-align: right;
   white-space: nowrap;
 }
-table.data-table thead th.numeric {
-  text-align: right;
+table.data-table thead th:first-child {
+  text-align: left;
 }
 table.data-table tbody td {
   padding: 6px 10px;
   border-bottom: 1px solid var(--brand-bone-deep);
   color: var(--brand-charcoal);
-}
-table.data-table tbody td.numeric {
   text-align: right;
+}
+table.data-table tbody td:first-child {
+  text-align: left;
 }
 table.data-table tbody tr:nth-child(even) {
   background: var(--brand-bone-deep);
