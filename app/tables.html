@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Tables — Scottish Banking: A History, 1695-1973</title>
+<link rel="stylesheet" href="css/tokens.css" />
+<link rel="stylesheet" href="css/app.css" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js"></script>
+</head>
+<body>
+
+<nav class="site-nav">
+  <div class="nav-left">
+    <img src="wordmark.svg" alt="Steakhouse Financial" class="nav-wordmark" />
+    <a href="index.html" class="nav-link">Dashboard</a>
+    <a href="tables.html" class="nav-link active">Tables</a>
+    <span class="nav-sep">|</span>
+    <a href="#" class="nav-link nav-external" target="_blank" rel="noopener">Buy Book <svg class="ext-icon" viewBox="0 0 12 12"><path d="M3.5 1.5h7v7M10 2L2 10" stroke="currentColor" stroke-width="1.2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+    <a href="https://steakhouse.financial" class="nav-link nav-external" target="_blank" rel="noopener">Homepage <svg class="ext-icon" viewBox="0 0 12 12"><path d="M3.5 1.5h7v7M10 2L2 10" stroke="currentColor" stroke-width="1.2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+    <a href="https://app.steakhouse.financial" class="nav-link nav-external" target="_blank" rel="noopener">App <svg class="ext-icon" viewBox="0 0 12 12"><path d="M3.5 1.5h7v7M10 2L2 10" stroke="currentColor" stroke-width="1.2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+  </div>
+  <div class="nav-right">
+    <span class="nav-book-title">Scottish Banking: A History, 1695-1973</span>
+  </div>
+</nav>
+
+<div class="page">
+  <select id="table-select" class="table-select"></select>
+  <div id="table-view" class="table-view"></div>
+
+  <footer class="footer">
+    <span class="brand">Steakhouse Financial</span>
+    <span>
+      Source — Checkland, S. G., <em>Scottish Banking: A History, 1695-1973</em>, Expanded Edition
+      <span class="divider">|</span>
+      2026
+    </span>
+  </footer>
+</div>
+
+<script type="module">
+  import { initTableBrowser } from './js/table-browser.js';
+  initTableBrowser();
+</script>
+</body>
+</html>

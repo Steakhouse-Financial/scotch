@@ -1,0 +1,207 @@
+/* Steakhouse Financial Design System
+ * Colors + Typography tokens
+ *
+ * Canonical sources:
+ *  - Figma /Guide/2 + /Guide/4 (brand palette swatches)
+ *  - Steakhouse-Financial/app · src/config/theme.css (app tokens, OKLCH)
+ *  - Steakhouse-Financial/app · THEME.md (heading/body utilities)
+ *
+ * Light mode is primary. Dark mode is supported via `.dark` on an ancestor.
+ */
+
+/* ────────────────────────────────────────────────────────────────
+   FONTS
+   Söhne & Söhne Breit — Klim Type Foundry. Licensed OTFs live in
+   Mono for monospace.
+   Weight mapping:
+     Extraleicht 200 · Leicht 300 · Buch 400 · Kräftig 500
+     Dreiviertelfett 600 · Halbfett 650 · Fett 700 · Extrafett 800
+   ──────────────────────────────────────────────────────────────── */
+
+/* Söhne — body */
+@font-face { font-family: 'Söhne'; font-style: normal; font-weight: 200; font-display: swap; src: url('../../sbank/fonts/S_hne-Extraleicht.otf') format('opentype'); }
+@font-face { font-family: 'Söhne'; font-style: italic; font-weight: 200; font-display: swap; src: url('../../sbank/fonts/S_hne-ExtraleichtKursiv.otf') format('opentype'); }
+@font-face { font-family: 'Söhne'; font-style: normal; font-weight: 300; font-display: swap; src: url('../../sbank/fonts/S_hne-Leicht.otf') format('opentype'); }
+@font-face { font-family: 'Söhne'; font-style: italic; font-weight: 300; font-display: swap; src: url('../../sbank/fonts/S_hne-LeichtKursiv.otf') format('opentype'); }
+@font-face { font-family: 'Söhne'; font-style: normal; font-weight: 400; font-display: swap; src: url('../../sbank/fonts/S_hne-Buch.otf') format('opentype'); }
+@font-face { font-family: 'Söhne'; font-style: italic; font-weight: 400; font-display: swap; src: url('../../sbank/fonts/S_hne-BuchKursiv.otf') format('opentype'); }
+@font-face { font-family: 'Söhne'; font-style: normal; font-weight: 500; font-display: swap; src: url('../../sbank/fonts/S_hne-Kr_ftig.otf') format('opentype'); }
+@font-face { font-family: 'Söhne'; font-style: italic; font-weight: 500; font-display: swap; src: url('../../sbank/fonts/S_hne-Kr_ftigKursiv.otf') format('opentype'); }
+@font-face { font-family: 'Söhne'; font-style: normal; font-weight: 600; font-display: swap; src: url('../../sbank/fonts/S_hne-Dreiviertelfett.otf') format('opentype'); }
+@font-face { font-family: 'Söhne'; font-style: italic; font-weight: 600; font-display: swap; src: url('../../sbank/fonts/S_hne-DreiviertelfettKursiv.otf') format('opentype'); }
+@font-face { font-family: 'Söhne'; font-style: normal; font-weight: 650; font-display: swap; src: url('../../sbank/fonts/S_hne-Halbfett.otf') format('opentype'); }
+@font-face { font-family: 'Söhne'; font-style: italic; font-weight: 650; font-display: swap; src: url('../../sbank/fonts/S_hne-HalbfettKursiv.otf') format('opentype'); }
+@font-face { font-family: 'Söhne'; font-style: normal; font-weight: 700; font-display: swap; src: url('../../sbank/fonts/S_hne-Fett.otf') format('opentype'); }
+@font-face { font-family: 'Söhne'; font-style: italic; font-weight: 700; font-display: swap; src: url('../../sbank/fonts/S_hne-FettKursiv.otf') format('opentype'); }
+@font-face { font-family: 'Söhne'; font-style: normal; font-weight: 800; font-display: swap; src: url('../../sbank/fonts/S_hne-Extrafett.otf') format('opentype'); }
+@font-face { font-family: 'Söhne'; font-style: italic; font-weight: 800; font-display: swap; src: url('../../sbank/fonts/S_hne-ExtrafettKursiv.otf') format('opentype'); }
+
+/* Söhne Breit — display */
+@font-face { font-family: 'Söhne Breit'; font-style: normal; font-weight: 200; font-display: swap; src: url('../../sbank/fonts/S_hneBreit-Extraleicht.otf') format('opentype'); }
+@font-face { font-family: 'Söhne Breit'; font-style: italic; font-weight: 200; font-display: swap; src: url('../../sbank/fonts/S_hneBreit-ExtraleichtKursiv.otf') format('opentype'); }
+@font-face { font-family: 'Söhne Breit'; font-style: normal; font-weight: 300; font-display: swap; src: url('../../sbank/fonts/S_hneBreit-Leicht.otf') format('opentype'); }
+@font-face { font-family: 'Söhne Breit'; font-style: italic; font-weight: 300; font-display: swap; src: url('../../sbank/fonts/S_hneBreit-LeichtKursiv.otf') format('opentype'); }
+@font-face { font-family: 'Söhne Breit'; font-style: normal; font-weight: 400; font-display: swap; src: url('../../sbank/fonts/S_hneBreit-Buch.otf') format('opentype'); }
+@font-face { font-family: 'Söhne Breit'; font-style: italic; font-weight: 400; font-display: swap; src: url('../../sbank/fonts/S_hneBreit-BuchKursiv.otf') format('opentype'); }
+@font-face { font-family: 'Söhne Breit'; font-style: normal; font-weight: 500; font-display: swap; src: url('../../sbank/fonts/S_hneBreit-Kr_ftig.otf') format('opentype'); }
+@font-face { font-family: 'Söhne Breit'; font-style: italic; font-weight: 500; font-display: swap; src: url('../../sbank/fonts/S_hneBreit-Kr_ftigKursiv.otf') format('opentype'); }
+@font-face { font-family: 'Söhne Breit'; font-style: normal; font-weight: 600; font-display: swap; src: url('../../sbank/fonts/S_hneBreit-Dreiviertelfett.otf') format('opentype'); }
+@font-face { font-family: 'Söhne Breit'; font-style: italic; font-weight: 600; font-display: swap; src: url('../../sbank/fonts/S_hneBreit-DreiviertelfettKursiv.otf') format('opentype'); }
+@font-face { font-family: 'Söhne Breit'; font-style: normal; font-weight: 650; font-display: swap; src: url('../../sbank/fonts/S_hneBreit-Halbfett.otf') format('opentype'); }
+@font-face { font-family: 'Söhne Breit'; font-style: italic; font-weight: 650; font-display: swap; src: url('../../sbank/fonts/S_hneBreit-HalbfettKursiv.otf') format('opentype'); }
+
+:root {
+  /* ── Type families ─────────────────────────────────────────── */
+  --font-display: 'Söhne Breit', ui-sans-serif, system-ui, sans-serif;
+  --font-sans:    'Söhne', ui-sans-serif, system-ui, sans-serif;
+
+  /* ── Brand palette (from Figma /Guide/2) ──────────────────── */
+  --brand-bone:        #FFFDF1;  /* primary page background */
+  --brand-bone-deep:   #ECE7E1;  /* secondary paper tone */
+  --brand-charcoal:    #1A1E20;  /* primary ink */
+  --brand-slate:       #515A5E;  /* secondary ink */
+  --brand-stone:       #9AA5AB;  /* tertiary ink / muted */
+  --brand-emerald:     #086552;  /* primary accent — SHF green */
+  --brand-gold:        #ECBC50;  /* warm accent */
+  --brand-ochre:       #DAA544;  /* "featured" gold */
+  --brand-orange:      #F15C3B;  /* hot accent (destructive) */
+  --brand-plum:        #934997;  /* cool accent */
+  --brand-sky:         #389BFE;  /* data blue */
+  --brand-lime:        #DDFF7E;  /* data lime */
+
+  /* Strategy colors (from app) */
+  --strategy-prime:      #355A52;  /* deep emerald */
+  --strategy-high-yield: #7C4032;  /* rust */
+  --strategy-turbo:      #5B3A5D;  /* aubergine */
+  --strategy-term:       #726343;  /* umber */
+
+  /* Chart series */
+  --chart-1: oklch(44.7% 0.083 174); /* emerald */
+  --chart-2: #389BFE;
+  --chart-3: #F15C3B;
+  --chart-4: #B7D464;
+  --chart-5: #ECBC50;
+  --chart-6: #5B5FEF;
+  --chart-7: #7BE0AD;
+  --chart-8: #FF7A5C;
+  --chart-9: #B388EB;
+
+  /* ── Semantic tokens — LIGHT (default) ───────────────────── */
+  --bg:              oklch(97% 0.022 92.9);     /* brand-bone */
+  --bg-elevated:     oklch(99.1% 0.017 98.6);   /* card */
+  --bg-muted:        oklch(94.8% 0.023 92.9);   /* muted */
+  --bg-accent:       oklch(93.1% 0.02 94.1);    /* warm accent bg */
+
+  --fg:              oklch(22.8% 0.007 229);    /* brand-charcoal */
+  --fg-muted:        oklch(45.8% 0.012 225);    /* brand-slate */
+  --fg-on-primary:   oklch(99% 0.015 98.5);
+
+  --primary:         oklch(44.7% 0.083 174);    /* brand-emerald */
+  --primary-fg:      oklch(99% 0.015 98.5);
+  --accent-fg:       oklch(44.7% 0.083 174);
+
+  --border:          oklch(89.5% 0.024 92.9);
+  --input:           oklch(89.5% 0.024 92.9);
+  --ring:            oklch(54.5% 0.215 263);
+
+  --destructive:     oklch(66.7% 0.19 34.1);
+  --featured:        #D4A018;
+
+  /* ── Radius ──────────────────────────────────────────────── */
+  --radius:          8px;
+  --radius-sm:       6px;
+  --radius-lg:       12px;
+  --radius-xl:       14px;
+  --button-radius:   4px;
+
+  /* ── Shadows / elevation (quietly used in the app) ───────── */
+  --shadow-sm:       0 1px 2px rgba(26,30,32,.05);
+  --shadow:          0 1px 3px rgba(26,30,32,.07), 0 1px 2px rgba(26,30,32,.04);
+  /* Signature "hard offset" drop used on cards/notes in one-pagers */
+  --shadow-block:    4px 4px 0 0 var(--brand-bone-deep);
+  --shadow-block-sm: 2.5px 2.5px 0 0 var(--brand-bone-deep);
+
+  /* ── Spacing tokens ──────────────────────────────────────── */
+  --space-1: 4px;   --space-2: 8px;   --space-3: 12px;
+  --space-4: 16px;  --space-5: 20px;  --space-6: 24px;
+  --space-8: 32px;  --space-10: 40px; --space-12: 48px;
+  --space-16: 64px; --space-24: 96px;
+  --spacing-header: 76px;
+
+  /* ── Type scale (mirrors THEME.md) ───────────────────────── */
+  --h1-size: 36px; --h1-lh: 48px; --h1-weight: 600; --h1-tracking: -0.20px;
+  --h2-size: 32px; --h2-lh: 36px; --h2-weight: 500; --h2-tracking: -0.20px;
+  --h3-size: 28px; --h3-lh: 32px; --h3-weight: 500; --h3-tracking: -0.20px;
+  --h4-size: 24px; --h4-lh: 32px; --h4-weight: 500;
+  --h5-size: 20px; --h5-lh: 32px; --h5-weight: 500;
+  --h6-size: 18px; --h6-lh: 24px; --h6-weight: 500;
+  --body-lg: 16px; --body-lg-lh: 24px;
+  --body-md: 14px; --body-md-lh: 20px;
+  --body-sm: 12px; --body-sm-lh: 16px;
+}
+
+.dark {
+  --bg:            oklch(17% 0.004 229);
+  --bg-elevated:   oklch(21.6% 0.004 229);
+  --bg-muted:      oklch(28.5% 0 263);
+  --bg-accent:     oklch(37% 0.011 286);
+  --fg:            oklch(97% 0.022 92.9);
+  --fg-muted:      oklch(83.8% 0.011 98.5);
+  --primary:       oklch(55% 0.103 173);
+  --border:        oklch(26.0% 0 263);
+  --input:         oklch(40% 0.003 229);
+  --ring:          oklch(62.6% 0.186 260);
+  --shadow-block:  4px 4px 0 0 rgba(255,255,255,.08);
+}
+
+/* ── Base ──────────────────────────────────────────────────── */
+html, body { background: var(--bg); color: var(--fg); }
+body {
+  font-family: var(--font-sans);
+  font-size: var(--body-md);
+  line-height: var(--body-md-lh);
+  letter-spacing: 0.05px;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ── Type utilities ────────────────────────────────────────── */
+.display-xl, .display-hero {
+  font-family: var(--font-display);
+  font-weight: 650;
+  font-size: clamp(64px, 9vw, 128px);
+  line-height: 100%;
+  letter-spacing: -0.02em;
+  color: var(--fg);
+}
+.display-lg {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 48px; line-height: 100%; letter-spacing: -0.01em;
+}
+
+h1, .h1 { font-family: var(--font-display); font-weight: var(--h1-weight);
+  font-size: var(--h1-size); line-height: var(--h1-lh); letter-spacing: var(--h1-tracking); }
+h2, .h2 { font-family: var(--font-display); font-weight: var(--h2-weight);
+  font-size: var(--h2-size); line-height: var(--h2-lh); letter-spacing: var(--h2-tracking); }
+h3, .h3 { font-family: var(--font-sans); font-weight: var(--h3-weight);
+  font-size: var(--h3-size); line-height: var(--h3-lh); letter-spacing: var(--h3-tracking); }
+h4, .h4 { font-family: var(--font-sans); font-weight: var(--h4-weight);
+  font-size: var(--h4-size); line-height: var(--h4-lh); }
+h5, .h5 { font-family: var(--font-sans); font-weight: var(--h5-weight);
+  font-size: var(--h5-size); line-height: var(--h5-lh); }
+h6, .h6 { font-family: var(--font-sans); font-weight: var(--h6-weight);
+  font-size: var(--h6-size); line-height: var(--h6-lh); }
+
+.body-large      { font: 400 16px/24px var(--font-sans); letter-spacing: 0.10px; }
+.body-large-plus { font: 500 16px/24px var(--font-sans); letter-spacing: 0.10px; }
+.body-medium     { font: 400 14px/20px var(--font-sans); letter-spacing: 0.05px; }
+.body-medium-plus{ font: 500 14px/20px var(--font-sans); letter-spacing: 0.05px; }
+.body-small      { font: 400 12px/16px var(--font-sans); letter-spacing: 0.05px; }
+.body-small-plus { font: 500 12px/16px var(--font-sans); letter-spacing: 0.05px; }
+.mono, code, kbd { font-family: var(--font-sans); font-size: 0.95em; }
+
+.eyebrow {
+  font-family: var(--font-display); font-weight: 600;
+  font-size: 11px; line-height: 1; letter-spacing: 0.18em;
+  text-transform: uppercase; color: var(--fg-muted);
+}
