@@ -46,7 +46,7 @@ export async function initTableBrowser() {
     if (rows.length > 0) {
       const first = rows[0];
       const nonEmpty = first.filter(c => c && c.trim() !== '');
-      if (nonEmpty.length <= 1 && first[0] && first[0].includes('Table')) {
+      if (nonEmpty.length <= 1 && first[0] && first[0].toLowerCase().includes('table')) {
         title = first[0].trim();
         startRow = 1;
       }
