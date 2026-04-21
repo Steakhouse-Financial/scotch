@@ -534,7 +534,7 @@ svg.chart {
 table.data-table {
   width: 100%;
   border-collapse: collapse;
-  font-family: var(--font-sans);
+  font-family: var(--font-mono);
   font-size: 12px;
   font-variant-numeric: tabular-nums;
 }
@@ -543,9 +543,9 @@ table.data-table thead th {
   top: 0;
   background: var(--brand-charcoal);
   color: var(--brand-bone);
-  font-family: var(--font-sans);
+  font-family: var(--font-mono);
   font-size: 10px;
-  font-weight: 600;
+  font-weight: 500;
   letter-spacing: 0.08em;
   padding: 6px 10px;
   text-align: right;
