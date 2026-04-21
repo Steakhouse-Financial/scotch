@@ -25,12 +25,8 @@ jobs:
 
       - name: Build site
         run: |
-          mkdir -p _site/sbank
-          # App files become the root
-          cp -r app/* _site/
-          # Data directories alongside
-          cp sbank/data.json _site/sbank/
-          cp -r sbank/fonts _site/sbank/fonts
+          mkdir -p _site
+          cp -r app/. _site/
           cp -r flattened _site/flattened
           cp -r original_tables _site/original_tables
 

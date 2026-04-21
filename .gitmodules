@@ -1,0 +1,3 @@
+[submodule "shf-design"]
+	path = shf-design
+	url = https://github.com/steakhouse-financial/shf-design

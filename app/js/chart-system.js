@@ -1,6 +1,6 @@
 // ────────────────────────────────────────────────────────────────
 // chart-system.js — ES module: system-wide stacked area chart
-// Ported from sbank/Scottish Banking System.html
+// Scottish Banking System chart
 // ────────────────────────────────────────────────────────────────
 
 import {
@@ -73,7 +73,7 @@ export async function initSystemChart(containerId) {
   const annotEl  = document.getElementById(`${containerId}-annot`);
 
   // Fetch system data
-  const resp = await fetch('./sbank/data.json');
+  const resp = await fetch('./data.json');
   DATA = await resp.json();
 
   // Wire y-scale segmented control

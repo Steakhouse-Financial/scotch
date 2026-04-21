@@ -19,36 +19,36 @@
    ──────────────────────────────────────────────────────────────── */
 
 /* Söhne — body */
-@font-face { font-family: 'Söhne'; font-style: normal; font-weight: 200; font-display: swap; src: url('../sbank/fonts/S_hne-Extraleicht.otf') format('opentype'); }
-@font-face { font-family: 'Söhne'; font-style: italic; font-weight: 200; font-display: swap; src: url('../sbank/fonts/S_hne-ExtraleichtKursiv.otf') format('opentype'); }
-@font-face { font-family: 'Söhne'; font-style: normal; font-weight: 300; font-display: swap; src: url('../sbank/fonts/S_hne-Leicht.otf') format('opentype'); }
-@font-face { font-family: 'Söhne'; font-style: italic; font-weight: 300; font-display: swap; src: url('../sbank/fonts/S_hne-LeichtKursiv.otf') format('opentype'); }
-@font-face { font-family: 'Söhne'; font-style: normal; font-weight: 400; font-display: swap; src: url('../sbank/fonts/S_hne-Buch.otf') format('opentype'); }
-@font-face { font-family: 'Söhne'; font-style: italic; font-weight: 400; font-display: swap; src: url('../sbank/fonts/S_hne-BuchKursiv.otf') format('opentype'); }
-@font-face { font-family: 'Söhne'; font-style: normal; font-weight: 500; font-display: swap; src: url('../sbank/fonts/S_hne-Kr_ftig.otf') format('opentype'); }
-@font-face { font-family: 'Söhne'; font-style: italic; font-weight: 500; font-display: swap; src: url('../sbank/fonts/S_hne-Kr_ftigKursiv.otf') format('opentype'); }
-@font-face { font-family: 'Söhne'; font-style: normal; font-weight: 600; font-display: swap; src: url('../sbank/fonts/S_hne-Dreiviertelfett.otf') format('opentype'); }
-@font-face { font-family: 'Söhne'; font-style: italic; font-weight: 600; font-display: swap; src: url('../sbank/fonts/S_hne-DreiviertelfettKursiv.otf') format('opentype'); }
-@font-face { font-family: 'Söhne'; font-style: normal; font-weight: 650; font-display: swap; src: url('../sbank/fonts/S_hne-Halbfett.otf') format('opentype'); }
-@font-face { font-family: 'Söhne'; font-style: italic; font-weight: 650; font-display: swap; src: url('../sbank/fonts/S_hne-HalbfettKursiv.otf') format('opentype'); }
-@font-face { font-family: 'Söhne'; font-style: normal; font-weight: 700; font-display: swap; src: url('../sbank/fonts/S_hne-Fett.otf') format('opentype'); }
-@font-face { font-family: 'Söhne'; font-style: italic; font-weight: 700; font-display: swap; src: url('../sbank/fonts/S_hne-FettKursiv.otf') format('opentype'); }
-@font-face { font-family: 'Söhne'; font-style: normal; font-weight: 800; font-display: swap; src: url('../sbank/fonts/S_hne-Extrafett.otf') format('opentype'); }
-@font-face { font-family: 'Söhne'; font-style: italic; font-weight: 800; font-display: swap; src: url('../sbank/fonts/S_hne-ExtrafettKursiv.otf') format('opentype'); }
+@font-face { font-family: 'Söhne'; font-style: normal; font-weight: 200; font-display: swap; src: url('../fonts/S_hne-Extraleicht.otf') format('opentype'); }
+@font-face { font-family: 'Söhne'; font-style: italic; font-weight: 200; font-display: swap; src: url('../fonts/S_hne-ExtraleichtKursiv.otf') format('opentype'); }
+@font-face { font-family: 'Söhne'; font-style: normal; font-weight: 300; font-display: swap; src: url('../fonts/S_hne-Leicht.otf') format('opentype'); }
+@font-face { font-family: 'Söhne'; font-style: italic; font-weight: 300; font-display: swap; src: url('../fonts/S_hne-LeichtKursiv.otf') format('opentype'); }
+@font-face { font-family: 'Söhne'; font-style: normal; font-weight: 400; font-display: swap; src: url('../fonts/S_hne-Buch.otf') format('opentype'); }
+@font-face { font-family: 'Söhne'; font-style: italic; font-weight: 400; font-display: swap; src: url('../fonts/S_hne-BuchKursiv.otf') format('opentype'); }
+@font-face { font-family: 'Söhne'; font-style: normal; font-weight: 500; font-display: swap; src: url('../fonts/S_hne-Kr_ftig.otf') format('opentype'); }
+@font-face { font-family: 'Söhne'; font-style: italic; font-weight: 500; font-display: swap; src: url('../fonts/S_hne-Kr_ftigKursiv.otf') format('opentype'); }
+@font-face { font-family: 'Söhne'; font-style: normal; font-weight: 600; font-display: swap; src: url('../fonts/S_hne-Dreiviertelfett.otf') format('opentype'); }
+@font-face { font-family: 'Söhne'; font-style: italic; font-weight: 600; font-display: swap; src: url('../fonts/S_hne-DreiviertelfettKursiv.otf') format('opentype'); }
+@font-face { font-family: 'Söhne'; font-style: normal; font-weight: 650; font-display: swap; src: url('../fonts/S_hne-Halbfett.otf') format('opentype'); }
+@font-face { font-family: 'Söhne'; font-style: italic; font-weight: 650; font-display: swap; src: url('../fonts/S_hne-HalbfettKursiv.otf') format('opentype'); }
+@font-face { font-family: 'Söhne'; font-style: normal; font-weight: 700; font-display: swap; src: url('../fonts/S_hne-Fett.otf') format('opentype'); }
+@font-face { font-family: 'Söhne'; font-style: italic; font-weight: 700; font-display: swap; src: url('../fonts/S_hne-FettKursiv.otf') format('opentype'); }
+@font-face { font-family: 'Söhne'; font-style: normal; font-weight: 800; font-display: swap; src: url('../fonts/S_hne-Extrafett.otf') format('opentype'); }
+@font-face { font-family: 'Söhne'; font-style: italic; font-weight: 800; font-display: swap; src: url('../fonts/S_hne-ExtrafettKursiv.otf') format('opentype'); }
 
 /* Söhne Breit — display */
-@font-face { font-family: 'Söhne Breit'; font-style: normal; font-weight: 200; font-display: swap; src: url('../sbank/fonts/S_hneBreit-Extraleicht.otf') format('opentype'); }
-@font-face { font-family: 'Söhne Breit'; font-style: italic; font-weight: 200; font-display: swap; src: url('../sbank/fonts/S_hneBreit-ExtraleichtKursiv.otf') format('opentype'); }
-@font-face { font-family: 'Söhne Breit'; font-style: normal; font-weight: 300; font-display: swap; src: url('../sbank/fonts/S_hneBreit-Leicht.otf') format('opentype'); }
-@font-face { font-family: 'Söhne Breit'; font-style: italic; font-weight: 300; font-display: swap; src: url('../sbank/fonts/S_hneBreit-LeichtKursiv.otf') format('opentype'); }
-@font-face { font-family: 'Söhne Breit'; font-style: normal; font-weight: 400; font-display: swap; src: url('../sbank/fonts/S_hneBreit-Buch.otf') format('opentype'); }
-@font-face { font-family: 'Söhne Breit'; font-style: italic; font-weight: 400; font-display: swap; src: url('../sbank/fonts/S_hneBreit-BuchKursiv.otf') format('opentype'); }
-@font-face { font-family: 'Söhne Breit'; font-style: normal; font-weight: 500; font-display: swap; src: url('../sbank/fonts/S_hneBreit-Kr_ftig.otf') format('opentype'); }
-@font-face { font-family: 'Söhne Breit'; font-style: italic; font-weight: 500; font-display: swap; src: url('../sbank/fonts/S_hneBreit-Kr_ftigKursiv.otf') format('opentype'); }
-@font-face { font-family: 'Söhne Breit'; font-style: normal; font-weight: 600; font-display: swap; src: url('../sbank/fonts/S_hneBreit-Dreiviertelfett.otf') format('opentype'); }
-@font-face { font-family: 'Söhne Breit'; font-style: italic; font-weight: 600; font-display: swap; src: url('../sbank/fonts/S_hneBreit-DreiviertelfettKursiv.otf') format('opentype'); }
-@font-face { font-family: 'Söhne Breit'; font-style: normal; font-weight: 650; font-display: swap; src: url('../sbank/fonts/S_hneBreit-Halbfett.otf') format('opentype'); }
-@font-face { font-family: 'Söhne Breit'; font-style: italic; font-weight: 650; font-display: swap; src: url('../sbank/fonts/S_hneBreit-HalbfettKursiv.otf') format('opentype'); }
+@font-face { font-family: 'Söhne Breit'; font-style: normal; font-weight: 200; font-display: swap; src: url('../fonts/S_hneBreit-Extraleicht.otf') format('opentype'); }
+@font-face { font-family: 'Söhne Breit'; font-style: italic; font-weight: 200; font-display: swap; src: url('../fonts/S_hneBreit-ExtraleichtKursiv.otf') format('opentype'); }
+@font-face { font-family: 'Söhne Breit'; font-style: normal; font-weight: 300; font-display: swap; src: url('../fonts/S_hneBreit-Leicht.otf') format('opentype'); }
+@font-face { font-family: 'Söhne Breit'; font-style: italic; font-weight: 300; font-display: swap; src: url('../fonts/S_hneBreit-LeichtKursiv.otf') format('opentype'); }
+@font-face { font-family: 'Söhne Breit'; font-style: normal; font-weight: 400; font-display: swap; src: url('../fonts/S_hneBreit-Buch.otf') format('opentype'); }
+@font-face { font-family: 'Söhne Breit'; font-style: italic; font-weight: 400; font-display: swap; src: url('../fonts/S_hneBreit-BuchKursiv.otf') format('opentype'); }
+@font-face { font-family: 'Söhne Breit'; font-style: normal; font-weight: 500; font-display: swap; src: url('../fonts/S_hneBreit-Kr_ftig.otf') format('opentype'); }
+@font-face { font-family: 'Söhne Breit'; font-style: italic; font-weight: 500; font-display: swap; src: url('../fonts/S_hneBreit-Kr_ftigKursiv.otf') format('opentype'); }
+@font-face { font-family: 'Söhne Breit'; font-style: normal; font-weight: 600; font-display: swap; src: url('../fonts/S_hneBreit-Dreiviertelfett.otf') format('opentype'); }
+@font-face { font-family: 'Söhne Breit'; font-style: italic; font-weight: 600; font-display: swap; src: url('../fonts/S_hneBreit-DreiviertelfettKursiv.otf') format('opentype'); }
+@font-face { font-family: 'Söhne Breit'; font-style: normal; font-weight: 650; font-display: swap; src: url('../fonts/S_hneBreit-Halbfett.otf') format('opentype'); }
+@font-face { font-family: 'Söhne Breit'; font-style: italic; font-weight: 650; font-display: swap; src: url('../fonts/S_hneBreit-HalbfettKursiv.otf') format('opentype'); }
 
 :root {
   /* ── Type families ─────────────────────────────────────────── */
