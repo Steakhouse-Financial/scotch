@@ -139,7 +139,7 @@ h1.title em {
 /* ── 5. Section spacing ────────────────────────────────────────── */
 .chart-section {
   margin-top: 64px;
-  border-top: 1px solid var(--brand-charcoal);
+  border-top: 1px solid var(--brand-bone-deep);
   padding-top: 36px;
 }
 .chart-section h2 {
@@ -260,7 +260,42 @@ svg.chart {
   font-variant-numeric: tabular-nums;
 }
 
-/* ── 8. Toolbar ────────────────────────────────────────────────── */
+/* ── 7b. Section description ───────────────────────────────────── */
+.section-desc {
+  font-family: var(--font-sans);
+  font-size: var(--body-md);
+  line-height: var(--body-md-lh);
+  color: var(--brand-slate);
+  margin: -16px 0 0 0;
+}
+
+/* ── 8. Buttons (shared base) ─────────────────────────────────── */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: var(--brand-bone);
+  border: 1px solid var(--brand-charcoal);
+  padding: 5px 12px;
+  font-family: var(--font-sans);
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--brand-charcoal);
+  cursor: pointer;
+  transition: background 120ms;
+}
+.btn:hover { background: var(--brand-bone-deep); }
+.btn:focus-visible {
+  outline: 2px solid var(--brand-emerald);
+  outline-offset: 1px;
+}
+.btn.active {
+  background: var(--brand-charcoal);
+  color: var(--brand-bone);
+}
+
+/* ── 8b. Toolbar ──────────────────────────────────────────────── */
 .chart-toolbar {
   display: flex;
   justify-content: space-between;
@@ -273,7 +308,7 @@ svg.chart {
   align-items: center;
   gap: 8px;
   font-family: var(--font-sans);
-  font-size: 10px;
+  font-size: 11px;
   letter-spacing: 0.08em;
   text-transform: uppercase;
   color: var(--brand-slate);
@@ -281,46 +316,18 @@ svg.chart {
   user-select: none;
 }
 .toolbar-check input { accent-color: var(--brand-emerald); width: 13px; height: 13px; }
+.toolbar-check input:focus-visible { outline: 2px solid var(--brand-emerald); outline-offset: 1px; }
 .toolbar-check:hover { color: var(--brand-charcoal); }
 .seg-mini {
   display: inline-flex;
   border: 1px solid var(--brand-charcoal);
 }
-.seg-mini button {
-  background: var(--brand-bone);
+.seg-mini .btn {
   border: none;
   border-right: 1px solid var(--brand-charcoal);
-  padding: 5px 12px;
-  font-family: var(--font-sans);
-  font-size: 10px;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  color: var(--brand-charcoal);
-  cursor: pointer;
-  transition: background 120ms;
 }
-.seg-mini button:last-child { border-right: none; }
-.seg-mini button:hover { background: var(--brand-bone-deep); }
-.seg-mini button.active {
-  background: var(--brand-charcoal);
-  color: var(--brand-bone);
-}
-.toolbar-btn {
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  background: var(--brand-bone);
-  border: 1px solid var(--brand-charcoal);
-  padding: 5px 12px;
-  font-family: var(--font-sans);
-  font-size: 10px;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  color: var(--brand-charcoal);
-  cursor: pointer;
-  transition: background 120ms;
-}
-.toolbar-btn:hover { background: var(--brand-bone-deep); }
+.seg-mini .btn:last-child { border-right: none; }
+.seg-mini .btn:focus-visible { outline-offset: -2px; }
 
 /* ── 9. Tooltip ────────────────────────────────────────────────── */
 .cursor-line {
@@ -446,25 +453,13 @@ svg.chart {
   border: 1px solid var(--brand-charcoal);
   flex-shrink: 0;
 }
-.theme-toggle button {
-  background: transparent;
+.theme-toggle .btn {
   border: none;
   border-right: 1px solid var(--brand-charcoal);
   padding: 4px 10px;
-  font-family: var(--font-sans);
-  font-size: 10px;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  color: var(--brand-charcoal);
-  cursor: pointer;
-  transition: background 120ms;
 }
-.theme-toggle button:last-child { border-right: none; }
-.theme-toggle button:hover { background: var(--brand-bone-deep); }
-.theme-toggle button.active {
-  background: var(--brand-charcoal);
-  color: var(--brand-bone);
-}
+.theme-toggle .btn:last-child { border-right: none; }
+.theme-toggle .btn:focus-visible { outline-offset: -2px; }
 
 /* ── 13. Bump chart ────────────────────────────────────────────── */
 .bump-line {
@@ -518,7 +513,7 @@ svg.chart {
   cursor: pointer;
   margin-bottom: 36px;
 }
-.table-select:focus {
+.table-select:focus-visible {
   outline: 2px solid var(--brand-emerald);
   outline-offset: 1px;
 }
@@ -575,21 +570,27 @@ table.data-table tbody tr:hover {
   background: var(--brand-bone-deep);
 }
 .download-btn {
-  display: inline-flex;
+  margin-top: 24px;
+}
+
+/* ── 15. Loading state ─────────────────────────────────────────── */
+.chart-loading {
+  display: flex;
   align-items: center;
-  gap: 6px;
-  background: var(--brand-bone);
-  border: 1px solid var(--brand-charcoal);
-  padding: 5px 12px;
+  justify-content: center;
+  min-height: 300px;
   font-family: var(--font-sans);
-  font-size: 10px;
+  font-size: var(--body-sm);
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  color: var(--brand-charcoal);
-  cursor: pointer;
-  transition: background 120ms;
+  color: var(--brand-stone);
 }
-.download-btn:hover { background: var(--brand-bone-deep); }
+
+/* ── 15b. Focus styles for nav links ──────────────────────────── */
+.site-nav .nav-link:focus-visible {
+  outline: 2px solid var(--brand-emerald);
+  outline-offset: 2px;
+}
 
 /* ── 16. Responsive ────────────────────────────────────────────── */
 @media (max-width: 1024px) {

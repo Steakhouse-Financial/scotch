@@ -95,6 +95,10 @@ export async function initSystemChart(containerId) {
     render({ animate: false });
   });
 
+  // Hide loading indicator
+  const loadingEl = document.getElementById(`${containerId}-loading`);
+  if (loadingEl) loadingEl.remove();
+
   // Initial render with animation
   render({ animate: true });
 }

@@ -99,7 +99,7 @@ export async function initTableBrowser() {
     // Download button
     const filename = entry.path.split('/').pop();
     const btn = document.createElement('button');
-    btn.className = 'download-btn';
+    btn.className = 'btn download-btn';
     btn.textContent = `Download ${filename}`;
     btn.addEventListener('click', () => downloadCSV(filename, entry.path));
     view.appendChild(btn);

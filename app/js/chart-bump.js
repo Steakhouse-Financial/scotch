@@ -270,6 +270,10 @@ export async function initBumpChart(containerId) {
     requestAnimationFrame(animate);
   }
 
+  // Hide loading indicator
+  const loadingEl = document.getElementById(`${containerId}-loading`);
+  if (loadingEl) loadingEl.remove();
+
   // Initial render
   render();
 }

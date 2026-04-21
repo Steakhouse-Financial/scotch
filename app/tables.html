@@ -28,8 +28,25 @@
 </nav>
 
 <div class="page">
+  <header class="masthead">
+    <div>
+      <div class="eyebrow">
+        <span>Scottish Banking System</span>
+        <span class="tick">|</span>
+        <span>Appendix Tables</span>
+      </div>
+      <h1 class="title">Source <em>tables</em></h1>
+    </div>
+    <div class="meta">
+      <span class="big">48 tables</span>
+      Balance sheets, note issues &amp; rankings
+    </div>
+  </header>
+
   <select id="table-select" class="table-select"></select>
-  <div id="table-view" class="table-view"></div>
+  <div id="table-view" class="table-view">
+    <div class="chart-loading">Loading&hellip;</div>
+  </div>
 
   <footer class="footer">
     <span class="brand">Steakhouse Financial</span>
@@ -39,9 +56,9 @@
       2026
     </span>
     <div class="theme-toggle" role="group" aria-label="Theme">
-      <button type="button" data-theme="light" aria-label="Light theme">Light</button>
-      <button type="button" data-theme="dark" aria-label="Dark theme">Dark</button>
-      <button type="button" data-theme="auto" aria-label="Auto theme">Auto</button>
+      <button type="button" class="btn" data-theme="light" aria-label="Light theme">Light</button>
+      <button type="button" class="btn" data-theme="dark" aria-label="Dark theme">Dark</button>
+      <button type="button" class="btn" data-theme="auto" aria-label="Auto theme">Auto</button>
     </div>
   </footer>
 </div>

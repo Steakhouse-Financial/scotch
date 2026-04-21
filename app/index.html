@@ -61,16 +61,17 @@
         </label>
       </div>
       <div class="toolbar-right">
-        <button class="toolbar-btn" id="system-chart-download">Download CSV</button>
+        <button class="btn" id="system-chart-download">Download CSV</button>
         <div class="seg-mini" id="system-chart-yscale">
-          <button data-yscale="normal" class="active">Normal</button>
-          <button data-yscale="log">Log</button>
-          <button data-yscale="percent">100%</button>
+          <button class="btn active" data-yscale="normal">Normal</button>
+          <button class="btn" data-yscale="log">Log</button>
+          <button class="btn" data-yscale="percent">100%</button>
         </div>
       </div>
     </div>
 
     <div class="chart-wrap" id="system-chart-wrap">
+      <div class="chart-loading" id="system-chart-loading">Loading&hellip;</div>
       <svg class="chart" id="system-chart-svg" viewBox="0 0 1280 620" preserveAspectRatio="xMidYMid meet"></svg>
       <div class="tooltip" id="system-chart-tooltip"></div>
     </div>
@@ -90,16 +91,17 @@
     <div class="chart-toolbar">
       <div class="toolbar-left"></div>
       <div class="toolbar-right">
-        <button class="toolbar-btn" id="rankings-chart-download">Download CSV</button>
+        <button class="btn" id="rankings-chart-download">Download CSV</button>
         <div class="seg-mini" id="rankings-chart-metric">
-          <button data-metric="TL" class="active">Total Liabilities</button>
-          <button data-metric="D">Deposits</button>
-          <button data-metric="A">Advances</button>
+          <button class="btn active" data-metric="TL">Total Liabilities</button>
+          <button class="btn" data-metric="D">Deposits</button>
+          <button class="btn" data-metric="A">Advances</button>
         </div>
       </div>
     </div>
 
     <div class="chart-wrap" id="rankings-chart-wrap">
+      <div class="chart-loading" id="rankings-chart-loading">Loading&hellip;</div>
       <svg class="chart" id="rankings-chart-svg" viewBox="0 0 1280 480" preserveAspectRatio="xMidYMid meet"></svg>
       <div class="tooltip" id="rankings-chart-tooltip"></div>
     </div>
@@ -114,9 +116,9 @@
       2026
     </span>
     <div class="theme-toggle" role="group" aria-label="Theme">
-      <button type="button" data-theme="light" aria-label="Light theme">Light</button>
-      <button type="button" data-theme="dark" aria-label="Dark theme">Dark</button>
-      <button type="button" data-theme="auto" aria-label="Auto theme">Auto</button>
+      <button type="button" class="btn" data-theme="light" aria-label="Light theme">Light</button>
+      <button type="button" class="btn" data-theme="dark" aria-label="Dark theme">Dark</button>
+      <button type="button" class="btn" data-theme="auto" aria-label="Auto theme">Auto</button>
     </div>
   </footer>
 </div>
