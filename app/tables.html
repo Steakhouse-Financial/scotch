@@ -6,6 +6,7 @@
 <title>Tables — Scottish Banking: A History, 1695-1973</title>
 <link rel="stylesheet" href="css/tokens.css" />
 <link rel="stylesheet" href="css/app.css" />
+<script>(function(){var t=localStorage.getItem('scotch:theme');var d=t==='dark'||(!t&&matchMedia('(prefers-color-scheme: dark)').matches);if(d)document.documentElement.classList.add('dark');})();</script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js"></script>
 </head>
 <body>
@@ -32,16 +33,23 @@
 
   <footer class="footer">
     <span class="brand">Steakhouse Financial</span>
-    <span>
+    <span class="footer-meta">
       Source — Checkland, S. G., <em>Scottish Banking: A History, 1695-1973</em>, Expanded Edition
       <span class="divider">|</span>
       2026
     </span>
+    <div class="theme-toggle" role="group" aria-label="Theme">
+      <button type="button" data-theme="light" aria-label="Light theme">Light</button>
+      <button type="button" data-theme="dark" aria-label="Dark theme">Dark</button>
+      <button type="button" data-theme="auto" aria-label="Auto theme">Auto</button>
+    </div>
   </footer>
 </div>
 
 <script type="module">
   import { initTableBrowser } from './js/table-browser.js';
+  import { initThemeToggle } from './js/theme-toggle.js';
+  initThemeToggle();
   initTableBrowser();
 </script>
 </body>

@@ -370,7 +370,7 @@ svg.chart {
 .tooltip .totals .k { color: var(--brand-slate); font-family: var(--font-sans); font-size: 10px; letter-spacing: 0.05em; text-transform: uppercase; align-self: center; }
 .tooltip .totals .v { font-family: var(--font-sans); font-size: 12px; font-variant-numeric: tabular-nums; text-align: right; }
 .tooltip .totals .v.assets { color: var(--brand-emerald); }
-.tooltip .totals .v.liab   { color: #A77B18; }
+.tooltip .totals .v.liab   { color: var(--brand-ochre); }
 .tooltip .totals .v.eq     { color: var(--brand-plum); }
 
 /* ── 10. Annotations ───────────────────────────────────────────── */
@@ -434,6 +434,34 @@ svg.chart {
   color: var(--brand-stone);
   margin: 0 10px;
 }
+.footer-meta {
+  flex: 1;
+  padding: 0 20px;
+}
+.theme-toggle {
+  display: inline-flex;
+  border: 1px solid var(--brand-charcoal);
+  flex-shrink: 0;
+}
+.theme-toggle button {
+  background: transparent;
+  border: none;
+  border-right: 1px solid var(--brand-charcoal);
+  padding: 4px 10px;
+  font-family: var(--font-sans);
+  font-size: 10px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--brand-charcoal);
+  cursor: pointer;
+  transition: background 120ms;
+}
+.theme-toggle button:last-child { border-right: none; }
+.theme-toggle button:hover { background: var(--brand-bone-deep); }
+.theme-toggle button.active {
+  background: var(--brand-charcoal);
+  color: var(--brand-bone);
+}
 
 /* ── 13. Bump chart ────────────────────────────────────────────── */
 .bump-line {
@@ -474,31 +502,7 @@ svg.chart {
   border-radius: 50%;
 }
 
-/* ── 14. Bank selector ─────────────────────────────────────────── */
-select.bank-select {
-  background: var(--brand-bone);
-  border: 1px solid var(--brand-charcoal);
-  font-family: var(--font-sans);
-  font-size: 12px;
-  padding: 6px 12px;
-  color: var(--brand-charcoal);
-  cursor: pointer;
-  appearance: none;
-  -webkit-appearance: none;
-  background-image: url("data:image/svg+xml,%3Csvg width='10' height='6' viewBox='0 0 10 6' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1l4 4 4-4' stroke='%231A1E20' stroke-width='1.2'/%3E%3C/svg%3E");
-  background-repeat: no-repeat;
-  background-position: right 10px center;
-  padding-right: 28px;
-}
-select.bank-select:hover {
-  background-color: var(--brand-bone-deep);
-}
-select.bank-select:focus {
-  outline: 2px solid var(--brand-emerald);
-  outline-offset: 1px;
-}
-
-/* ── 15. Table browser ─────────────────────────────────────────── */
+/* ── 14. Table browser ─────────────────────────────────────────── */
 .table-select {
   display: block;
   width: 100%;

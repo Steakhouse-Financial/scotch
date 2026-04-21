@@ -141,6 +141,15 @@
 }
 
 .dark {
+  /* Brand tokens — inverted for dark surface */
+  --brand-bone:        #14181A;  /* page bg (was #FFFDF1) */
+  --brand-bone-deep:   #1E2224;  /* secondary surface / borders (was #ECE7E1) */
+  --brand-charcoal:    #F4F1E6;  /* primary ink (was #1A1E20) */
+  --brand-slate:       #B5BBBE;  /* secondary ink (was #515A5E) */
+  --brand-stone:       #6E777B;  /* tertiary ink (was #9AA5AB) */
+  --brand-emerald:     #3FA58D;  /* accent — brightened for dark (was #086552) */
+
+  /* Semantic tokens */
   --bg:            oklch(17% 0.004 229);
   --bg-elevated:   oklch(21.6% 0.004 229);
   --bg-muted:      oklch(28.5% 0 263);
@@ -151,7 +160,8 @@
   --border:        oklch(26.0% 0 263);
   --input:         oklch(40% 0.003 229);
   --ring:          oklch(62.6% 0.186 260);
-  --shadow-block:  4px 4px 0 0 rgba(255,255,255,.08);
+  --shadow-block:    4px 4px 0 0 rgba(0,0,0,.6);
+  --shadow-block-sm: 2.5px 2.5px 0 0 rgba(0,0,0,.6);
 }
 
 /* ── Base ──────────────────────────────────────────────────── */
