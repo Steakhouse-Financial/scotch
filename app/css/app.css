@@ -34,9 +34,12 @@ html, body {
   align-items: center;
 }
 .nav-wordmark {
-  height: 36px;
-  width: auto;
   display: block;
+  height: 36px;
+  aspect-ratio: 1100 / 280;
+  background-color: var(--brand-charcoal);
+  -webkit-mask: url('../wordmark.svg') no-repeat left center / contain;
+  mask: url('../wordmark.svg') no-repeat left center / contain;
 }
 .site-nav .nav-link {
   font-family: var(--font-sans);

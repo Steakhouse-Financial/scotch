@@ -144,7 +144,7 @@
   /* Brand tokens — inverted for dark surface */
   --brand-bone:        #14181A;  /* page bg (was #FFFDF1) */
   --brand-bone-deep:   #1E2224;  /* secondary surface / borders (was #ECE7E1) */
-  --brand-charcoal:    #F4F1E6;  /* primary ink (was #1A1E20) */
+  --brand-charcoal:    #FFFDF1;  /* primary ink — bone (was #1A1E20) */
   --brand-slate:       #B5BBBE;  /* secondary ink (was #515A5E) */
   --brand-stone:       #6E777B;  /* tertiary ink (was #9AA5AB) */
   --brand-emerald:     #3FA58D;  /* accent — brightened for dark (was #086552) */
