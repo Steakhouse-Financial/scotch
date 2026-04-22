@@ -170,8 +170,7 @@
 }
 
 /* ── Base ──────────────────────────────────────────────────── */
-html { background: var(--bg); }
-body { color: var(--fg); }
+html, body { background: var(--bg); color: var(--fg); }
 body {
   font-family: var(--font-sans);
   font-size: var(--body-md);
