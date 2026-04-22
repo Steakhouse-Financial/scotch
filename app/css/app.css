@@ -12,6 +12,21 @@ html, body {
   -webkit-font-smoothing: antialiased;
 }
 
+/* ── 1b. Banknote backdrop ─────────────────────────────────────── */
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background: url('../banknote.svg') no-repeat center center / 80%;
+  opacity: 0.04;
+  pointer-events: none;
+  z-index: -1;
+}
+.dark body::before {
+  opacity: 0.03;
+  filter: invert(1);
+}
+
 /* ── 2. Page layout ────────────────────────────────────────────── */
 .page {
   max-width: 1400px;
