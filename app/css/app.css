@@ -23,7 +23,6 @@ html, body {
 /* ── 3. Nav bar ────────────────────────────────────────────────── */
 .site-nav {
   display: flex;
-  justify-content: space-between;
   align-items: center;
   padding: 20px 56px;
   border-bottom: 1px solid var(--brand-charcoal);
@@ -69,17 +68,6 @@ html, body {
   height: 10px;
   vertical-align: baseline;
   margin-left: 2px;
-}
-.nav-right {
-  display: flex;
-  align-items: center;
-}
-.nav-book-title {
-  font-family: var(--font-sans);
-  font-weight: 400;
-  font-size: 12px;
-  letter-spacing: 0.02em;
-  color: var(--brand-slate);
 }
 
 /* ── 4. Masthead ───────────────────────────────────────────────── */
