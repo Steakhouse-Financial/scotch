@@ -4,9 +4,12 @@
    ════════════════════════════════════════════════════════════════ */
 
 /* ── 1. Base reset ─────────────────────────────────────────────── */
-html, body {
-  margin: 0;
+html {
   background: var(--brand-bone);
+}
+body {
+  margin: 0;
+  position: relative;
   color: var(--brand-charcoal);
   font-family: var(--font-sans);
   -webkit-font-smoothing: antialiased;
