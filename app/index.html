@@ -6,6 +6,10 @@
 <title>Scottish Banking: A History, 1695-1973 — Data Companion</title>
 <link rel="stylesheet" href="css/tokens.css" />
 <link rel="stylesheet" href="css/app.css" />
+<link rel="stylesheet" href="css/book.css?v=21" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" />
 <script>(function(){var t=localStorage.getItem('scotch:theme');var d=t==='dark'||(!t&&matchMedia('(prefers-color-scheme: dark)').matches);if(d)document.documentElement.classList.add('dark');})();</script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js"></script>
 </head>
@@ -41,6 +45,78 @@
       SG Checkland &middot; Expanded Edition 2026
     </div>
   </header>
+
+  <!-- ═══════════════════════════════════════════════════════════ -->
+  <!-- Book Showcase -->
+  <!-- ═══════════════════════════════════════════════════════════ -->
+  <section class="book-section" id="book-showcase" aria-label="The Book">
+    <div class="book-section-inner">
+      <!-- Left: 3D rotateable book -->
+      <div class="book-stage" id="book-stage" aria-label="Three-dimensional model of the book — drag to rotate">
+
+        <div class="book-3d" id="book-3d"
+             style="--cover-bg:#1B4FB5;
+                    --cover-img:url('assets/book-front.png?v=4');
+                    --back-img:url('assets/book-back.png?v=4');
+                    --spine-img:url('assets/book-spine.png?v=4');">
+          <div class="book-face book-cover">
+            <div class="cover-fresnel" aria-hidden="true"></div>
+          </div>
+          <div class="book-face book-back"></div>
+          <div class="book-face book-spine"></div>
+
+          <!-- Page block edges -->
+          <div class="book-face book-top"></div>
+          <div class="book-face book-bottom"></div>
+          <div class="book-face book-edge"></div>
+        </div>
+
+        <div class="book-hint" id="book-hint">
+          <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M2 8h12M5 5l-3 3 3 3M11 5l3 3-3 3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <span>Drag to rotate</span>
+        </div>
+      </div>
+
+      <!-- Right: details -->
+      <div class="book-details">
+        <div class="book-meta">
+          <span>Expanded Edition</span>
+          <span class="tick">|</span>
+          <span>Out now · 2026</span>
+        </div>
+        <h2 class="book-title">A definitive history of <em>Scottish banking</em></h2>
+        <p class="book-byline"><strong>S. G. Checkland</strong> · Foreword by Steakhouse Financial · 700 pages</p>
+
+        <div class="book-blurb">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+
+        <div class="book-cta-row">
+          <a class="book-cta primary" href="https://www.amazon.com/" target="_blank" rel="noopener">
+            <span class="book-cta-left">
+              <span class="book-cta-where">Amazon</span>
+              <span class="book-cta-label">Order paperback</span>
+            </span>
+            <span class="book-cta-price">$48.00 <span class="book-cta-arrow">→</span></span>
+          </a>
+          <a class="book-cta disabled" aria-disabled="true" tabindex="-1">
+            <span class="book-cta-left">
+              <span class="book-cta-where">Amazon</span>
+              <span class="book-cta-label">Kindle edition coming soon</span>
+            </span>
+          </a>
+        </div>
+
+        <dl class="book-specs">
+          <div class="book-spec"><dt>Format</dt><dd>Paperback</dd></div>
+          <div class="book-spec"><dt>Pages</dt><dd>700</dd></div>
+          <div class="book-spec"><dt>Trim</dt><dd>6.6 × 9.25 in</dd></div>
+          <div class="book-spec"><dt>Published</dt><dd>March 2026</dd></div>
+        </dl>
+      </div>
+    </div>
+  </section>
 
   <!-- ═══════════════════════════════════════════════════════════ -->
   <!-- Chart A: System Overview -->
@@ -128,6 +204,10 @@
   import { initThemeToggle } from './js/theme-toggle.js';
 
   initThemeToggle();
+
+  // 3D book interactions
+  await import('./js/book-3d.js?v=4');
+
   initSystemChart('system-chart');
   initBumpChart('rankings-chart');
 

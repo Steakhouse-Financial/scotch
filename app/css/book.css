@@ -1,0 +1,649 @@
+/* ════════════════════════════════════════════════════════════════
+   Book Showcase — 3D rotateable book section
+   Inserted between the masthead and the first chart.
+   Inspired by Stripe Press's PressHomepageBookDetails layout.
+   ════════════════════════════════════════════════════════════════ */
+
+.book-section {
+  --book-bg:    #0E2A23;          /* deep emerald felt */
+  --book-bg-2:  #134138;
+  --book-fg:    #E8DFC9;          /* warm cream ink */
+  --book-fg-muted: #A8A088;
+  --book-rule:  rgba(232,223,201,.18);
+  --book-cta:   #E8DFC9;
+  --book-cta-fg:#0E2A23;
+
+  position: relative;
+  z-index: 1;
+  margin: 64px -56px 0;            /* break out of .page padding */
+  background: var(--book-bg);
+  background:
+    radial-gradient(120% 80% at 80% 0%, var(--book-bg-2) 0%, var(--book-bg) 55%),
+    var(--book-bg);
+  color: var(--book-fg);
+  border-top: 1px solid var(--brand-charcoal);
+  border-bottom: 1px solid var(--brand-charcoal);
+  overflow: hidden;
+}
+
+@media (max-width: 1024px) {
+  .book-section {
+    margin: 48px -24px 0;
+  }
+}
+
+.book-section-inner {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  gap: 64px;
+  align-items: center;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 96px 56px 110px;
+}
+
+@media (max-width: 1024px) {
+  .book-section-inner {
+    grid-template-columns: 1fr;
+    gap: 56px;
+    padding: 64px 24px 80px;
+  }
+}
+
+/* ── Stage ─────────────────────────────────────────────────────── */
+.book-stage {
+  position: relative;
+  height: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  perspective: 2400px;
+  perspective-origin: 50% 45%;
+  cursor: grab;
+  touch-action: none;
+  user-select: none;
+}
+.book-stage:active { cursor: grabbing; }
+
+/* The 3D book itself.
+   We size in CSS variables so cover/back/spine all derive from one source.
+   Default Demy 8vo trim, tall portrait. */
+.book-3d {
+  --w: 270px;     /* cover width — 6" */
+  --h: 424px;     /* cover height — 9" */
+  --d: 84px;      /* spine thickness — 1.86" */
+  --pages: #FFFFFF;
+  --page-edge: #E8E8E8;
+
+  position: relative;
+  width: var(--w);
+  height: var(--h);
+  transform-style: preserve-3d;
+  transform: rotateX(var(--rx, -8deg)) rotateY(var(--ry, -28deg));
+    transition: transform 100ms cubic-bezier(.2,.7,.2,1);
+  will-change: transform;
+}
+
+/* Each face ----------------------------------------------------- */
+.book-face {
+  position: absolute;
+  inset: 0;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+/* Front cover — the artwork */
+.book-cover {
+  transform: translateZ(calc(var(--d) / 2));
+  background-color: var(--cover-bg, #1B4FB5);
+  background-image: var(--cover-img);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  box-shadow:
+    inset 0 0 0 1px rgba(0,0,0,.25),
+    inset 0 0 60px rgba(0,0,0,.18);
+  overflow: hidden;
+  isolation: isolate;
+}
+/* Foil-laminate sheen — a single soft specular highlight that tracks rotation.
+   The light source is treated as fixed in world space (above-front of the
+   book); as each face yaws/pitches, the bright spot slides across it,
+   exactly like a glossy laminate catching room light.
+
+   --gloss-x-{face} / --gloss-y are computed in JS from the rotation angles. */
+.book-cover::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: radial-gradient(
+    ellipse 55% 70% at var(--gloss-x-front, 50%) var(--gloss-y, 30%),
+    rgba(255, 255, 255, 0.42) 0%,
+    rgba(255, 255, 255, 0.18) 22%,
+    rgba(255, 255, 255, 0.05) 45%,
+    rgba(255, 255, 255, 0)    70%);
+  mix-blend-mode: screen;
+  transition: background 100ms ease;
+}
+.book-back::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: radial-gradient(
+    ellipse 55% 70% at var(--gloss-x-back, 50%) var(--gloss-y, 30%),
+    rgba(255, 255, 255, 0.42) 0%,
+    rgba(255, 255, 255, 0.18) 22%,
+    rgba(255, 255, 255, 0.05) 45%,
+    rgba(255, 255, 255, 0)    70%);
+  mix-blend-mode: screen;
+  transition: background 100ms ease;
+}
+.book-spine::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  /* Spine is a narrow vertical strip — use a tighter ellipse so the highlight
+     reads as a single bright vertical band sweeping across it. */
+  background: radial-gradient(
+    ellipse 90% 60% at var(--gloss-x-spine, 50%) var(--gloss-y, 30%),
+    rgba(255, 255, 255, 0.38) 0%,
+    rgba(255, 255, 255, 0.16) 24%,
+    rgba(255, 255, 255, 0.04) 50%,
+    rgba(255, 255, 255, 0)    75%);
+  mix-blend-mode: screen;
+  transition: background 100ms ease;
+  z-index: 1;
+}
+@property --gloss-x-front {
+  syntax: '<percentage>';
+  inherits: true;
+  initial-value: 50%;
+}
+@property --gloss-x-back {
+  syntax: '<percentage>';
+  inherits: true;
+  initial-value: 50%;
+}
+@property --gloss-x-spine {
+  syntax: '<percentage>';
+  inherits: true;
+  initial-value: 50%;
+}
+@property --gloss-y {
+  syntax: '<percentage>';
+  inherits: true;
+  initial-value: 30%;
+}
+/* Fresnel rim — edges brighten when the cover faces away from the camera,
+   the same effect you see on real laminated stock at grazing angles. */
+.cover-fresnel {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background:
+    radial-gradient(
+      ellipse 78% 72% at center,
+      rgba(255, 255, 255, 0)    55%,
+      rgba(255, 255, 255, 0.10) 80%,
+      rgba(255, 255, 255, 0.28) 100%);
+  mix-blend-mode: screen;
+  opacity: var(--fresnel, 0.25);
+}
+
+/* Back cover */
+.book-back {
+  transform: translateZ(calc(var(--d) / -2)) rotateY(180deg);
+  background-color: var(--cover-bg, #1B4FB5);
+  background-image: var(--back-img);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  box-shadow:
+    inset 0 0 0 1px rgba(0,0,0,.25),
+    inset 0 0 60px rgba(0,0,0,.18);
+}
+
+
+/* Spine */
+.book-spine {
+  width: var(--d);
+  height: var(--h);
+  left: calc(var(--w) / 2 - var(--d) / 2);
+  transform: rotateY(-90deg) translateZ(calc(var(--w) / 2));
+  background-color: var(--cover-bg, #1B4FB5);
+  background-image: var(--spine-img);
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  box-shadow:
+    inset 0 0 0 1px rgba(0,0,0,.3),
+    inset 0 0 40px rgba(0,0,0,.25);
+}
+.book-spine::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: linear-gradient(90deg,
+    rgba(0,0,0,.35) 0%,
+    rgba(255,255,255,.04) 12%,
+    rgba(255,255,255,0) 50%,
+    rgba(255,255,255,.04) 88%,
+    rgba(0,0,0,.35) 100%);
+}
+
+/* Top, bottom, fore-edge — show the page block */
+.book-top, .book-bottom, .book-edge {
+  background: var(--pages);
+  background-image:
+    repeating-linear-gradient(90deg,
+      var(--pages) 0 1px,
+      var(--page-edge) 1px 2px);
+}
+.book-top {
+  width: var(--w);
+  height: var(--d);
+  top: calc(var(--h) / 2 - var(--d) / 2);
+  transform: rotateX(90deg) translateZ(calc(var(--h) / 2));
+  background-image:
+    repeating-linear-gradient(90deg,
+      var(--pages) 0 1px,
+      var(--page-edge) 1px 2px);
+}
+.book-bottom {
+  width: var(--w);
+  height: var(--d);
+  top: calc(var(--h) / 2 - var(--d) / 2);
+  transform: rotateX(-90deg) translateZ(calc(var(--h) / 2));
+}
+.book-edge {
+  width: var(--d);
+  height: var(--h);
+  left: calc(var(--w) / 2 - var(--d) / 2);
+  transform: rotateY(90deg) translateZ(calc(var(--w) / 2));
+  background-image:
+    repeating-linear-gradient(0deg,
+      var(--pages) 0 1px,
+      var(--page-edge) 1px 2px);
+}
+
+/* ── Cover artwork (CSS-rendered, since we don't have the PNG) ─── */
+.cover-art {
+  position: absolute;
+  inset: 0;
+  padding: 30px 26px 26px;
+  display: flex;
+  flex-direction: column;
+  color: #F2E7C8;
+  font-family: var(--font-display);
+  text-align: center;
+  pointer-events: none;
+}
+.cover-art .ca-rule {
+  height: 1px; background: rgba(242,231,200,.55); margin: 0 6px;
+}
+.cover-art .ca-eyebrow {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 9px;
+  letter-spacing: 0.32em;
+  margin: 8px 0 4px;
+  color: #E6CC8C;
+}
+.cover-art .ca-edition {
+  font-family: var(--font-sans);
+  font-style: italic;
+  font-weight: 400;
+  font-size: 10px;
+  letter-spacing: 0.06em;
+  color: rgba(242,231,200,.75);
+  margin: 4px 0 18px;
+}
+.cover-art .ca-title {
+  font-family: 'Cormorant Garamond', 'Iowan Old Style', Georgia, serif;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 0.95;
+  letter-spacing: -0.005em;
+  color: #F4E9C8;
+  margin: 6px 0 0;
+  text-wrap: balance;
+}
+.cover-art .ca-title em {
+  font-style: italic;
+  display: block;
+  color: #E6CC8C;
+  font-size: 30px;
+  margin-top: 6px;
+}
+.cover-art .ca-sub {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 14px;
+  color: rgba(242,231,200,.85);
+  margin: 14px 0 16px;
+}
+.cover-art .ca-mark {
+  margin: 18px auto 16px;
+  width: 78px;
+  height: 78px;
+}
+.cover-art .ca-years {
+  font-family: var(--font-display);
+  font-weight: 500;
+  font-size: 13px;
+  letter-spacing: 0.18em;
+  color: #E6CC8C;
+  margin-top: auto;
+}
+.cover-art .ca-author {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-weight: 500;
+  font-size: 18px;
+  letter-spacing: 0.04em;
+  margin-top: 14px;
+  color: #F2E7C8;
+}
+.cover-art .ca-publisher {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 8px;
+  letter-spacing: 0.4em;
+  color: rgba(242,231,200,.7);
+  margin-top: 14px;
+}
+
+/* Spine artwork */
+.spine-art {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  padding: 22px 0 22px;
+  color: #E6CC8C;
+}
+.spine-title {
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-weight: 500;
+  font-size: 13px;
+  letter-spacing: 0.06em;
+  white-space: nowrap;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.spine-author {
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  font-family: var(--font-display);
+  font-weight: 500;
+  font-size: 9px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  white-space: nowrap;
+  color: rgba(232,204,140,.85);
+}
+.spine-mark {
+  width: 16px; height: 16px;
+  border: 1px solid currentColor;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-display);
+  font-size: 8px;
+  font-weight: 600;
+  flex-shrink: 0;
+}
+
+/* Back cover artwork — blurb + barcode */
+.back-art {
+  position: absolute;
+  inset: 0;
+  padding: 32px 28px 26px;
+  display: flex;
+  flex-direction: column;
+  color: rgba(242,231,200,.86);
+  pointer-events: none;
+}
+.back-art .ba-pull {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-style: italic;
+  font-size: 13px;
+  line-height: 1.35;
+  text-align: center;
+  margin-bottom: 14px;
+}
+.back-art .ba-blurb {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: 9.5px;
+  line-height: 1.45;
+  margin: 0;
+  letter-spacing: 0.01em;
+}
+.back-art .ba-bottom {
+  margin-top: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding-top: 16px;
+  border-top: 1px solid rgba(242,231,200,.3);
+}
+.back-art .ba-meta {
+  font-family: var(--font-display);
+  font-size: 7px;
+  letter-spacing: 0.22em;
+  color: #E6CC8C;
+  text-transform: uppercase;
+  line-height: 1.5;
+}
+.back-art .ba-barcode {
+  width: 68px;
+  height: 30px;
+  background: #fff;
+  background-image: repeating-linear-gradient(90deg,
+    #000 0 1px, #fff 1px 3px,
+    #000 3px 4px, #fff 4px 6px,
+    #000 6px 8px, #fff 8px 9px,
+    #000 9px 11px, #fff 11px 13px);
+}
+
+/* Hint text under the book */
+.book-hint {
+  position: absolute;
+  left: 50%;
+  bottom: 18px;
+  transform: translateX(-50%);
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--book-fg-muted);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  white-space: nowrap;
+  opacity: 0.8;
+  transition: opacity 240ms ease;
+}
+.book-hint.hidden { opacity: 0; }
+.book-hint svg { width: 14px; height: 14px; }
+
+/* ── Book details panel ───────────────────────────────────────── */
+.book-meta {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 11px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--book-fg-muted);
+  margin-bottom: 18px;
+  display: flex;
+  gap: 14px;
+  align-items: center;
+}
+.book-meta .tick { color: rgba(232,223,201,.35); }
+
+.book-title {
+  font-family: var(--font-display);
+  font-weight: 500;
+  font-size: clamp(34px, 3.6vw, 52px);
+  line-height: 1.04;
+  letter-spacing: -0.018em;
+  margin: 0 0 8px;
+  color: var(--book-fg);
+  text-wrap: balance;
+}
+.book-title em {
+  font-style: normal;
+  color: #E6CC8C;
+}
+.book-byline {
+  font-family: var(--font-sans);
+  font-size: 14px;
+  color: var(--book-fg-muted);
+  letter-spacing: 0.05px;
+  margin: 0 0 28px;
+}
+.book-byline strong {
+  color: var(--book-fg);
+  font-weight: 500;
+}
+
+.book-blurb {
+  font-family: var(--font-sans);
+  font-size: 15px;
+  line-height: 1.6;
+  color: rgba(232,223,201,.85);
+  margin: 0 0 32px;
+  max-width: 56ch;
+}
+.book-blurb p { margin: 0 0 14px; }
+.book-blurb p:last-child { margin-bottom: 0; }
+
+/* CTA buttons */
+.book-cta-row {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 28px;
+}
+.book-cta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 14px 20px;
+  background: transparent;
+  border: 1px solid var(--book-rule);
+  color: var(--book-fg);
+  font-family: var(--font-sans);
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  transition: background 120ms ease, border-color 120ms ease, transform 120ms ease;
+  cursor: pointer;
+}
+.book-cta:hover {
+  background: rgba(232,223,201,.06);
+  border-color: rgba(232,223,201,.45);
+}
+.book-cta.primary {
+  background: var(--book-cta);
+  color: var(--book-cta-fg);
+  border-color: var(--book-cta);
+}
+.book-cta.primary:hover {
+  background: #F4E9C8;
+  border-color: #F4E9C8;
+}
+.book-cta-left {
+  display: inline-flex;
+  align-items: center;
+  gap: 14px;
+}
+.book-cta-where {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 9px;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  color: var(--book-fg-muted);
+  width: 84px;
+  flex-shrink: 0;
+}
+.book-cta.primary .book-cta-where { color: rgba(14,42,35,.55); }
+.book-cta-label { flex: 1; }
+.book-cta-price {
+  font-family: var(--font-mono);
+  font-size: 13px;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 0.02em;
+}
+.book-cta-arrow {
+  display: inline-block;
+  width: 16px;
+  transition: transform 160ms ease;
+}
+.book-cta:hover .book-cta-arrow { transform: translateX(3px); }
+.book-cta.disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+.book-cta.disabled:hover {
+  background: transparent;
+  border-color: rgba(232,223,201,.25);
+}
+
+/* Specs row */
+.book-specs {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0;
+  border-top: 1px solid var(--book-rule);
+  padding-top: 20px;
+}
+.book-spec {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding-right: 16px;
+}
+.book-spec dt {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 9px;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  color: var(--book-fg-muted);
+}
+.book-spec dd {
+  margin: 0;
+  font-family: var(--font-sans);
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--book-fg);
+  letter-spacing: 0.02em;
+}
+
+@media (max-width: 640px) {
+  .book-specs { grid-template-columns: repeat(2, 1fr); row-gap: 16px; }
+  .book-stage { height: 480px; }
+  .book-3d { --w: 210px; --h: 315px; --d: 65px; }
+}
+
+/* Dark mode — leave the book section as-is (it's already dark);
+   but make sure the rest of the page styles continue to work. */
+.dark .book-section {
+  border-top-color: var(--brand-charcoal);
+  border-bottom-color: var(--brand-charcoal);
+}
