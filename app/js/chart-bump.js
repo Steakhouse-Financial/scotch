@@ -243,11 +243,19 @@ export async function initBumpChart(containerId) {
       tooltip.innerHTML = html;
       tooltip.style.opacity = '1';
 
-      // Position tooltip
-      const tipX = (e.clientX - svgRect.left) + 16;
-      const tipY = (e.clientY - svgRect.top) - 10;
-      tooltip.style.left = tipX + 'px';
-      tooltip.style.top = tipY + 'px';
+      // Position tooltip — default right of cursor, flip to left if it
+      // would overflow the chart wrap, then clamp inside.
+      const px = e.clientX - svgRect.left;
+      const py = e.clientY - svgRect.top;
+      const tw = tooltip.offsetWidth;
+      const th = tooltip.offsetHeight;
+      let left = px + 16;
+      if (left + tw > svgRect.width - 8) left = px - tw - 16;
+      left = Math.max(8, Math.min(svgRect.width - tw - 8, left));
+      let top = py - 10;
+      top = Math.max(8, Math.min(svgRect.height - th - 8, top));
+      tooltip.style.left = left + 'px';
+      tooltip.style.top = top + 'px';
     });
 
     overlay.addEventListener('mouseleave', () => {

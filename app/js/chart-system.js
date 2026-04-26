@@ -421,14 +421,16 @@ function render(opts = {}) {
     `;
     tooltipEl.classList.add('visible');
 
-    // Position tooltip relative to container
+    // Position tooltip relative to container — default right of cursor,
+    // flip to left if it would overflow the wrap, then clamp inside.
     const wrap = wrapEl.getBoundingClientRect();
     const px = ev.clientX - wrap.left;
     const py = ev.clientY - wrap.top;
     const tw = tooltipEl.offsetWidth;
     const th = tooltipEl.offsetHeight;
     let left = px + 16;
-    if (left + tw > wrap.clientWidth - 8) left = px - tw - 16;
+    if (left + tw > wrap.width - 8) left = px - tw - 16;
+    left = Math.max(8, Math.min(wrap.width - tw - 8, left));
     let top = py - th / 2;
     top = Math.max(8, Math.min(wrap.height - th - 8, top));
     tooltipEl.style.left = left + 'px';
