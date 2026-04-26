@@ -1,55 +1,69 @@
-// Book 3D — drag-rotate, fresnel rim tracks rotation.
-// Purely user-driven: no idle auto-spin.
+// Book 3D — drag-rotate, with per-face Lambertian shading.
+// Each face darkens as it rotates away from a fixed world-space light
+// (above and slightly forward of the camera).
 (function () {
   const stage = document.querySelector('.book-stage');
   if (!stage) return;
-  const book  = stage.querySelector('.book-3d');
-  const hint  = stage.querySelector('.book-hint');
-  const cover = stage.querySelector('.book-cover');
+  const book = stage.querySelector('.book-3d');
+  const hint = stage.querySelector('.book-hint');
 
-  // Initial pose
-  let ry = -28;   // yaw
-  let rx = -8;    // pitch
+  let ry = -28, rx = -8;
   let dragging = false;
   let lastX = 0, lastY = 0;
 
+  // Light direction in world space: above and slightly forward of camera.
+  // Values are pre-normalised.
+  const LIGHT = (() => {
+    const v = [0, -0.55, 0.84];
+    const len = Math.hypot(v[0], v[1], v[2]);
+    return v.map(c => c / len);
+  })();
+
+  // How dark a fully-back-facing face gets (0 = no shading, 1 = pure black).
+  const STRENGTH = 0.7;
+  // Minimum darkness applied even on the brightest face — a small uniform
+  // shadow keeps the cover from looking flat at the brightest pose.
+  const AMBIENT = 0.06;
+
   function clamp(v, lo, hi) { return Math.max(lo, Math.min(hi, v)); }
 
+  // Apply rotateX(rxR) * rotateY(ryR) to a book-frame normal.
+  function worldNormal(nx, ny, nz, ryR, rxR) {
+    const cy = Math.cos(ryR), sy = Math.sin(ryR);
+    const cx = Math.cos(rxR), sx = Math.sin(rxR);
+    // rotateY(ry):
+    const x1 = cy * nx + sy * nz;
+    const y1 = ny;
+    const z1 = -sy * nx + cy * nz;
+    // rotateX(rx):
+    return [
+      x1,
+      cx * y1 - sx * z1,
+      sx * y1 + cx * z1,
+    ];
+  }
+
+  function shadowFor(localN, ryR, rxR) {
+    const n = worldNormal(localN[0], localN[1], localN[2], ryR, rxR);
+    const dot = n[0] * LIGHT[0] + n[1] * LIGHT[1] + n[2] * LIGHT[2];
+    const lambert = Math.max(0, dot);
+    return clamp((1 - lambert) * STRENGTH + AMBIENT, 0, 1);
+  }
+
   function apply() {
-    // Yaw and pitch on the book.
     book.style.setProperty('--ry', ry + 'deg');
     book.style.setProperty('--rx', rx + 'deg');
 
-    if (cover) {
-      // Specular highlight position — light source treated as fixed in world
-      // space (above-front of the book). Each face has its own "facing the
-      // light" angle: front=0°, back=±180°, spine=+90° (left edge).
-      // The highlight slides on each face based on how far that face has
-      // yawed away from its facing-the-light pose.
-      const wrap = (a) => {
-        // Shortest signed angular distance, in [-180, 180]
-        let x = ((a + 180) % 360 + 360) % 360 - 180;
-        return x;
-      };
-      const k = 0.9;          // horizontal sweep per degree of yaw
-      const gy = 30 + rx * 1.4; // shared vertical position from pitch
+    const ryR = ry * Math.PI / 180;
+    const rxR = rx * Math.PI / 180;
 
-      const dxFront = wrap(ry);          // 0 when front faces light
-      const dxBack  = wrap(ry - 180);    // 0 when back faces light
-      const dxSpine = wrap(ry + 90);     // 0 when spine faces light
-
-      book.style.setProperty('--gloss-x-front', clamp(50 - dxFront * k, -20, 120) + '%');
-      book.style.setProperty('--gloss-x-back',  clamp(50 - dxBack  * k, -20, 120) + '%');
-      book.style.setProperty('--gloss-x-spine', clamp(50 - dxSpine * k, -20, 120) + '%');
-      book.style.setProperty('--gloss-y',       clamp(gy, -20, 120) + '%');
-
-      // Fresnel rim — brightens when the cover is rotated away from the viewer.
-      // 0 at face-on, ~0.85 at grazing angles.
-      const yawAway = Math.min(Math.abs(ry) / 70, 1);
-      const pitchAway = Math.min(Math.abs(rx) / 60, 1);
-      const fres = 0.10 + 0.75 * Math.max(yawAway, pitchAway);
-      cover.style.setProperty('--fresnel', fres.toFixed(3));
-    }
+    // Book-frame outward normals for each face.
+    book.style.setProperty('--shadow-front',  shadowFor([ 0,  0,  1], ryR, rxR).toFixed(3));
+    book.style.setProperty('--shadow-back',   shadowFor([ 0,  0, -1], ryR, rxR).toFixed(3));
+    book.style.setProperty('--shadow-spine',  shadowFor([-1,  0,  0], ryR, rxR).toFixed(3));
+    book.style.setProperty('--shadow-edge',   shadowFor([ 1,  0,  0], ryR, rxR).toFixed(3));
+    book.style.setProperty('--shadow-top',    shadowFor([ 0, -1,  0], ryR, rxR).toFixed(3));
+    book.style.setProperty('--shadow-bottom', shadowFor([ 0,  1,  0], ryR, rxR).toFixed(3));
   }
 
   function pt(e) {

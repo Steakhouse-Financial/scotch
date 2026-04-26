@@ -106,92 +106,29 @@
   overflow: hidden;
   isolation: isolate;
 }
-/* Foil-laminate sheen — a single soft specular highlight that tracks rotation.
-   The light source is treated as fixed in world space (above-front of the
-   book); as each face yaws/pitches, the bright spot slides across it,
-   exactly like a glossy laminate catching room light.
-
-   --gloss-x-{face} / --gloss-y are computed in JS from the rotation angles. */
-.book-cover::after {
-  content: '';
-  position: absolute;
-  inset: 0;
-  pointer-events: none;
-  background: radial-gradient(
-    ellipse 55% 70% at var(--gloss-x-front, 50%) var(--gloss-y, 30%),
-    rgba(255, 255, 255, 0.42) 0%,
-    rgba(255, 255, 255, 0.18) 22%,
-    rgba(255, 255, 255, 0.05) 45%,
-    rgba(255, 255, 255, 0)    70%);
-  mix-blend-mode: screen;
-  transition: background 100ms ease;
-}
-.book-back::after {
-  content: '';
-  position: absolute;
-  inset: 0;
-  pointer-events: none;
-  background: radial-gradient(
-    ellipse 55% 70% at var(--gloss-x-back, 50%) var(--gloss-y, 30%),
-    rgba(255, 255, 255, 0.42) 0%,
-    rgba(255, 255, 255, 0.18) 22%,
-    rgba(255, 255, 255, 0.05) 45%,
-    rgba(255, 255, 255, 0)    70%);
-  mix-blend-mode: screen;
-  transition: background 100ms ease;
-}
+/* Per-face Lambertian shadow overlay — each face darkens as it rotates
+   away from a fixed world-space light. The opacity values
+   (--shadow-{face}) are computed in JS from the rotation angles. */
+.book-cover::after,
+.book-back::after,
+.book-top::after,
+.book-bottom::after,
+.book-edge::after,
 .book-spine::before {
   content: '';
   position: absolute;
   inset: 0;
   pointer-events: none;
-  /* Spine is a narrow vertical strip — use a tighter ellipse so the highlight
-     reads as a single bright vertical band sweeping across it. */
-  background: radial-gradient(
-    ellipse 90% 60% at var(--gloss-x-spine, 50%) var(--gloss-y, 30%),
-    rgba(255, 255, 255, 0.38) 0%,
-    rgba(255, 255, 255, 0.16) 24%,
-    rgba(255, 255, 255, 0.04) 50%,
-    rgba(255, 255, 255, 0)    75%);
-  mix-blend-mode: screen;
-  transition: background 100ms ease;
-  z-index: 1;
+  background: #000;
+  transition: opacity 100ms ease;
+  z-index: 2;
 }
-@property --gloss-x-front {
-  syntax: '<percentage>';
-  inherits: true;
-  initial-value: 50%;
-}
-@property --gloss-x-back {
-  syntax: '<percentage>';
-  inherits: true;
-  initial-value: 50%;
-}
-@property --gloss-x-spine {
-  syntax: '<percentage>';
-  inherits: true;
-  initial-value: 50%;
-}
-@property --gloss-y {
-  syntax: '<percentage>';
-  inherits: true;
-  initial-value: 30%;
-}
-/* Fresnel rim — edges brighten when the cover faces away from the camera,
-   the same effect you see on real laminated stock at grazing angles. */
-.cover-fresnel {
-  position: absolute;
-  inset: 0;
-  pointer-events: none;
-  background:
-    radial-gradient(
-      ellipse 78% 72% at center,
-      rgba(255, 255, 255, 0)    55%,
-      rgba(255, 255, 255, 0.10) 80%,
-      rgba(255, 255, 255, 0.28) 100%);
-  mix-blend-mode: screen;
-  opacity: var(--fresnel, 0.25);
-}
+.book-cover::after  { opacity: var(--shadow-front, 0.15); }
+.book-back::after   { opacity: var(--shadow-back,  0.5); }
+.book-spine::before { opacity: var(--shadow-spine, 0.5); }
+.book-top::after    { opacity: var(--shadow-top,   0.2); }
+.book-bottom::after { opacity: var(--shadow-bottom,0.5); }
+.book-edge::after   { opacity: var(--shadow-edge,  0.5); }
 
 /* Back cover */
 .book-back {
