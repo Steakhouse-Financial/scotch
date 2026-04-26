@@ -96,7 +96,7 @@
 .book-cover {
   transform: translateZ(calc(var(--d) / 2));
   background-color: var(--cover-bg, #1B4FB5);
-  background-image: url('../assets/book-front.png?v=4');
+  background-image: url('../assets/book-front.png?v=5');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -197,7 +197,7 @@
 .book-back {
   transform: translateZ(calc(var(--d) / -2)) rotateY(180deg);
   background-color: var(--cover-bg, #1B4FB5);
-  background-image: url('../assets/book-back.png?v=4');
+  background-image: url('../assets/book-back.png?v=5');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -214,7 +214,7 @@
   left: calc(var(--w) / 2 - var(--d) / 2);
   transform: rotateY(-90deg) translateZ(calc(var(--w) / 2));
   background-color: var(--cover-bg, #1B4FB5);
-  background-image: url('../assets/book-spine.png?v=4');
+  background-image: url('../assets/book-spine.png?v=5');
   background-size: 100% 100%;
   background-position: center;
   background-repeat: no-repeat;
