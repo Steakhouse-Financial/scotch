@@ -20,10 +20,10 @@
   })();
 
   // How dark a fully-back-facing face gets (0 = no shading, 1 = pure black).
-  const STRENGTH = 0.7;
+  const STRENGTH = 0.55;
   // Minimum darkness applied even on the brightest face — a small uniform
   // shadow keeps the cover from looking flat at the brightest pose.
-  const AMBIENT = 0.06;
+  const AMBIENT = 0.02;
 
   function clamp(v, lo, hi) { return Math.max(lo, Math.min(hi, v)); }
 
