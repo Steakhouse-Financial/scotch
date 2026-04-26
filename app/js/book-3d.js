@@ -1,4 +1,4 @@
-// Book 3D — drag-rotate, with per-face Lambertian shading.
+// Book 3D — drag-rotate, plus passive mouse-tracking parallax.
 // Each face darkens as it rotates away from a fixed world-space light
 // (above and slightly forward of the camera).
 (function () {
@@ -7,9 +7,20 @@
   const book = stage.querySelector('.book-3d');
   const hint = stage.querySelector('.book-hint');
 
-  let ry = -28, rx = -8;
+  // Base pose — set by drag, persists after release.
+  let baseRy = -28, baseRx = -8;
+  // Mouse-follow offset, eases toward target each frame.
+  let offsetY = 0, offsetX = 0;
+  let targetOffsetY = 0, targetOffsetX = 0;
+
   let dragging = false;
   let lastX = 0, lastY = 0;
+
+  // Parallax range and easing for the passive mouse-follow.
+  const FOLLOW_RANGE_Y = 14;   // ° max horizontal sway
+  const FOLLOW_RANGE_X = 7;    // ° max vertical tilt
+  const EASE = 0.08;
+  const reducedMotion = matchMedia('(prefers-reduced-motion: reduce)').matches;
 
   // Light direction in world space: above and slightly forward of camera.
   // Values are pre-normalised.
@@ -51,6 +62,8 @@
   }
 
   function apply() {
+    const ry = baseRy + offsetY;
+    const rx = baseRx + offsetX;
     book.style.setProperty('--ry', ry + 'deg');
     book.style.setProperty('--rx', rx + 'deg');
 
@@ -64,6 +77,19 @@
     book.style.setProperty('--shadow-edge',   shadowFor([ 1,  0,  0], ryR, rxR).toFixed(3));
     book.style.setProperty('--shadow-top',    shadowFor([ 0, -1,  0], ryR, rxR).toFixed(3));
     book.style.setProperty('--shadow-bottom', shadowFor([ 0,  1,  0], ryR, rxR).toFixed(3));
+  }
+
+  function tick() {
+    if (dragging) {
+      // Decay parallax to 0 during drag so the drag itself feels direct.
+      offsetY += (0 - offsetY) * 0.2;
+      offsetX += (0 - offsetX) * 0.2;
+    } else {
+      offsetY += (targetOffsetY - offsetY) * EASE;
+      offsetX += (targetOffsetX - offsetX) * EASE;
+    }
+    apply();
+    requestAnimationFrame(tick);
   }
 
   function pt(e) {
@@ -84,10 +110,9 @@
     const dx = p.x - lastX;
     const dy = p.y - lastY;
     lastX = p.x; lastY = p.y;
-    ry += dx * 0.45;
-    rx -= dy * 0.30;
-    rx = clamp(rx, -55, 55);
-    apply();
+    baseRy += dx * 0.45;
+    baseRx -= dy * 0.30;
+    baseRx = clamp(baseRx, -55, 55);
   }
   function onUp(e) {
     if (!dragging) return;
@@ -95,10 +120,28 @@
     stage.releasePointerCapture && e.pointerId != null && stage.releasePointerCapture(e.pointerId);
   }
 
+  // Passive mouse-follow over the whole window — gives the book a
+  // tasteful sway as the cursor moves around the page.
+  function onWindowMouseMove(e) {
+    if (dragging || reducedMotion) return;
+    const nx = (e.clientX / window.innerWidth) * 2 - 1;
+    const ny = (e.clientY / window.innerHeight) * 2 - 1;
+    targetOffsetY = clamp(nx, -1, 1) * FOLLOW_RANGE_Y;
+    targetOffsetX = -clamp(ny, -1, 1) * FOLLOW_RANGE_X;
+  }
+
+  function onPageLeave() {
+    targetOffsetY = 0;
+    targetOffsetX = 0;
+  }
+
   stage.addEventListener('pointerdown', onDown);
   window.addEventListener('pointermove', onMove);
   window.addEventListener('pointerup', onUp);
   window.addEventListener('pointercancel', onUp);
+  window.addEventListener('mousemove', onWindowMouseMove, { passive: true });
+  document.addEventListener('mouseleave', onPageLeave);
 
   apply();
+  requestAnimationFrame(tick);
 })();

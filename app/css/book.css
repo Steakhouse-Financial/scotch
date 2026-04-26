@@ -15,7 +15,10 @@
 
   position: relative;
   z-index: 1;
-  margin: 64px -56px 0;            /* break out of .page padding */
+  /* Stretch to full viewport width regardless of .page max-width.
+     `(100% - 100vw) / 2` is the negative offset from the parent's content
+     edge out to the viewport edge, working for any .page width/padding. */
+  margin: 64px calc((100% - 100vw) / 2) 0;
   background: var(--book-bg);
   background:
     radial-gradient(120% 80% at 80% 0%, var(--book-bg-2) 0%, var(--book-bg) 55%),
@@ -28,7 +31,7 @@
 
 @media (max-width: 1024px) {
   .book-section {
-    margin: 48px -24px 0;
+    margin-top: 48px;
   }
 }
 
@@ -93,7 +96,6 @@
   height: var(--h);
   transform-style: preserve-3d;
   transform: rotateX(var(--rx, -8deg)) rotateY(var(--ry, -28deg));
-    transition: transform 100ms cubic-bezier(.2,.7,.2,1);
   will-change: transform;
 }
 
