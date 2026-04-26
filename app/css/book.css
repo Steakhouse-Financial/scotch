@@ -69,9 +69,12 @@
    We size in CSS variables so cover/back/spine all derive from one source.
    Default Demy 8vo trim, tall portrait. */
 .book-3d {
-  --w: 350px;     /* cover width — 6" */
-  --h: 550px;     /* cover height — 9" */
-  --d: 108px;     /* spine thickness — 1.86" */
+  /* Internal dimensions are 2× the visual size so faces rasterize at 2×
+     resolution; the scale(0.5) at the end of the transform brings it back
+     to the intended visual size. */
+  --w: 700px;     /* cover width — 6"  (visual 350px × 2) */
+  --h: 1100px;    /* cover height — 9" (visual 550px × 2) */
+  --d: 216px;     /* spine thickness — 1.86" (visual 108px × 2) */
   --pages: #FFFFFF;
   --page-edge: #E8E8E8;
 
@@ -79,7 +82,7 @@
   width: var(--w);
   height: var(--h);
   transform-style: preserve-3d;
-  transform: rotateX(var(--rx, -8deg)) rotateY(var(--ry, -28deg));
+  transform: rotateX(var(--rx, -8deg)) rotateY(var(--ry, -28deg)) scale(0.5);
     transition: transform 100ms cubic-bezier(.2,.7,.2,1);
   will-change: transform;
 }
@@ -101,8 +104,8 @@
   background-position: center;
   background-repeat: no-repeat;
   box-shadow:
-    inset 0 0 0 1px rgba(0,0,0,.25),
-    inset 0 0 60px rgba(0,0,0,.18);
+    inset 0 0 0 2px rgba(0,0,0,.25),
+    inset 0 0 120px rgba(0,0,0,.18);
   overflow: hidden;
   isolation: isolate;
 }
@@ -202,8 +205,8 @@
   background-position: center;
   background-repeat: no-repeat;
   box-shadow:
-    inset 0 0 0 1px rgba(0,0,0,.25),
-    inset 0 0 60px rgba(0,0,0,.18);
+    inset 0 0 0 2px rgba(0,0,0,.25),
+    inset 0 0 120px rgba(0,0,0,.18);
 }
 
 
@@ -219,8 +222,8 @@
   background-position: center;
   background-repeat: no-repeat;
   box-shadow:
-    inset 0 0 0 1px rgba(0,0,0,.3),
-    inset 0 0 40px rgba(0,0,0,.25);
+    inset 0 0 0 2px rgba(0,0,0,.3),
+    inset 0 0 80px rgba(0,0,0,.25);
 }
 .book-spine::after {
   content: '';
@@ -638,7 +641,7 @@
 @media (max-width: 640px) {
   .book-specs { grid-template-columns: repeat(2, 1fr); row-gap: 16px; }
   .book-stage { height: 480px; }
-  .book-3d { --w: 210px; --h: 315px; --d: 65px; }
+  .book-3d { --w: 420px; --h: 630px; --d: 130px; }
 }
 
 /* Dark mode — leave the book section as-is (it's already dark);
