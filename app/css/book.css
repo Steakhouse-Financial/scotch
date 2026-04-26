@@ -53,7 +53,7 @@
 /* ── Stage ─────────────────────────────────────────────────────── */
 .book-stage {
   position: relative;
-  height: 600px;
+  height: 720px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -69,9 +69,9 @@
    We size in CSS variables so cover/back/spine all derive from one source.
    Default Demy 8vo trim, tall portrait. */
 .book-3d {
-  --w: 270px;     /* cover width — 6" */
-  --h: 424px;     /* cover height — 9" */
-  --d: 84px;      /* spine thickness — 1.86" */
+  --w: 350px;     /* cover width — 6" */
+  --h: 550px;     /* cover height — 9" */
+  --d: 108px;     /* spine thickness — 1.86" */
   --pages: #FFFFFF;
   --page-edge: #E8E8E8;
 
