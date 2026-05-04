@@ -406,8 +406,20 @@ export async function initAssetCompositionChart(containerId) {
     }))
     .filter(r => r.Year != null && r.Advances != null);
 
+  const series = [
+    { key: 'Advances', label: 'Advances', color: SERIES_COLORS[0] },
+    { key: 'Investments', label: 'Investments', color: SERIES_COLORS[1] },
+    { key: 'Liquid', label: 'Liquid Assets', color: SERIES_COLORS[2] },
+  ];
+
   const years = data.map(r => r.Year);
-  const ymax = 90;
+  const dataMax = Math.max(
+    ...data.flatMap(r => series.map(s => r[s.key] ?? 0)),
+  );
+  // Round up to the next 10 with a small headroom so the highest line
+  // (advances briefly exceeded 100% of deposits in the 1870s) sits inside
+  // the plot frame.
+  const ymax = Math.ceil((dataMax + 5) / 10) * 10;
   const { xAt, yAt, xMin, xMax } = buildScales(years, 0, ymax);
   const yTicks = niceTicks(0, ymax, 5);
 
@@ -416,12 +428,6 @@ export async function initAssetCompositionChart(containerId) {
     { from: 1914, to: 1918, label: 'WWI' },
     { from: 1939, to: 1945, label: 'WWII' },
   ]);
-
-  const series = [
-    { key: 'Advances', label: 'Advances', color: SERIES_COLORS[0] },
-    { key: 'Investments', label: 'Investments', color: SERIES_COLORS[1] },
-    { key: 'Liquid', label: 'Liquid Assets', color: SERIES_COLORS[2] },
-  ];
 
   for (const s of series) {
     const pts = data.map(r => [xAt(r.Year), r[s.key] != null ? yAt(r[s.key]) : null]);
