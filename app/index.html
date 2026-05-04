@@ -115,8 +115,14 @@
   </section>
 
   <!-- ═══════════════════════════════════════════════════════════ -->
-  <!-- Chart A: System Overview -->
+  <!-- Part I — The Aggregate Picture                               -->
   <!-- ═══════════════════════════════════════════════════════════ -->
+  <div class="part-divider">
+    <span class="part-num">I</span>
+    <span class="part-title">The aggregate picture</span>
+  </div>
+
+  <!-- Chart A: System Overview -->
   <section class="chart-section" id="system-chart">
     <div class="section-header">
       <h2>The System</h2>
@@ -147,11 +153,185 @@
     </div>
 
     <div class="legend-row" id="system-chart-legend"></div>
+
+    <p class="commentary">
+      Two and a half centuries on a single page. Above the zero line: how
+      Scottish banks deployed capital &mdash; advances to industry, investments in
+      securities, and the liquidity buffer. Below it: how they funded
+      themselves &mdash; note issue giving way to deposits, with capital becoming
+      a thinner sliver as leverage grew. The widening of the bands tracks the
+      system's seven-thousand-fold nominal expansion through industrialisation,
+      two world wars, and the post-war settlement.
+    </p>
+  </section>
+
+  <!-- Chart C: Asset Composition (01_5) -->
+  <section class="chart-section mini-chart" id="asset-comp-chart">
+    <div class="section-header">
+      <h2>Asset Composition</h2>
+      <p class="section-desc">Advances, investments, and liquid assets as a share of deposits, 1865-1972.</p>
+    </div>
+
+    <div class="chart-wrap" id="asset-comp-chart-wrap">
+      <div class="chart-loading" id="asset-comp-chart-loading">Loading&hellip;</div>
+      <svg class="chart" id="asset-comp-chart-svg" viewBox="0 0 1280 420" preserveAspectRatio="xMidYMid meet"></svg>
+      <div class="tooltip mini-tooltip" id="asset-comp-chart-tooltip"></div>
+    </div>
+    <div class="mini-legend" id="asset-comp-chart-legend"></div>
+
+    <p class="commentary">
+      What did Scottish banks actually do with deposits? In 1865 advances ran
+      at 95&thinsp;% of deposits &mdash; a near-perfect classical loan book. Two
+      world wars turned that on its head: investments (mostly UK government
+      securities) ballooned past 70&thinsp;% during 1942-46, while advances
+      collapsed below 20&thinsp;%. The post-war "investment overhang" took a
+      generation to unwind, and only by the 1970s did advances reclaim their
+      pre-1914 share &mdash; a vivid case study in how war finance permanently
+      rewires a banking system's balance sheet.
+    </p>
+  </section>
+
+  <!-- Chart D: Long Decline of Capital Ratios (01_4) -->
+  <section class="chart-section mini-chart" id="capital-ratio-chart">
+    <div class="section-header">
+      <h2>The Long Decline of Capital Ratios</h2>
+      <p class="section-desc">Capital + reserves as a percentage of total liabilities &amp; equity, 1744-1972.</p>
+    </div>
+
+    <div class="chart-wrap" id="capital-ratio-chart-wrap">
+      <div class="chart-loading" id="capital-ratio-chart-loading">Loading&hellip;</div>
+      <svg class="chart" id="capital-ratio-chart-svg" viewBox="0 0 1280 420" preserveAspectRatio="xMidYMid meet"></svg>
+      <div class="tooltip mini-tooltip" id="capital-ratio-chart-tooltip"></div>
+    </div>
+    <div class="mini-legend" id="capital-ratio-chart-legend"></div>
+
+    <p class="commentary">
+      Across two and a quarter centuries the equity cushion of the Scottish
+      system fell from 54&thinsp;% of the balance sheet to roughly 7&thinsp;%.
+      Each generation taught itself to operate on thinner capital, backstopped
+      first by partners' unlimited liability, then by reputation and inter-bank
+      coordination, and ultimately &mdash; implicitly &mdash; by the Bank of England's
+      lender-of-last-resort. Modern Basel debates often treat declining capital
+      as a recent vice; the Scottish data show it is a structural,
+      multi-century trend.
+    </p>
   </section>
 
   <!-- ═══════════════════════════════════════════════════════════ -->
-  <!-- Chart B: Bank Rankings -->
+  <!-- Part II — Profitability, Returns &amp; Risk                     -->
   <!-- ═══════════════════════════════════════════════════════════ -->
+  <div class="part-divider">
+    <span class="part-num">II</span>
+    <span class="part-title">Profitability, returns &amp; risk</span>
+  </div>
+
+  <!-- Chart E: System Profitability (04_1) -->
+  <section class="chart-section mini-chart" id="profit-chart">
+    <div class="section-header">
+      <h2>System Profitability</h2>
+      <p class="section-desc">Profit before and after tax as a percentage of deposits, 1865-1972.</p>
+    </div>
+
+    <div class="chart-wrap" id="profit-chart-wrap">
+      <div class="chart-loading" id="profit-chart-loading">Loading&hellip;</div>
+      <svg class="chart" id="profit-chart-svg" viewBox="0 0 1280 420" preserveAspectRatio="xMidYMid meet"></svg>
+      <div class="tooltip mini-tooltip" id="profit-chart-tooltip"></div>
+    </div>
+    <div class="mini-legend" id="profit-chart-legend"></div>
+
+    <p class="commentary">
+      Profit before tax fell from roughly 2&thinsp;% of deposits in the 1860s
+      to under 0.8&thinsp;% by the 1970s &mdash; a slow, secular margin compression
+      as competition tightened, deposit-taking became commoditised, and
+      post-war administered interest rates capped what banks could earn. The
+      dashed lines mark the system's four largest shocks; profitability dipped,
+      but it was the trend, not the cycle, that ultimately reshaped the
+      industry.
+    </p>
+  </section>
+
+  <!-- Chart F: Return on Equity (04_2) -->
+  <section class="chart-section mini-chart" id="roe-chart">
+    <div class="section-header">
+      <h2>Return on Equity</h2>
+      <p class="section-desc">Profit before tax divided by capital + reserves, 1865-1972.</p>
+    </div>
+
+    <div class="chart-wrap" id="roe-chart-wrap">
+      <div class="chart-loading" id="roe-chart-loading">Loading&hellip;</div>
+      <svg class="chart" id="roe-chart-svg" viewBox="0 0 1280 420" preserveAspectRatio="xMidYMid meet"></svg>
+      <div class="tooltip mini-tooltip" id="roe-chart-tooltip"></div>
+    </div>
+    <div class="mini-legend" id="roe-chart-legend"></div>
+
+    <p class="commentary">
+      Profitability was falling as a share of deposits &mdash; yet return on
+      equity stayed broadly stable, eventually rising into double digits in the
+      late 1960s. The arithmetic is simple: as the capital base shrank
+      (chart above), the same pound of profit served a smaller equity slice,
+      propping up shareholder returns. ROE is a flattering metric in an era of
+      rising leverage.
+    </p>
+  </section>
+
+  <!-- Chart G: Capital Adequacy / Basel lens (04_4) -->
+  <section class="chart-section mini-chart" id="capital-adequacy-chart">
+    <div class="section-header">
+      <h2>Capital Adequacy &mdash; A Basel Lens</h2>
+      <p class="section-desc">Capital + reserves as a percentage of total public liabilities, with indicative modern reference lines.</p>
+    </div>
+
+    <div class="chart-wrap" id="capital-adequacy-chart-wrap">
+      <div class="chart-loading" id="capital-adequacy-chart-loading">Loading&hellip;</div>
+      <svg class="chart" id="capital-adequacy-chart-svg" viewBox="0 0 1280 420" preserveAspectRatio="xMidYMid meet"></svg>
+      <div class="tooltip mini-tooltip" id="capital-adequacy-chart-tooltip"></div>
+    </div>
+    <div class="mini-legend" id="capital-adequacy-chart-legend"></div>
+
+    <p class="commentary">
+      The same long decline, viewed through a Basel III lens. By the late 1960s
+      the Scottish system was running on capital + reserves of around
+      6&thinsp;% of public liabilities &mdash; comfortably above today's
+      3&thinsp;% leverage minimum but below the 8&thinsp;% Tier-1 reference.
+      Strikingly, the system never suffered another systemic failure after 1878,
+      suggesting that for an oligopoly with strong inter-bank discipline,
+      formal capital ratios were not the only thing keeping the lights on.
+    </p>
+  </section>
+
+  <!-- Chart H: Crisis Impact (04_5) -->
+  <section class="chart-section mini-chart" id="crisis-chart">
+    <div class="section-header">
+      <h2>Crisis Impact</h2>
+      <p class="section-desc">Asset ratios around the two world wars: advances, investments, and liquid assets, all as a percentage of deposits.</p>
+    </div>
+
+    <div class="chart-wrap" id="crisis-chart-wrap">
+      <div class="chart-loading" id="crisis-chart-loading">Loading&hellip;</div>
+      <svg class="chart" id="crisis-chart-svg" viewBox="0 0 1280 420" preserveAspectRatio="xMidYMid meet"></svg>
+      <div class="tooltip mini-tooltip" id="crisis-chart-tooltip"></div>
+    </div>
+    <div class="mini-legend" id="crisis-chart-legend"></div>
+
+    <p class="commentary">
+      How crises rearranged the balance sheet. Both world wars produced the
+      same pattern: investments surged as banks were corralled into government
+      debt, advances collapsed, and liquid assets stayed elevated. Each war
+      ratcheted the asset mix &mdash; the post-1918 advances ratio never returned
+      to its pre-1914 level, and a similar shift followed 1945. War finance is
+      sticky.
+    </p>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════════════ -->
+  <!-- Part III — Banks &amp; Geography                                -->
+  <!-- ═══════════════════════════════════════════════════════════ -->
+  <div class="part-divider">
+    <span class="part-num">III</span>
+    <span class="part-title">Banks &amp; geography</span>
+  </div>
+
+  <!-- Chart B: Bank Rankings -->
   <section class="chart-section" id="rankings-chart">
     <div class="section-header">
       <h2>Bank Rankings</h2>
@@ -175,6 +355,63 @@
       <svg class="chart" id="rankings-chart-svg" viewBox="0 0 1280 480" preserveAspectRatio="xMidYMid meet"></svg>
       <div class="tooltip" id="rankings-chart-tooltip"></div>
     </div>
+
+    <p class="commentary">
+      Eight banks compete for primacy across a century of change. The Bank of
+      Scotland and Royal Bank &mdash; public banks chartered in 1695 and 1727 &mdash;
+      were rarely outright leaders by the 1860s; the joint-stock challengers
+      (Commercial, National, Union) had taken the front rank. Watch the City of
+      Glasgow line vanish in 1878 &mdash; the system's most catastrophic failure &mdash;
+      and notice how mergers and exits gradually thin the field from eight
+      names to five.
+    </p>
+  </section>
+
+  <!-- Chart I: Branch Density (02_2) -->
+  <section class="chart-section mini-chart" id="branch-density-chart">
+    <div class="section-header">
+      <h2>Branch Density &mdash; Scotland vs England</h2>
+      <p class="section-desc">Bank offices per thousand population, at four observation points, 1886-1972.</p>
+    </div>
+
+    <div class="chart-wrap" id="branch-density-chart-wrap">
+      <div class="chart-loading" id="branch-density-chart-loading">Loading&hellip;</div>
+      <svg class="chart" id="branch-density-chart-svg" viewBox="0 0 1280 420" preserveAspectRatio="xMidYMid meet"></svg>
+    </div>
+    <div class="mini-legend" id="branch-density-chart-legend"></div>
+
+    <p class="commentary">
+      Scottish banks were pioneers of branch banking, and the contrast with
+      England is stark: 0.25 offices per thousand people in 1886 versus 0.06 in
+      England &mdash; a four-fold density advantage. That distribution network was
+      the physical infrastructure of the cash-credit system, the
+      relationship-banking that drew Smithian economists' admiration. By 1972
+      England had nearly caught up, but Scotland still led.
+    </p>
+  </section>
+
+  <!-- Chart J: Scotland's Share (02_4) -->
+  <section class="chart-section mini-chart" id="scotland-share-chart">
+    <div class="section-header">
+      <h2>Scotland's Share of Great Britain</h2>
+      <p class="section-desc">Scottish notes and deposits as a percentage of the GB total, 1865-1972.</p>
+    </div>
+
+    <div class="chart-wrap" id="scotland-share-chart-wrap">
+      <div class="chart-loading" id="scotland-share-chart-loading">Loading&hellip;</div>
+      <svg class="chart" id="scotland-share-chart-svg" viewBox="0 0 1280 420" preserveAspectRatio="xMidYMid meet"></svg>
+      <div class="tooltip mini-tooltip" id="scotland-share-chart-tooltip"></div>
+    </div>
+    <div class="mini-legend" id="scotland-share-chart-legend"></div>
+
+    <p class="commentary">
+      Scotland's share of Great Britain's deposits halved from roughly
+      25&thinsp;% in the 1880s to about 10&thinsp;% by 1972, broadly tracking
+      the country's declining share of UK population and GDP. Scottish notes
+      held up better &mdash; never falling much below 4&thinsp;% even after the
+      1845 Bank Notes Act capped issuance &mdash; a measure of cultural attachment
+      that survives in the Scottish banknotes still circulating today.
+    </p>
   </section>
 
   <!-- Footer -->
@@ -196,6 +433,16 @@
 <script type="module">
   import { initSystemChart } from './js/chart-system.js';
   import { initBumpChart } from './js/chart-bump.js';
+  import {
+    initCapitalRatioChart,
+    initAssetCompositionChart,
+    initBranchDensityChart,
+    initScotlandShareChart,
+    initSystemProfitabilityChart,
+    initReturnOnEquityChart,
+    initCapitalAdequacyChart,
+    initCrisisImpactChart,
+  } from './js/chart-analytics.js';
   import { downloadCSV } from './js/csv.js';
   import { initThemeToggle } from './js/theme-toggle.js';
 
@@ -206,6 +453,17 @@
 
   initSystemChart('system-chart');
   initBumpChart('rankings-chart');
+
+  // Companion analytical charts. Each returns a Promise; we let them
+  // load in parallel rather than blocking on each other.
+  initAssetCompositionChart('asset-comp-chart');
+  initCapitalRatioChart('capital-ratio-chart');
+  initSystemProfitabilityChart('profit-chart');
+  initReturnOnEquityChart('roe-chart');
+  initCapitalAdequacyChart('capital-adequacy-chart');
+  initCrisisImpactChart('crisis-chart');
+  initBranchDensityChart('branch-density-chart');
+  initScotlandShareChart('scotland-share-chart');
 
   document.getElementById('system-chart-download').addEventListener('click', () => {
     downloadCSV('appendix_system.csv', './flattened/appendix_system.csv');
